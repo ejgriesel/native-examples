@@ -16,3 +16,9 @@
 /glue-c-exports/gluepy/.idea/
 /glue-c-exports/gluepy/build/
 /glue-c-exports/cpp-console-example/GlueNati.30b02569
+/glue-com/GlueDelphi/__recovery
+*.dcu
+*.rsm
+*.local
+*.res
+*.exe
