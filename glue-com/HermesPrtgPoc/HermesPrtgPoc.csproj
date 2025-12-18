@@ -137,6 +137,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Configs\hermes-poc-delphi.json" />
     <None Include="Configs\hermes-prtg-poc.json" />
     <None Include="Configs\publiclistener.json" />
     <None Include="packages.config" />
