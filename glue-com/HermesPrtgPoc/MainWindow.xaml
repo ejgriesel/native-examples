@@ -1,12 +1,61 @@
 ﻿<Window x:Class="HermesPrtgPoc.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:HermesPrtgPoc"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Market Data Fetcher" Height="450" Width="400">
+    <StackPanel Margin="20">
         
-    </Grid>
+        <TextBlock Text="Market Data Search" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+            <TextBlock Text="Instr Code:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox x:Name="txtInstrCode" Width="150" Padding="5" VerticalContentAlignment="Center"/>
+            <Button x:Name="btnFetch" Content="Get Data" Margin="10,0,0,0" Padding="10,5" Click="BtnFetch_Click"/>
+        </StackPanel>
+
+        <Separator Margin="0,0,0,20"/>
+
+        <Grid x:Name="gridResults" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" /> <ColumnDefinition Width="*" />    </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Exchange:" FontWeight="Bold"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" x:Name="lblExchange" Margin="10,0,0,0"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Period Name:" FontWeight="Bold"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" x:Name="lblPeriod" Margin="10,0,0,0"/>
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Closing Price:" FontWeight="Bold"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" x:Name="lblClosing" Margin="10,0,0,0"/>
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Last Price:" FontWeight="Bold"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" x:Name="lblLast" Margin="10,0,0,0"/>
+
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Best Bid:" FontWeight="Bold"/>
+            <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Margin="10,0,0,0">
+                <TextBlock x:Name="lblBidVal" Foreground="Green"/>
+                <TextBlock Text=" @ "/>
+                <TextBlock x:Name="lblBidVol"/>
+            </StackPanel>
+
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Best Offer:" FontWeight="Bold"/>
+            <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" Margin="10,0,0,0">
+                <TextBlock x:Name="lblOfferVal" Foreground="Red"/>
+                <TextBlock Text=" @ "/>
+                <TextBlock x:Name="lblOfferVol"/>
+            </StackPanel>
+
+        </Grid>
+        
+        <TextBlock x:Name="lblStatus" Foreground="Red" TextWrapping="Wrap" Margin="0,10,0,0"/>
+        
+    </StackPanel>
 </Window>
