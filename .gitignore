@@ -26,3 +26,7 @@
 *.identcache
 /glue-com/GlueDelphi10 - CaseList/__recovery
 *.dcr
+*.vsidx
+/glue-com/HermesPrtgDemo/.vs
+*.user
+/glue-com/HermesPrtgDemo/obj
