@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Hermes PRTG POC🔗",
+        "type": "exe",
+        "name": "hermes-prtg-poc",
+        "icon": "http://localhost:22080/resources/icons/wpf.ico",
+        "details": {
+            "path": "C:/GitHub/native-examples-ejgriesel/glue-com/HermesPrtgPoc/bin/Debug",
+            "command": "HermesPrtgPoc.exe",
+            "mode": "tab",
+            "parameters": " --mode=3",
+            "left": 100,
+            "top": 75,
+            "startingContextMode": "interop"
+        },
+        "customProperties": {
+            "includeInCanvas": false,
+            "includeInWorkspaces": false,
+            "appManagerOrder": 2,
+            "folder": "Hermes"
+        }
+    }
+]

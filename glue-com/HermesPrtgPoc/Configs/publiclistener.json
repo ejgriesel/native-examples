@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Public Listener 🔗",
+    "type": "window",
+    "name": "prtg",
+    "hidden": false,
+	"customProperties": {
+            "includeInCanvas": false,
+            "includeInWorkspaces": false,
+            "appManagerOrder": 2,
+            "folder": "Hermes"
+        },
+    "details": {
+      "url": "http://localhost:12001/api/prtg_marketData.MarketData?InstrCode=SOL&Exchange=JSE",
+      "height": 640,
+      "width": 560,
+      "left": 100,
+      "top": 100,
+      "mode": "tab",
+      "title": "PRTG",
+      "allowChannels": true,
+      "loader": {
+        "enabled": true,
+        "hideOnLoad": true
+      }
+    }
+  }
+]
