@@ -3,13 +3,32 @@ using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
+using System.Threading.Tasks;
 using System.Windows;
+using Tick42;
+using Tick42.Windows;
 
 namespace HermesPrtgPoc
 {
     public partial class MainWindow : Window
     {
         private readonly HttpClient _client;
+        private Glue42 _glue;
+        public IGlueWindow GlueWindow { get; set; }
+        internal void RegisterGlue(Glue42 glue)
+        {
+            _glue = glue;
+            //UpdateUI(true);
+
+            glue.GlueWindows?.RegisterStartupWindow(this, Title).ContinueWith(t =>
+            {
+                if (t.IsCompleted)
+                {
+                    GlueWindow = t.Result;
+                }
+            }, TaskScheduler.FromCurrentSynchronizationContext());
+        }
+
         public MainWindow()
         {
             _client = new HttpClient();
@@ -19,6 +38,9 @@ namespace HermesPrtgPoc
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             InitializeComponent();
+
+            DataContext = this;
+            Visibility = Visibility.Hidden;
         }
 
         private async void BtnFetch_Click(object sender, RoutedEventArgs e)
