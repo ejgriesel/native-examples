@@ -1,6 +1,7 @@
 ﻿using HermesPrtgPoc.Dto;
 using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Windows;
 
@@ -8,11 +9,15 @@ namespace HermesPrtgPoc
 {
     public partial class MainWindow : Window
     {
-        // Use a single HttpClient instance for the life of the app
-        private static readonly HttpClient client = new HttpClient();
-
+        private readonly HttpClient _client;
         public MainWindow()
         {
+            _client = new HttpClient();
+            // Pretend to be a browser
+            _client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
+            // Explicitly ask for JSON
+            _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
             InitializeComponent();
         }
 
@@ -37,7 +42,7 @@ namespace HermesPrtgPoc
                 string url = $"http://localhost:12001/api/prtg_marketData.MarketData?InstrCode={instrCode}&Exchange=JSE";
 
                 // 3. Make the Request
-                string responseBody = await client.GetStringAsync(url);
+                string responseBody = await _client.GetStringAsync(url);
 
                 // 4. Deserialize JSON (Case insensitive makes it more robust)
                 var options = new JsonSerializerOptions
