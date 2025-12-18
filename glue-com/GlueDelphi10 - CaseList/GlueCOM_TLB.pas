@@ -1,34 +1,63 @@
 unit GlueCOM_TLB;
 
 // ************************************************************************ //
-// WARNING
-// -------
-// The types declared in this file were generated from data read from a
-// Type Library. If this type library is explicitly or indirectly (via
-// another type library referring to this type library) re-imported, or the
-// 'Refresh' command of the Type Library Editor activated while editing the
-// Type Library, the contents of this file will be regenerated and all
-// manual modifications will be lost.
+// WARNING                                                                    
+// -------                                                                    
+// The types declared in this file were generated from data read from a       
+// Type Library. If this type library is explicitly or indirectly (via        
+// another type library referring to this type library) re-imported, or the   
+// 'Refresh' command of the Type Library Editor activated while editing the   
+// Type Library, the contents of this file will be regenerated and all        
+// manual modifications will be lost.                                         
 // ************************************************************************ //
 
-// $Rev: 52393 $
-// File generated on 10/10/2022 4:51:25 PM from Type Library described below.
+// $Rev: 98336 $
+// File generated on 2025/12/18 08:47:06 from Type Library described below.
 
 // ************************************************************************  //
-// Type Lib: C:\work\tick42\stash\dot-net-glue-com\GlueCom\bin\Debug\GlueCOM.dll (1)
+// Type Lib: C:\Users\eben.griesel\AppData\Local\interop.io\io.Connect Desktop\SDK\COMv2\GlueCOM.dll (1)
 // LIBID: {84EF66B3-C5E2-4C58-AD95-0E956FAE7027}
 // LCID: 0
-// Helpfile:
+// Helpfile: 
 // HelpString: Tick42 Glue for COM
-// DepndLst:
+// DepndLst: 
 //   (1) v2.0 stdole, (C:\Windows\SysWOW64\stdole2.tlb)
 //   (2) v2.4 mscorlib, (C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.tlb)
 // SYS_KIND: SYS_WIN32
 // Errors:
 //   Hint: Symbol 'Type' renamed to 'type_'
 //   Hint: Parameter 'Type' of IGlueIntentsManagerEvents.HandleIntentRequest changed to 'Type_'
+//   Error creating palette bitmap of (TGlueNameValuePair) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueException) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlue42) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueContextImage) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueContextManager) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueContextUpdate) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueDynamicValueBase) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueDynamicValue) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueStreamSubscription) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueWindow) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueWindowSettings) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueStreamConsumer) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueMethodInfo) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueData) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueMethodInvocator) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TVbGlueInvocationResult) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueServerMethod) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TVBGlueStreamSubscriber) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueServerStream) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueInvocationRequest) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueSubscriptionRequest) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueIntentsManager) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TEventSinkAppFactory) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueAppInSink) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueApplication) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueApplicationInstance) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueAppManager) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TGlueDynamicValueReceiver) : Server mscoree.dll contains no icons
+//   Error creating palette bitmap of (TLambdaAnnouncerInSink) : Server mscoree.dll contains no icons
 // ************************************************************************ //
-{$TYPEDADDRESS OFF} // Unit must be compiled without type-checked pointers.
+{$TYPEDADDRESS OFF} // Unit must be compiled without type-checked pointers. 
 {$WARN SYMBOL_PLATFORM OFF}
 {$WRITEABLECONST ON}
 {$VARPROPSETTER ON}
@@ -37,15 +66,15 @@ unit GlueCOM_TLB;
 interface
 
 uses Winapi.Windows, mscorlib_TLB, System.Classes, System.Variants, System.Win.StdVCL, Vcl.Graphics, Vcl.OleServer, Winapi.ActiveX;
-
+  
 
 
 // *********************************************************************//
-// GUIDS declared in the TypeLibrary. Following prefixes are used:
-//   Type Libraries     : LIBID_xxxx
-//   CoClasses          : CLASS_xxxx
-//   DISPInterfaces     : DIID_xxxx
-//   Non-DISP interfaces: IID_xxxx
+// GUIDS declared in the TypeLibrary. Following prefixes are used:        
+//   Type Libraries     : LIBID_xxxx                                      
+//   CoClasses          : CLASS_xxxx                                      
+//   DISPInterfaces     : DIID_xxxx                                       
+//   Non-DISP interfaces: IID_xxxx                                        
 // *********************************************************************//
 const
   // TypeLibrary Major and minor versions
@@ -151,7 +180,7 @@ const
   CLASS_LambdaAnnouncerInSink: TGUID = '{616E43D6-D793-4726-94EA-19919912F3AB}';
 
 // *********************************************************************//
-// Declaration of Enumerations defined in Type Library
+// Declaration of Enumerations defined in Type Library                    
 // *********************************************************************//
 // Constants for enum GlueInstanceIdentity
 type
@@ -263,7 +292,7 @@ const
 type
 
 // *********************************************************************//
-// Forward declaration of types defined in TypeLibrary
+// Forward declaration of types defined in TypeLibrary                    
 // *********************************************************************//
   IGlueNameValuePair = dispinterface;
   _GlueException = interface;
@@ -358,8 +387,8 @@ type
   _LambdaAnnouncerInSinkDisp = dispinterface;
 
 // *********************************************************************//
-// Declaration of CoClasses defined in Type Library
-// (NOTE: Here we map each CoClass to its Default Interface)
+// Declaration of CoClasses defined in Type Library                       
+// (NOTE: Here we map each CoClass to its Default Interface)              
 // *********************************************************************//
   GlueNameValuePair = IGlueNameValuePair;
   GlueContextUpdate = IGlueContextUpdate;
@@ -393,8 +422,9 @@ type
 
 
 // *********************************************************************//
-// Declaration of structures, unions and aliases.
+// Declaration of structures, unions and aliases.                         
 // *********************************************************************//
+{$ALIGN 8}
   GlueConfiguration = record
     LoggingConfigurationPath: WideString;
     GWUri: WideString;
@@ -413,6 +443,7 @@ type
     AwaitAndTrackGlue: WordBool;
   end;
 
+{$ALIGN 4}
   GlueContext = record
     Name: WideString;
     Id: WideString;
@@ -434,7 +465,6 @@ type
     CompositeValue: PSafeArray;
   end;
 
- {$ALIGN 8}
   GlueInstance = record
     InstanceId: WideString;
     Version: WideString;
@@ -460,6 +490,7 @@ type
     ObjectTypes: PSafeArray;
   end;
 
+{$ALIGN 4}
   GlueResult = record
     Values: PSafeArray;
     Status: GlueMethodInvocationStatus;
@@ -506,12 +537,12 @@ type
     GlueData: IGlueData;
   end;
 
- {$ALIGN 8}
   GlueInvocationResult = record
     method: GlueMethod;
     result: GlueResult;
   end;
 
+{$ALIGN 4}
   GlueAppDefinition = record
     Name: WideString;
     Title: WideString;
@@ -566,14 +597,14 @@ type
     procedure StartWithAppName(const ApplicationName: WideString); safecall;
     procedure Stop; safecall;
     function RegisterGlueWindow(hwnd: Integer; const windowEventHandler: IGlueWindowEventHandler): IGlueWindow; safecall;
-    function RegisterStartupGlueWindow(hwnd: Integer;
+    function RegisterStartupGlueWindow(hwnd: Integer; 
                                        const windowEventHandler: IGlueWindowEventHandler): IGlueWindow; safecall;
     function CreateDefaultVBGlueWindowSettings: IGlueWindowSettings; safecall;
     function GetStartupWindowSettings: IGlueWindowSettings; safecall;
-    function RegisterGlueWindowWithSettings(hwnd: Integer; const settings: IGlueWindowSettings;
+    function RegisterGlueWindowWithSettings(hwnd: Integer; const settings: IGlueWindowSettings; 
                                             const windowEventHandler: IGlueWindowEventHandler): IGlueWindow; safecall;
-    function RegisterStartupGlueWindowWithSettings(hwnd: Integer;
-                                                   const settings: IGlueWindowSettings;
+    function RegisterStartupGlueWindowWithSettings(hwnd: Integer; 
+                                                   const settings: IGlueWindowSettings; 
                                                    const windowEventHandler: IGlueWindowEventHandler): IGlueWindow; safecall;
     function GetInstance: GlueInstance; safecall;
     function CreateGlueValues: OleVariant; safecall;
@@ -587,113 +618,113 @@ type
     procedure Subscribe(const handler: IGlueEvents); safecall;
     procedure Unsubscribe(const handler: IGlueEvents); safecall;
     function BuildGlueContextValues(const contextBuilderCallback: IGlueContextBuilderCallback): PSafeArray; safecall;
-    function RegisterMethod(const methodName: WideString;
-                            const requestHandler: IGlueRequestHandler; const Input: WideString;
+    function RegisterMethod(const methodName: WideString; 
+                            const requestHandler: IGlueRequestHandler; const Input: WideString; 
                             const Output: WideString; ObjectTypes: PSafeArray): GlueMethod; safecall;
-    function CreateServerMethod(const methodName: WideString; const Input: WideString;
+    function CreateServerMethod(const methodName: WideString; const Input: WideString; 
                                 const Output: WideString; const objectTypesCSV: WideString): IGlueServerMethod; safecall;
-    function CreateServerStream(const streamName: WideString; const Input: WideString;
+    function CreateServerStream(const streamName: WideString; const Input: WideString; 
                                 const Output: WideString; const objectTypesCSV: WideString): IGlueServerStream; safecall;
     function CreateMethodInvocator: IGlueMethodInvocator; safecall;
     function CreateStreamConsumer: IGlueStreamConsumer; safecall;
-    function RegisterStream(const streamName: WideString;
-                            const subscriptionHandler: IGlueSubscriptionHandler;
-                            const Input: WideString; const Output: WideString;
+    function RegisterStream(const streamName: WideString; 
+                            const subscriptionHandler: IGlueSubscriptionHandler; 
+                            const Input: WideString; const Output: WideString; 
                             ObjectTypes: PSafeArray; out stream: IGlueStream): GlueMethod; safecall;
     procedure UnregisterMethod(method: GlueMethod); safecall;
-    procedure BuildAndInvoke(const method: WideString;
-                             const builderCallback: IGlueContextBuilderCallback;
-                             targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity;
-                             const resultHandler: IGlueInvocationResultHandler;
+    procedure BuildAndInvoke(const method: WideString; 
+                             const builderCallback: IGlueContextBuilderCallback; 
+                             targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity; 
+                             const resultHandler: IGlueInvocationResultHandler; 
                              invocationTimeoutMsecs: Int64; const correlationId: WideString); safecall;
-    procedure InvokeMethods(const method: WideString; invocationArgs: PSafeArray;
-                            targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity;
-                            const resultHandler: IGlueInvocationResultHandler;
+    procedure InvokeMethods(const method: WideString; invocationArgs: PSafeArray; 
+                            targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity; 
+                            const resultHandler: IGlueInvocationResultHandler; 
                             invocationTimeoutMsecs: Int64; const correlationId: WideString); safecall;
-    procedure InvokeMethod(method: GlueMethod; invocationArgs: PSafeArray;
-                           const resultHandler: IGlueInvocationResultHandler;
+    procedure InvokeMethod(method: GlueMethod; invocationArgs: PSafeArray; 
+                           const resultHandler: IGlueInvocationResultHandler; 
                            invocationTimeoutMsecs: Int64; const correlationId: WideString); safecall;
-    procedure SubscribeStreams(const streamName: WideString; subscriptionRequestArgs: PSafeArray;
-                               targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity;
-                               const streamHandler: IGlueStreamHandler;
+    procedure SubscribeStreams(const streamName: WideString; subscriptionRequestArgs: PSafeArray; 
+                               targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity; 
+                               const streamHandler: IGlueStreamHandler; 
                                invocationTimeoutMsecs: Int64); safecall;
-    procedure SubscribeStreamsFilterTargets(const streamName: WideString;
-                                            subscriptionRequestArgs: PSafeArray;
-                                            const targetRegex: WideString; all: WordBool;
-                                            const streamHandler: IGlueStreamHandler;
+    procedure SubscribeStreamsFilterTargets(const streamName: WideString; 
+                                            subscriptionRequestArgs: PSafeArray; 
+                                            const targetRegex: WideString; all: WordBool; 
+                                            const streamHandler: IGlueStreamHandler; 
                                             invocationTimeoutMsecs: Int64); safecall;
-    procedure SubscribeStream(stream: GlueMethod; subscriptionRequestArgs: PSafeArray;
-                              const streamHandler: IGlueStreamHandler;
+    procedure SubscribeStream(stream: GlueMethod; subscriptionRequestArgs: PSafeArray; 
+                              const streamHandler: IGlueStreamHandler; 
                               subscriptionTimeoutMsecs: Int64); safecall;
-    function InvokeSync(const methodName: WideString; const argsAsJson: WideString;
+    function InvokeSync(const methodName: WideString; const argsAsJson: WideString; 
                         const resultFieldPath: WideString; const targetRegex: WideString): WideString; safecall;
-    procedure InvokeAsync(const correlationId: WideString; const methodName: WideString;
-                          const argsAsJson: WideString; const resultFieldPath: WideString;
+    procedure InvokeAsync(const correlationId: WideString; const methodName: WideString; 
+                          const argsAsJson: WideString; const resultFieldPath: WideString; 
                           const targetRegex: WideString); safecall;
-    procedure SubscribeStreamInSink(const correlationId: WideString; const streamName: WideString;
-                                    const argsAsJson: WideString;
-                                    const resultFieldPath: WideString;
-                                    const targetRegex: WideString;
-                                    const filterFieldPath: WideString;
+    procedure SubscribeStreamInSink(const correlationId: WideString; const streamName: WideString; 
+                                    const argsAsJson: WideString; 
+                                    const resultFieldPath: WideString; 
+                                    const targetRegex: WideString; 
+                                    const filterFieldPath: WideString; 
                                     const filterDataRegex: WideString); safecall;
-    procedure RegisterMethodInSink(const correlationId: WideString; const methodName: WideString;
-                                   const inputSignature: WideString;
-                                   const outputSignature: WideString; ObjectTypes: PSafeArray;
-                                   const invocationFieldPath: WideString;
-                                   const targetRegex: WideString;
-                                   const filterFieldPath: WideString;
+    procedure RegisterMethodInSink(const correlationId: WideString; const methodName: WideString; 
+                                   const inputSignature: WideString; 
+                                   const outputSignature: WideString; ObjectTypes: PSafeArray; 
+                                   const invocationFieldPath: WideString; 
+                                   const targetRegex: WideString; 
+                                   const filterFieldPath: WideString; 
                                    const filterDataRegex: WideString); safecall;
-    procedure RegisterVariantMethodInSink(const correlationId: WideString;
-                                          const methodName: WideString;
-                                          const inputSignature: WideString;
-                                          const outputSignature: WideString;
-                                          ObjectTypes: PSafeArray;
-                                          const invocationFieldPath: WideString;
-                                          const targetRegex: WideString;
-                                          const filterFieldPath: WideString;
+    procedure RegisterVariantMethodInSink(const correlationId: WideString; 
+                                          const methodName: WideString; 
+                                          const inputSignature: WideString; 
+                                          const outputSignature: WideString; 
+                                          ObjectTypes: PSafeArray; 
+                                          const invocationFieldPath: WideString; 
+                                          const targetRegex: WideString; 
+                                          const filterFieldPath: WideString; 
                                           const filterDataRegex: WideString); safecall;
-    procedure RegisterVoidMethodInSink(const correlationId: WideString;
-                                       const methodName: WideString;
-                                       const inputSignature: WideString; ObjectTypes: PSafeArray;
-                                       const invocationFieldPath: WideString;
-                                       const targetRegex: WideString;
-                                       const filterFieldPath: WideString;
+    procedure RegisterVoidMethodInSink(const correlationId: WideString; 
+                                       const methodName: WideString; 
+                                       const inputSignature: WideString; ObjectTypes: PSafeArray; 
+                                       const invocationFieldPath: WideString; 
+                                       const targetRegex: WideString; 
+                                       const filterFieldPath: WideString; 
                                        const filterDataRegex: WideString); safecall;
-    procedure RegisterSingleBranchStream(const correlationId: WideString;
-                                         const streamName: WideString;
-                                         const requestSignature: WideString;
+    procedure RegisterSingleBranchStream(const correlationId: WideString; 
+                                         const streamName: WideString; 
+                                         const requestSignature: WideString; 
                                          const streamSignature: WideString); safecall;
-    procedure AddCorrelationInterest(const correlationId: WideString; const interestId: WideString;
-                                     const fieldPath: WideString;
-                                     const filterFieldPath: WideString;
+    procedure AddCorrelationInterest(const correlationId: WideString; const interestId: WideString; 
+                                     const fieldPath: WideString; 
+                                     const filterFieldPath: WideString; 
                                      const filterDataRegex: WideString); safecall;
-    procedure RegisterStreamInSink(const correlationId: WideString; const streamName: WideString;
-                                   const requestSignature: WideString;
-                                   const streamSignature: WideString;
-                                   const requestFieldPath: WideString;
-                                   const targetRegex: WideString;
-                                   const filterFieldPath: WideString;
+    procedure RegisterStreamInSink(const correlationId: WideString; const streamName: WideString; 
+                                   const requestSignature: WideString; 
+                                   const streamSignature: WideString; 
+                                   const requestFieldPath: WideString; 
+                                   const targetRegex: WideString; 
+                                   const filterFieldPath: WideString; 
                                    const filterDataRegex: WideString); safecall;
-    procedure YieldCallbackData(const correlationId: WideString; const callbackId: WideString;
+    procedure YieldCallbackData(const correlationId: WideString; const callbackId: WideString; 
                                 const callbackData: WideString); safecall;
-    procedure YieldCallbackVariantData(const correlationId: WideString;
+    procedure YieldCallbackVariantData(const correlationId: WideString; 
                                        const callbackId: WideString; callbackData: OleVariant); safecall;
-    procedure RegisterGlueWindowInSink(const correlationId: WideString; const hwnd: WideString;
+    procedure RegisterGlueWindowInSink(const correlationId: WideString; const hwnd: WideString; 
                                        const glueWindowOptionsJson: WideString); safecall;
     function JsonToVariant(const json: WideString): PSafeArray; safecall;
     procedure CloseResource(const correlationId: WideString); safecall;
     function GetMethodNamesForTarget(const targetRegex: WideString): PSafeArray; safecall;
     function GetTargets: PSafeArray; safecall;
     function GetChannels: PSafeArray; safecall;
-    procedure InvokeAsyncVariantData(const correlationId: WideString; const methodName: WideString;
-                                     args: OleVariant; const resultFieldPath: WideString;
+    procedure InvokeAsyncVariantData(const correlationId: WideString; const methodName: WideString; 
+                                     args: OleVariant; const resultFieldPath: WideString; 
                                      const targetRegex: WideString); safecall;
-    procedure SubscribeChannel(const correlationId: WideString; const Channel: WideString;
+    procedure SubscribeChannel(const correlationId: WideString; const Channel: WideString; 
                                const resultFieldPath: WideString); safecall;
-    procedure SetChannelData(const Channel: WideString; const fieldPath: WideString;
+    procedure SetChannelData(const Channel: WideString; const fieldPath: WideString; 
                              const data: WideString); safecall;
-    procedure G4O_XL_OpenSheet(const correlationId: WideString; const sheetName: WideString;
-                               columnNames: PSafeArray; columnValidationTypes: PSafeArray;
+    procedure G4O_XL_OpenSheet(const correlationId: WideString; const sheetName: WideString; 
+                               columnNames: PSafeArray; columnValidationTypes: PSafeArray; 
                                data: OleVariant); safecall;
     procedure Log(level: Byte; const Message: WideString); safecall;
     function Get_AppFactoryRegistry: IAppFactoryRegistry; safecall;
@@ -705,14 +736,15 @@ type
     function GetLibraryVersion: WideString; safecall;
     function GetGDInfo: WideString; safecall;
     function CreateIntentsManager: IGlueIntentsManager; safecall;
-    procedure InvokeMethodsWithJson(const method: WideString; const invocationArgs: WideString;
-                                    targets: PSafeArray; all: WordBool;
-                                    identity: GlueInstanceIdentity;
-                                    const resultHandler: IGlueInvocationResultHandler;
+    procedure InvokeMethodsWithJson(const method: WideString; const invocationArgs: WideString; 
+                                    targets: PSafeArray; all: WordBool; 
+                                    identity: GlueInstanceIdentity; 
+                                    const resultHandler: IGlueInvocationResultHandler; 
                                     invocationTimeoutMsecs: Int64; const correlationId: WideString); safecall;
     function GetValueByFieldPath(Values: PSafeArray; const fieldPath: WideString): GlueValue; safecall;
     function CreateAppManager: IGlueAppManager; safecall;
     function GetGlueDynamicValueByFieldPath(variant: OleVariant; const fieldPath: WideString): IGlueValueCollection; safecall;
+    function GetAllInstancesVB: PSafeArray; safecall;
     property AppFactoryRegistry: IAppFactoryRegistry read Get_AppFactoryRegistry;
   end;
 
@@ -730,14 +762,14 @@ type
     procedure StartWithAppName(const ApplicationName: WideString); dispid 1610743812;
     procedure Stop; dispid 1610743813;
     function RegisterGlueWindow(hwnd: Integer; const windowEventHandler: IGlueWindowEventHandler): IGlueWindow; dispid 1610743814;
-    function RegisterStartupGlueWindow(hwnd: Integer;
+    function RegisterStartupGlueWindow(hwnd: Integer; 
                                        const windowEventHandler: IGlueWindowEventHandler): IGlueWindow; dispid 1610743815;
     function CreateDefaultVBGlueWindowSettings: IGlueWindowSettings; dispid 1610743816;
     function GetStartupWindowSettings: IGlueWindowSettings; dispid 1610743817;
-    function RegisterGlueWindowWithSettings(hwnd: Integer; const settings: IGlueWindowSettings;
+    function RegisterGlueWindowWithSettings(hwnd: Integer; const settings: IGlueWindowSettings; 
                                             const windowEventHandler: IGlueWindowEventHandler): IGlueWindow; dispid 1610743818;
-    function RegisterStartupGlueWindowWithSettings(hwnd: Integer;
-                                                   const settings: IGlueWindowSettings;
+    function RegisterStartupGlueWindowWithSettings(hwnd: Integer; 
+                                                   const settings: IGlueWindowSettings; 
                                                    const windowEventHandler: IGlueWindowEventHandler): IGlueWindow; dispid 1610743819;
     function GetInstance: {NOT_OLEAUTO(GlueInstance)}OleVariant; dispid 1610743820;
     function CreateGlueValues: OleVariant; dispid 1610743821;
@@ -747,130 +779,130 @@ type
     function GetGlueContext(const contextName: WideString): IGlueContext; dispid 1610743825;
     function GetAllInstances: {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743826;
     function GetAllMethods: {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743827;
-    function GetMethodsForInstance(Instance: {NOT_OLEAUTO(GlueInstance)}OleVariant;
+    function GetMethodsForInstance(Instance: {NOT_OLEAUTO(GlueInstance)}OleVariant; 
                                    identity: GlueInstanceIdentity): {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743828;
     procedure Subscribe(const handler: IGlueEvents); dispid 1610743829;
     procedure Unsubscribe(const handler: IGlueEvents); dispid 1610743830;
     function BuildGlueContextValues(const contextBuilderCallback: IGlueContextBuilderCallback): {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743831;
-    function RegisterMethod(const methodName: WideString;
-                            const requestHandler: IGlueRequestHandler; const Input: WideString;
-                            const Output: WideString;
+    function RegisterMethod(const methodName: WideString; 
+                            const requestHandler: IGlueRequestHandler; const Input: WideString; 
+                            const Output: WideString; 
                             ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant): {NOT_OLEAUTO(GlueMethod)}OleVariant; dispid 1610743832;
-    function CreateServerMethod(const methodName: WideString; const Input: WideString;
+    function CreateServerMethod(const methodName: WideString; const Input: WideString; 
                                 const Output: WideString; const objectTypesCSV: WideString): IGlueServerMethod; dispid 1610743833;
-    function CreateServerStream(const streamName: WideString; const Input: WideString;
+    function CreateServerStream(const streamName: WideString; const Input: WideString; 
                                 const Output: WideString; const objectTypesCSV: WideString): IGlueServerStream; dispid 1610743834;
     function CreateMethodInvocator: IGlueMethodInvocator; dispid 1610743835;
     function CreateStreamConsumer: IGlueStreamConsumer; dispid 1610743836;
-    function RegisterStream(const streamName: WideString;
-                            const subscriptionHandler: IGlueSubscriptionHandler;
-                            const Input: WideString; const Output: WideString;
-                            ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+    function RegisterStream(const streamName: WideString; 
+                            const subscriptionHandler: IGlueSubscriptionHandler; 
+                            const Input: WideString; const Output: WideString; 
+                            ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
                             out stream: IGlueStream): {NOT_OLEAUTO(GlueMethod)}OleVariant; dispid 1610743837;
     procedure UnregisterMethod(method: {NOT_OLEAUTO(GlueMethod)}OleVariant); dispid 1610743838;
-    procedure BuildAndInvoke(const method: WideString;
-                             const builderCallback: IGlueContextBuilderCallback;
-                             targets: {NOT_OLEAUTO(PSafeArray)}OleVariant; all: WordBool;
-                             identity: GlueInstanceIdentity;
-                             const resultHandler: IGlueInvocationResultHandler;
+    procedure BuildAndInvoke(const method: WideString; 
+                             const builderCallback: IGlueContextBuilderCallback; 
+                             targets: {NOT_OLEAUTO(PSafeArray)}OleVariant; all: WordBool; 
+                             identity: GlueInstanceIdentity; 
+                             const resultHandler: IGlueInvocationResultHandler; 
                              invocationTimeoutMsecs: Int64; const correlationId: WideString); dispid 1610743839;
-    procedure InvokeMethods(const method: WideString;
-                            invocationArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                            targets: {NOT_OLEAUTO(PSafeArray)}OleVariant; all: WordBool;
-                            identity: GlueInstanceIdentity;
-                            const resultHandler: IGlueInvocationResultHandler;
+    procedure InvokeMethods(const method: WideString; 
+                            invocationArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                            targets: {NOT_OLEAUTO(PSafeArray)}OleVariant; all: WordBool; 
+                            identity: GlueInstanceIdentity; 
+                            const resultHandler: IGlueInvocationResultHandler; 
                             invocationTimeoutMsecs: Int64; const correlationId: WideString); dispid 1610743840;
-    procedure InvokeMethod(method: {NOT_OLEAUTO(GlueMethod)}OleVariant;
-                           invocationArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                           const resultHandler: IGlueInvocationResultHandler;
+    procedure InvokeMethod(method: {NOT_OLEAUTO(GlueMethod)}OleVariant; 
+                           invocationArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                           const resultHandler: IGlueInvocationResultHandler; 
                            invocationTimeoutMsecs: Int64; const correlationId: WideString); dispid 1610743841;
-    procedure SubscribeStreams(const streamName: WideString;
-                               subscriptionRequestArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                               targets: {NOT_OLEAUTO(PSafeArray)}OleVariant; all: WordBool;
-                               identity: GlueInstanceIdentity;
-                               const streamHandler: IGlueStreamHandler;
+    procedure SubscribeStreams(const streamName: WideString; 
+                               subscriptionRequestArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                               targets: {NOT_OLEAUTO(PSafeArray)}OleVariant; all: WordBool; 
+                               identity: GlueInstanceIdentity; 
+                               const streamHandler: IGlueStreamHandler; 
                                invocationTimeoutMsecs: Int64); dispid 1610743842;
-    procedure SubscribeStreamsFilterTargets(const streamName: WideString;
-                                            subscriptionRequestArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                                            const targetRegex: WideString; all: WordBool;
-                                            const streamHandler: IGlueStreamHandler;
+    procedure SubscribeStreamsFilterTargets(const streamName: WideString; 
+                                            subscriptionRequestArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                                            const targetRegex: WideString; all: WordBool; 
+                                            const streamHandler: IGlueStreamHandler; 
                                             invocationTimeoutMsecs: Int64); dispid 1610743843;
-    procedure SubscribeStream(stream: {NOT_OLEAUTO(GlueMethod)}OleVariant;
-                              subscriptionRequestArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                              const streamHandler: IGlueStreamHandler;
+    procedure SubscribeStream(stream: {NOT_OLEAUTO(GlueMethod)}OleVariant; 
+                              subscriptionRequestArgs: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                              const streamHandler: IGlueStreamHandler; 
                               subscriptionTimeoutMsecs: Int64); dispid 1610743844;
-    function InvokeSync(const methodName: WideString; const argsAsJson: WideString;
+    function InvokeSync(const methodName: WideString; const argsAsJson: WideString; 
                         const resultFieldPath: WideString; const targetRegex: WideString): WideString; dispid 1610743845;
-    procedure InvokeAsync(const correlationId: WideString; const methodName: WideString;
-                          const argsAsJson: WideString; const resultFieldPath: WideString;
+    procedure InvokeAsync(const correlationId: WideString; const methodName: WideString; 
+                          const argsAsJson: WideString; const resultFieldPath: WideString; 
                           const targetRegex: WideString); dispid 1610743846;
-    procedure SubscribeStreamInSink(const correlationId: WideString; const streamName: WideString;
-                                    const argsAsJson: WideString;
-                                    const resultFieldPath: WideString;
-                                    const targetRegex: WideString;
-                                    const filterFieldPath: WideString;
+    procedure SubscribeStreamInSink(const correlationId: WideString; const streamName: WideString; 
+                                    const argsAsJson: WideString; 
+                                    const resultFieldPath: WideString; 
+                                    const targetRegex: WideString; 
+                                    const filterFieldPath: WideString; 
                                     const filterDataRegex: WideString); dispid 1610743847;
-    procedure RegisterMethodInSink(const correlationId: WideString; const methodName: WideString;
-                                   const inputSignature: WideString;
-                                   const outputSignature: WideString;
-                                   ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                                   const invocationFieldPath: WideString;
-                                   const targetRegex: WideString;
-                                   const filterFieldPath: WideString;
+    procedure RegisterMethodInSink(const correlationId: WideString; const methodName: WideString; 
+                                   const inputSignature: WideString; 
+                                   const outputSignature: WideString; 
+                                   ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                                   const invocationFieldPath: WideString; 
+                                   const targetRegex: WideString; 
+                                   const filterFieldPath: WideString; 
                                    const filterDataRegex: WideString); dispid 1610743848;
-    procedure RegisterVariantMethodInSink(const correlationId: WideString;
-                                          const methodName: WideString;
-                                          const inputSignature: WideString;
-                                          const outputSignature: WideString;
-                                          ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                                          const invocationFieldPath: WideString;
-                                          const targetRegex: WideString;
-                                          const filterFieldPath: WideString;
+    procedure RegisterVariantMethodInSink(const correlationId: WideString; 
+                                          const methodName: WideString; 
+                                          const inputSignature: WideString; 
+                                          const outputSignature: WideString; 
+                                          ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                                          const invocationFieldPath: WideString; 
+                                          const targetRegex: WideString; 
+                                          const filterFieldPath: WideString; 
                                           const filterDataRegex: WideString); dispid 1610743849;
-    procedure RegisterVoidMethodInSink(const correlationId: WideString;
-                                       const methodName: WideString;
-                                       const inputSignature: WideString;
-                                       ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                                       const invocationFieldPath: WideString;
-                                       const targetRegex: WideString;
-                                       const filterFieldPath: WideString;
+    procedure RegisterVoidMethodInSink(const correlationId: WideString; 
+                                       const methodName: WideString; 
+                                       const inputSignature: WideString; 
+                                       ObjectTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                                       const invocationFieldPath: WideString; 
+                                       const targetRegex: WideString; 
+                                       const filterFieldPath: WideString; 
                                        const filterDataRegex: WideString); dispid 1610743850;
-    procedure RegisterSingleBranchStream(const correlationId: WideString;
-                                         const streamName: WideString;
-                                         const requestSignature: WideString;
+    procedure RegisterSingleBranchStream(const correlationId: WideString; 
+                                         const streamName: WideString; 
+                                         const requestSignature: WideString; 
                                          const streamSignature: WideString); dispid 1610743851;
-    procedure AddCorrelationInterest(const correlationId: WideString; const interestId: WideString;
-                                     const fieldPath: WideString;
-                                     const filterFieldPath: WideString;
+    procedure AddCorrelationInterest(const correlationId: WideString; const interestId: WideString; 
+                                     const fieldPath: WideString; 
+                                     const filterFieldPath: WideString; 
                                      const filterDataRegex: WideString); dispid 1610743852;
-    procedure RegisterStreamInSink(const correlationId: WideString; const streamName: WideString;
-                                   const requestSignature: WideString;
-                                   const streamSignature: WideString;
-                                   const requestFieldPath: WideString;
-                                   const targetRegex: WideString;
-                                   const filterFieldPath: WideString;
+    procedure RegisterStreamInSink(const correlationId: WideString; const streamName: WideString; 
+                                   const requestSignature: WideString; 
+                                   const streamSignature: WideString; 
+                                   const requestFieldPath: WideString; 
+                                   const targetRegex: WideString; 
+                                   const filterFieldPath: WideString; 
                                    const filterDataRegex: WideString); dispid 1610743853;
-    procedure YieldCallbackData(const correlationId: WideString; const callbackId: WideString;
+    procedure YieldCallbackData(const correlationId: WideString; const callbackId: WideString; 
                                 const callbackData: WideString); dispid 1610743854;
-    procedure YieldCallbackVariantData(const correlationId: WideString;
+    procedure YieldCallbackVariantData(const correlationId: WideString; 
                                        const callbackId: WideString; callbackData: OleVariant); dispid 1610743855;
-    procedure RegisterGlueWindowInSink(const correlationId: WideString; const hwnd: WideString;
+    procedure RegisterGlueWindowInSink(const correlationId: WideString; const hwnd: WideString; 
                                        const glueWindowOptionsJson: WideString); dispid 1610743856;
     function JsonToVariant(const json: WideString): {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743857;
     procedure CloseResource(const correlationId: WideString); dispid 1610743858;
     function GetMethodNamesForTarget(const targetRegex: WideString): {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743859;
     function GetTargets: {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743860;
     function GetChannels: {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743861;
-    procedure InvokeAsyncVariantData(const correlationId: WideString; const methodName: WideString;
-                                     args: OleVariant; const resultFieldPath: WideString;
+    procedure InvokeAsyncVariantData(const correlationId: WideString; const methodName: WideString; 
+                                     args: OleVariant; const resultFieldPath: WideString; 
                                      const targetRegex: WideString); dispid 1610743862;
-    procedure SubscribeChannel(const correlationId: WideString; const Channel: WideString;
+    procedure SubscribeChannel(const correlationId: WideString; const Channel: WideString; 
                                const resultFieldPath: WideString); dispid 1610743863;
-    procedure SetChannelData(const Channel: WideString; const fieldPath: WideString;
+    procedure SetChannelData(const Channel: WideString; const fieldPath: WideString; 
                              const data: WideString); dispid 1610743864;
-    procedure G4O_XL_OpenSheet(const correlationId: WideString; const sheetName: WideString;
-                               columnNames: {NOT_OLEAUTO(PSafeArray)}OleVariant;
-                               columnValidationTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+    procedure G4O_XL_OpenSheet(const correlationId: WideString; const sheetName: WideString; 
+                               columnNames: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
+                               columnValidationTypes: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
                                data: OleVariant); dispid 1610743865;
     procedure Log(level: Byte; const Message: WideString); dispid 1610743866;
     property AppFactoryRegistry: IAppFactoryRegistry readonly dispid 1610743867;
@@ -882,15 +914,16 @@ type
     function GetLibraryVersion: WideString; dispid 1610743873;
     function GetGDInfo: WideString; dispid 1610743874;
     function CreateIntentsManager: IGlueIntentsManager; dispid 1610743875;
-    procedure InvokeMethodsWithJson(const method: WideString; const invocationArgs: WideString;
-                                    targets: {NOT_OLEAUTO(PSafeArray)}OleVariant; all: WordBool;
-                                    identity: GlueInstanceIdentity;
-                                    const resultHandler: IGlueInvocationResultHandler;
+    procedure InvokeMethodsWithJson(const method: WideString; const invocationArgs: WideString; 
+                                    targets: {NOT_OLEAUTO(PSafeArray)}OleVariant; all: WordBool; 
+                                    identity: GlueInstanceIdentity; 
+                                    const resultHandler: IGlueInvocationResultHandler; 
                                     invocationTimeoutMsecs: Int64; const correlationId: WideString); dispid 1610743876;
-    function GetValueByFieldPath(Values: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+    function GetValueByFieldPath(Values: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
                                  const fieldPath: WideString): {NOT_OLEAUTO(GlueValue)}OleVariant; dispid 1610743877;
     function CreateAppManager: IGlueAppManager; dispid 1610743878;
     function GetGlueDynamicValueByFieldPath(variant: OleVariant; const fieldPath: WideString): IGlueValueCollection; dispid 1610743879;
+    function GetAllInstancesVB: {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743880;
   end;
 
 // *********************************************************************//
@@ -957,7 +990,7 @@ type
     procedure SetContextData(data: {NOT_OLEAUTO(PSafeArray)}OleVariant); dispid 1610743812;
     procedure BuildAndSetContextData(const builderCallback: IGlueContextBuilderCallback); dispid 1610743813;
     procedure UpdateContextData(data: {NOT_OLEAUTO(PSafeArray)}OleVariant); dispid 1610743814;
-    procedure SetContextDataOnFieldPath(const fieldPath: WideString;
+    procedure SetContextDataOnFieldPath(const fieldPath: WideString; 
                                         data: {NOT_OLEAUTO(PSafeArray)}OleVariant); dispid 1610743815;
     function GetDataAsJson(const fieldPath: WideString): WideString; dispid 1610743816;
     procedure UpdateContextDataJson(const fieldPath: WideString; const jsonEncodedData: WideString); dispid 1610743817;
@@ -1080,7 +1113,7 @@ type
     procedure AddDatetimeArray(const Name: WideString; Value: PSafeArray); safecall;
     procedure AddLongArray(const Name: WideString; Value: PSafeArray); safecall;
     procedure AddDoubleArray(const Name: WideString; Value: PSafeArray); safecall;
-    procedure BuildComposite(const Name: WideString; const callback: IGlueContextBuilderCallback;
+    procedure BuildComposite(const Name: WideString; const callback: IGlueContextBuilderCallback; 
                              IsArray: WordBool); safecall;
     procedure BuildTuple(const Name: WideString; const callback: IGlueContextBuilderCallback); safecall;
     procedure AddComposite(const Name: WideString; Composite: PSafeArray; IsArray: WordBool); safecall;
@@ -1110,10 +1143,10 @@ type
     procedure AddDatetimeArray(const Name: WideString; Value: {NOT_OLEAUTO(PSafeArray)}OleVariant); dispid 1610743817;
     procedure AddLongArray(const Name: WideString; Value: {NOT_OLEAUTO(PSafeArray)}OleVariant); dispid 1610743818;
     procedure AddDoubleArray(const Name: WideString; Value: {NOT_OLEAUTO(PSafeArray)}OleVariant); dispid 1610743819;
-    procedure BuildComposite(const Name: WideString; const callback: IGlueContextBuilderCallback;
+    procedure BuildComposite(const Name: WideString; const callback: IGlueContextBuilderCallback; 
                              IsArray: WordBool); dispid 1610743820;
     procedure BuildTuple(const Name: WideString; const callback: IGlueContextBuilderCallback); dispid 1610743821;
-    procedure AddComposite(const Name: WideString; Composite: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+    procedure AddComposite(const Name: WideString; Composite: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
                            IsArray: WordBool); dispid 1610743822;
     procedure AddTuple(const Name: WideString; Tuple: {NOT_OLEAUTO(PSafeArray)}OleVariant); dispid 1610743823;
     procedure AddContextValue(GlueContextValue: {NOT_OLEAUTO(GlueContextValue)}OleVariant); dispid 1610743824;
@@ -1145,6 +1178,7 @@ type
     function HandleMethodStatus(method: GlueMethod; active: WordBool): HResult; stdcall;
     function HandleGlueContext(context: GlueContext; created: WordBool): HResult; stdcall;
     function HandleException(const Message: WideString; ex: GlueValue): HResult; stdcall;
+    function HandleGlueState(active: WordBool; const Message: WideString; date: Int64): HResult; stdcall;
   end;
 
 // *********************************************************************//
@@ -1155,10 +1189,10 @@ type
   IGlueEventSink = dispinterface
     ['{0EE5A248-F02A-4551-8745-437F6AFAAB4D}']
     procedure OnGlueVariantResponse(const correlationId: WideString; data: OleVariant); dispid 1610743808;
-    procedure OnGlueVariantInvoke(const correlationId: WideString; data: OleVariant;
+    procedure OnGlueVariantInvoke(const correlationId: WideString; data: OleVariant; 
                                   const callbackId: WideString); dispid 1610743809;
     procedure OnGlueResponse(const correlationId: WideString; const jsonData: WideString); dispid 1610743810;
-    procedure OnGlueInvoke(const correlationId: WideString; const jsonData: WideString;
+    procedure OnGlueInvoke(const correlationId: WideString; const jsonData: WideString; 
                            const callbackId: WideString); dispid 1610743811;
     procedure OnConnectionStatus(const state: WideString; const Message: WideString; date: Double); dispid 1610743812;
     procedure OnInstanceStatus(const Instance: WideString; active: WordBool); dispid 1610743813;
@@ -1166,6 +1200,7 @@ type
     procedure OnGlueContext(const context: WideString; created: WordBool); dispid 1610743815;
     procedure OnException(const Message: WideString; const ex: IGlueValueCollection); dispid 1610743816;
     procedure BindLifetimeEvent; dispid 1610743817;
+    procedure OnGlueState(active: WordBool; const Message: WideString; date: Double); dispid 1610743818;
   end;
 
 // *********************************************************************//
@@ -1296,10 +1331,10 @@ type
 // *********************************************************************//
   IGlueMethodInvocator = dispinterface
     ['{DA0A6BAF-6967-4F6B-91C9-21743B5D23A1}']
-    procedure InvokeAsync(const method: WideString; const targetRegex: WideString;
-                          args: OleVariant; all: WordBool; const correlationId: WideString;
+    procedure InvokeAsync(const method: WideString; const targetRegex: WideString; 
+                          args: OleVariant; all: WordBool; const correlationId: WideString; 
                           timeoutMsecs: Integer); dispid 1610743808;
-    function InvokeSync(const method: WideString; const targetRegex: WideString; args: OleVariant;
+    function InvokeSync(const method: WideString; const targetRegex: WideString; args: OleVariant; 
                         all: WordBool; timeoutMsecs: Integer): OleVariant; dispid 1610743809;
   end;
 
@@ -1310,7 +1345,7 @@ type
 // *********************************************************************//
   IGlueStreamConsumer = dispinterface
     ['{2F7F15D5-7206-4C87-A390-ED0B42C2CA36}']
-    procedure Subscribe(const stream: WideString; const targetRegex: WideString; args: OleVariant;
+    procedure Subscribe(const stream: WideString; const targetRegex: WideString; args: OleVariant; 
                         all: WordBool; const correlationId: WideString; timeoutMsecs: Integer); dispid 1610743808;
   end;
 
@@ -1321,10 +1356,10 @@ type
 // *********************************************************************//
   IGlueStreamConsumerEvents = dispinterface
     ['{45E44742-45E8-4C58-BB18-8663D4C20D11}']
-    procedure HandleSubscriptionActivated(const GlueStreamSubscription: IGlueStreamSubscription;
+    procedure HandleSubscriptionActivated(const GlueStreamSubscription: IGlueStreamSubscription; 
                                           const correlationId: WideString); dispid 1610743808;
     procedure HandleStreamData(const stream: IGlueMethodInfo; const data: IGlueData); dispid 1610743809;
-    procedure HandleStreamStatus(const stream: IGlueMethodInfo; state: GlueStreamState;
+    procedure HandleStreamStatus(const stream: IGlueMethodInfo; state: GlueStreamState; 
                                  const Message: WideString; dateTime: Double); dispid 1610743810;
     procedure HandleStreamClosed(const stream: IGlueMethodInfo); dispid 1610743811;
   end;
@@ -1419,13 +1454,13 @@ type
 // *********************************************************************//
   IGlueSubscriptionHandler = interface(IUnknown)
     ['{DAA04777-BD8E-4180-9021-48A0807A2E1D}']
-    function HandleSubscriptionRequest(stream: GlueMethod; Caller: GlueInstance;
-                                       requestValues: PSafeArray;
+    function HandleSubscriptionRequest(stream: GlueMethod; Caller: GlueInstance; 
+                                       requestValues: PSafeArray; 
                                        const callback: IGlueServerSubscriptionCallback): HResult; stdcall;
-    function HandleSubscriber(subscriberInstance: GlueInstance;
-                              const glueStreamSubscriber: IGlueStreamSubscriber;
+    function HandleSubscriber(subscriberInstance: GlueInstance; 
+                              const glueStreamSubscriber: IGlueStreamSubscriber; 
                               requestValues: PSafeArray): HResult; stdcall;
-    function HandleSubscriberLost(streamSubscriber: GlueInstance;
+    function HandleSubscriberLost(streamSubscriber: GlueInstance; 
                                   const glueStreamSubscriber: IGlueStreamSubscriber): HResult; stdcall;
   end;
 
@@ -1465,12 +1500,12 @@ type
   IGlueWindowEventHandler = interface(IUnknown)
     ['{FBCB4411-153C-4AAC-8DC8-DB696C931FEB}']
     function HandleWindowReady(const GlueWindow: IGlueWindow): HResult; stdcall;
-    function HandleChannelData(const GlueWindow: IGlueWindow;
+    function HandleChannelData(const GlueWindow: IGlueWindow; 
                                const channelUpdate: IGlueContextUpdate): HResult; stdcall;
-    function HandleChannelChanged(const GlueWindow: IGlueWindow; const Channel: IGlueContext;
+    function HandleChannelChanged(const GlueWindow: IGlueWindow; const Channel: IGlueContext; 
                                   prevChannel: GlueContext): HResult; stdcall;
     function HandleWindowDestroyed(const GlueWindow: IGlueWindow): HResult; stdcall;
-    function HandleWindowEvent(const GlueWindow: IGlueWindow; eventType: GlueWindowEventType;
+    function HandleWindowEvent(const GlueWindow: IGlueWindow; eventType: GlueWindowEventType; 
                                eventData: GlueValue): HResult; stdcall;
   end;
 
@@ -1482,12 +1517,12 @@ type
   IAppFactoryRegistry = interface(IDispatch)
     ['{B1810DB3-167B-4FBD-8852-0481B0BBFDC4}']
     procedure RegisterAppFactory(appDefinition: GlueAppDefinition; const factory: IAppFactory); safecall;
-    procedure RegisterAppInstance(const appDefName: WideString; const GlueWindow: IGlueWindow;
+    procedure RegisterAppInstance(const appDefName: WideString; const GlueWindow: IGlueWindow; 
                                   const glueApp: IGlueApp); safecall;
     procedure RegisterMainInstance(const main: IGlueApp); safecall;
     function GetMainRestoreState: GlueValue; safecall;
-    function RegisterAppFactoryInSink(const Name: WideString; const Title: WideString;
-                                      const Category: WideString;
+    function RegisterAppFactoryInSink(const Name: WideString; const Title: WideString; 
+                                      const Category: WideString; 
                                       const appDefinitionJson: WideString): IEventSinkAppFactory; safecall;
   end;
 
@@ -1498,14 +1533,14 @@ type
 // *********************************************************************//
   IAppFactoryRegistryDisp = dispinterface
     ['{B1810DB3-167B-4FBD-8852-0481B0BBFDC4}']
-    procedure RegisterAppFactory(appDefinition: {NOT_OLEAUTO(GlueAppDefinition)}OleVariant;
+    procedure RegisterAppFactory(appDefinition: {NOT_OLEAUTO(GlueAppDefinition)}OleVariant; 
                                  const factory: IAppFactory); dispid 1610743808;
-    procedure RegisterAppInstance(const appDefName: WideString; const GlueWindow: IGlueWindow;
+    procedure RegisterAppInstance(const appDefName: WideString; const GlueWindow: IGlueWindow; 
                                   const glueApp: IGlueApp); dispid 1610743809;
     procedure RegisterMainInstance(const main: IGlueApp); dispid 1610743810;
     function GetMainRestoreState: {NOT_OLEAUTO(GlueValue)}OleVariant; dispid 1610743811;
-    function RegisterAppFactoryInSink(const Name: WideString; const Title: WideString;
-                                      const Category: WideString;
+    function RegisterAppFactoryInSink(const Name: WideString; const Title: WideString; 
+                                      const Category: WideString; 
                                       const appDefinitionJson: WideString): IEventSinkAppFactory; dispid 1610743812;
   end;
 
@@ -1596,7 +1631,7 @@ type
     ['{A384126A-06D1-41CE-942C-4376D4574F4B}']
     function SubscriptionActivated(const GlueStreamSubscription: IGlueStreamSubscription): HResult; stdcall;
     function HandleStreamData(stream: GlueMethod; data: PSafeArray): HResult; stdcall;
-    function HandleStreamStatus(stream: GlueMethod; state: GlueStreamState;
+    function HandleStreamStatus(stream: GlueMethod; state: GlueStreamState; 
                                 const Message: WideString; dateTime: Int64): HResult; stdcall;
     function StreamClosed(stream: GlueMethod): HResult; stdcall;
   end;
@@ -1633,7 +1668,7 @@ type
   IGlueSubscriptionHandlerEvents = dispinterface
     ['{96E100B1-CCE8-463C-8965-2567B08ECF37}']
     procedure HandleSubscriptionRequest(const GlueSubscriptionRequest: IGlueSubscriptionRequest); dispid 1610743808;
-    procedure HandleSubscriber(const glueStreamSubscriber: IVBGlueStreamSubscriber;
+    procedure HandleSubscriber(const glueStreamSubscriber: IVBGlueStreamSubscriber; 
                                const requestValues: IGlueData); dispid 1610743809;
     procedure HandleSubscriberLost(const glueStreamSubscriber: IVBGlueStreamSubscriber); dispid 1610743810;
   end;
@@ -1645,8 +1680,8 @@ type
 // *********************************************************************//
   IGlueRequestHandler = interface(IUnknown)
     ['{81671796-A690-476B-85EA-94326B7CA2B5}']
-    function HandleInvocationRequest(method: GlueMethod; Caller: GlueInstance;
-                                     requestValues: PSafeArray;
+    function HandleInvocationRequest(method: GlueMethod; Caller: GlueInstance; 
+                                     requestValues: PSafeArray; 
                                      const resultCallback: IGlueServerMethodResultCallback): HResult; stdcall;
   end;
 
@@ -1689,7 +1724,7 @@ type
 // *********************************************************************//
   IGlueInvocationResultEvents = dispinterface
     ['{2A3E264F-C7A0-4F08-A1EF-4143D87C7087}']
-    procedure HandleResult(invocationResult: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+    procedure HandleResult(invocationResult: {NOT_OLEAUTO(PSafeArray)}OleVariant; 
                            const correlationId: WideString); dispid 1610743808;
   end;
 
@@ -1700,17 +1735,17 @@ type
 // *********************************************************************//
   IGlueIntentsManager = interface(IDispatch)
     ['{2439A1C1-8625-49E7-8C10-E107122BEA6C}']
-    procedure RaiseIntent(const intentName: WideString; const contextType: WideString;
-                          Values: PSafeArray; const handler: WideString;
+    procedure RaiseIntent(const intentName: WideString; const contextType: WideString; 
+                          Values: PSafeArray; const handler: WideString; 
                           const correlationId: WideString); safecall;
-    procedure RaiseIntentWithJson(const intentName: WideString; const contextType: WideString;
-                                  const json: WideString; const handler: WideString;
+    procedure RaiseIntentWithJson(const intentName: WideString; const contextType: WideString; 
+                                  const json: WideString; const handler: WideString; 
                                   const correlationId: WideString); safecall;
-    procedure RaiseIntentWithDynamicValue(const intentName: WideString;
-                                          const contextType: WideString;
-                                          const dv: IGlueValueCollection;
+    procedure RaiseIntentWithDynamicValue(const intentName: WideString; 
+                                          const contextType: WideString; 
+                                          const dv: IGlueValueCollection; 
                                           const handler: WideString; const correlationId: WideString); safecall;
-    procedure RegisterIntent(const intentName: WideString; const displayName: WideString;
+    procedure RegisterIntent(const intentName: WideString; const displayName: WideString; 
                              const description: WideString; const contextTypesCSV: WideString); safecall;
   end;
 
@@ -1721,17 +1756,17 @@ type
 // *********************************************************************//
   IGlueIntentsManagerDisp = dispinterface
     ['{2439A1C1-8625-49E7-8C10-E107122BEA6C}']
-    procedure RaiseIntent(const intentName: WideString; const contextType: WideString;
-                          Values: {NOT_OLEAUTO(PSafeArray)}OleVariant; const handler: WideString;
+    procedure RaiseIntent(const intentName: WideString; const contextType: WideString; 
+                          Values: {NOT_OLEAUTO(PSafeArray)}OleVariant; const handler: WideString; 
                           const correlationId: WideString); dispid 1610743808;
-    procedure RaiseIntentWithJson(const intentName: WideString; const contextType: WideString;
-                                  const json: WideString; const handler: WideString;
+    procedure RaiseIntentWithJson(const intentName: WideString; const contextType: WideString; 
+                                  const json: WideString; const handler: WideString; 
                                   const correlationId: WideString); dispid 1610743809;
-    procedure RaiseIntentWithDynamicValue(const intentName: WideString;
-                                          const contextType: WideString;
-                                          const dv: IGlueValueCollection;
+    procedure RaiseIntentWithDynamicValue(const intentName: WideString; 
+                                          const contextType: WideString; 
+                                          const dv: IGlueValueCollection; 
                                           const handler: WideString; const correlationId: WideString); dispid 1610743810;
-    procedure RegisterIntent(const intentName: WideString; const displayName: WideString;
+    procedure RegisterIntent(const intentName: WideString; const displayName: WideString; 
                              const description: WideString; const contextTypesCSV: WideString); dispid 1610743811;
   end;
 
@@ -1742,12 +1777,12 @@ type
 // *********************************************************************//
   IGlueIntentsManagerEvents = dispinterface
     ['{FDBB1A97-FC6E-4351-BD61-493E7841077D}']
-    procedure HandleIntentDefinition(const intentName: WideString; const intentHandler: WideString;
+    procedure HandleIntentDefinition(const intentName: WideString; const intentHandler: WideString; 
                                      const contextTypesCSV: WideString; enabled: WordBool); dispid 1610743808;
-    procedure HandleIntentRaiseResult(const intentName: WideString;
-                                      const correlationId: WideString; success: WordBool;
+    procedure HandleIntentRaiseResult(const intentName: WideString; 
+                                      const correlationId: WideString; success: WordBool; 
                                       const Message: WideString); dispid 1610743809;
-    procedure HandleIntentRequest(const intentName: WideString; const Type_: WideString;
+    procedure HandleIntentRequest(const intentName: WideString; const Type_: WideString; 
                                   const requestValue: IGlueValueCollection); dispid 1610743810;
   end;
 
@@ -1759,12 +1794,12 @@ type
   IGlueWindowEvents = dispinterface
     ['{30B72DA7-93FD-4B9F-BDA2-6EEE1F41EE30}']
     procedure HandleWindowReady(const GlueWindow: IGlueWindow); dispid 1610743808;
-    procedure HandleChannelData(const GlueWindow: IGlueWindow;
+    procedure HandleChannelData(const GlueWindow: IGlueWindow; 
                                 const channelUpdate: IGlueContextUpdate); dispid 1610743809;
-    procedure HandleChannelChanged(const GlueWindow: IGlueWindow; const Channel: IGlueContext;
+    procedure HandleChannelChanged(const GlueWindow: IGlueWindow; const Channel: IGlueContext; 
                                    const prevChannelName: WideString); dispid 1610743810;
     procedure HandleWindowDestroyed(const GlueWindow: IGlueWindow); dispid 1610743811;
-    procedure HandleWindowEvent(const GlueWindow: IGlueWindow; eventType: GlueWindowEventType;
+    procedure HandleWindowEvent(const GlueWindow: IGlueWindow; eventType: GlueWindowEventType; 
                                 const eventData: IGlueValueCollection); dispid 1610743812;
   end;
 
@@ -1825,7 +1860,7 @@ type
     procedure Subscribe(const handler: IGlueApplicationEventHandler); safecall;
     procedure Unsubscribe(const handler: IGlueApplicationEventHandler); safecall;
     procedure Start(const correlationId: WideString; context: OleVariant; startTimeoutMsecs: Integer); safecall;
-    procedure StartWithJson(const correlationId: WideString; const json: WideString;
+    procedure StartWithJson(const correlationId: WideString; const json: WideString; 
                             startTimeoutMsecs: Integer); safecall;
     procedure Stop(const InstanceId: WideString; const correlationId: WideString); safecall;
     property Name: WideString read Get_Name;
@@ -1854,7 +1889,7 @@ type
     procedure Subscribe(const handler: IGlueApplicationEventHandler); dispid 1610743817;
     procedure Unsubscribe(const handler: IGlueApplicationEventHandler); dispid 1610743818;
     procedure Start(const correlationId: WideString; context: OleVariant; startTimeoutMsecs: Integer); dispid 1610743819;
-    procedure StartWithJson(const correlationId: WideString; const json: WideString;
+    procedure StartWithJson(const correlationId: WideString; const json: WideString; 
                             startTimeoutMsecs: Integer); dispid 1610743820;
     procedure Stop(const InstanceId: WideString; const correlationId: WideString); dispid 1610743821;
   end;
@@ -1909,11 +1944,11 @@ type
     ['{6A258876-3737-4281-BF01-09B3B9B99886}']
     procedure Subscribe(const handler: IGlueAppManagerEventHandler); safecall;
     procedure Unsubscribe(const handler: IGlueAppManagerEventHandler); safecall;
-    procedure StartApplication(const appName: WideString; const correlationId: WideString;
-                               context: OleVariant; appDefTimeoutMsecs: Integer;
+    procedure StartApplication(const appName: WideString; const correlationId: WideString; 
+                               context: OleVariant; appDefTimeoutMsecs: Integer; 
                                startTimeoutMsecs: Integer); safecall;
-    procedure StartApplicationWithJson(const appName: WideString; const correlationId: WideString;
-                                       const json: WideString; appDefTimeoutMsecs: Integer;
+    procedure StartApplicationWithJson(const appName: WideString; const correlationId: WideString; 
+                                       const json: WideString; appDefTimeoutMsecs: Integer; 
                                        startTimeoutMsecs: Integer); safecall;
     procedure StopApplication(const correlationId: WideString); safecall;
     function GetApplications: PSafeArray; safecall;
@@ -1929,11 +1964,11 @@ type
     ['{6A258876-3737-4281-BF01-09B3B9B99886}']
     procedure Subscribe(const handler: IGlueAppManagerEventHandler); dispid 1610743808;
     procedure Unsubscribe(const handler: IGlueAppManagerEventHandler); dispid 1610743809;
-    procedure StartApplication(const appName: WideString; const correlationId: WideString;
-                               context: OleVariant; appDefTimeoutMsecs: Integer;
+    procedure StartApplication(const appName: WideString; const correlationId: WideString; 
+                               context: OleVariant; appDefTimeoutMsecs: Integer; 
                                startTimeoutMsecs: Integer); dispid 1610743810;
-    procedure StartApplicationWithJson(const appName: WideString; const correlationId: WideString;
-                                       const json: WideString; appDefTimeoutMsecs: Integer;
+    procedure StartApplicationWithJson(const appName: WideString; const correlationId: WideString; 
+                                       const json: WideString; appDefTimeoutMsecs: Integer; 
                                        startTimeoutMsecs: Integer); dispid 1610743811;
     procedure StopApplication(const correlationId: WideString); dispid 1610743812;
     function GetApplications: {NOT_OLEAUTO(PSafeArray)}OleVariant; dispid 1610743813;
@@ -1965,7 +2000,7 @@ type
 // *********************************************************************//
   IAppFactoryEvents = dispinterface
     ['{851E9C52-0392-4174-83F0-63C46AB9758B}']
-    procedure OnCreateApp(const appDefName: WideString; const state: IGlueValueCollection;
+    procedure OnCreateApp(const appDefName: WideString; const state: IGlueValueCollection; 
                           const announcer: IAppAnnouncerInSink); dispid 1610743808;
   end;
 
@@ -1996,7 +2031,7 @@ type
 // *********************************************************************//
   IAppFactory = interface(IUnknown)
     ['{505D3B9B-8ABD-4AC3-8EFE-66C64C372009}']
-    function CreateApp(const appDefName: WideString; state: GlueValue;
+    function CreateApp(const appDefName: WideString; state: GlueValue; 
                        const announcer: IAppAnnouncer): HResult; stdcall;
   end;
 
@@ -2074,7 +2109,7 @@ type
 // *********************************************************************//
   IGlueAppSinkEvents = dispinterface
     ['{3D45C385-F42A-45E7-8D6A-FA0FBAB89BF8}']
-    procedure OnInitialize(hwnd: Integer; const state: IGlueValueCollection;
+    procedure OnInitialize(hwnd: Integer; const state: IGlueValueCollection; 
                            const GlueWindow: IGlueWindow); dispid 1610743808;
     procedure OnSaveState(hwnd: Integer; const receiver: IGlueDynamicValueReceiver); dispid 1610743809;
     procedure OnShutdown(hwnd: Integer); dispid 1610743810;
@@ -2088,9 +2123,9 @@ type
   IGlueAppManagerEvents = dispinterface
     ['{03D0882F-68FE-4A2B-84D6-5EF070187600}']
     procedure OnApplicationDefinition(const appName: WideString; added: WordBool); dispid 1610743808;
-    procedure OnApplicationInstance(const appName: WideString; const correlationId: WideString;
-                                    const Id: WideString; started: WordBool;
-                                    const Message: WideString;
+    procedure OnApplicationInstance(const appName: WideString; const correlationId: WideString; 
+                                    const Id: WideString; started: WordBool; 
+                                    const Message: WideString; 
                                     const Instance: IGlueApplicationInstance); dispid 1610743809;
   end;
 
@@ -2102,11 +2137,11 @@ type
   IGlueApplicationEvents = dispinterface
     ['{3883BD9D-ACF6-47C1-A98B-3A4CA8D48B98}']
     procedure OnApplicationDefinition(const application: IGlueApplication; announced: WordBool); dispid 1610743808;
-    procedure OnApplicationInstance(const application: IGlueApplication;
-                                    const correlationId: WideString; const Id: WideString;
-                                    started: WordBool; const Message: WideString;
+    procedure OnApplicationInstance(const application: IGlueApplication; 
+                                    const correlationId: WideString; const Id: WideString; 
+                                    started: WordBool; const Message: WideString; 
                                     const Instance: IGlueApplicationInstance); dispid 1610743809;
-    procedure OnMessage(const application: IGlueApplication; const correlationId: WideString;
+    procedure OnMessage(const application: IGlueApplication; const correlationId: WideString; 
                         success: WordBool; const Message: WideString); dispid 1610743810;
   end;
 
@@ -2117,7 +2152,7 @@ type
 // *********************************************************************//
   IGlueApplicationInstanceEvents = dispinterface
     ['{C1BBE49F-0152-4660-A130-3F273952366E}']
-    procedure OnAppInstanceEvent(const Instance: IGlueApplicationInstance; started: WordBool;
+    procedure OnAppInstanceEvent(const Instance: IGlueApplicationInstance; started: WordBool; 
                                  success: WordBool; const Message: WideString); dispid 1610743808;
   end;
 
@@ -2129,11 +2164,11 @@ type
   IGlueApplicationEventHandler = interface(IUnknown)
     ['{22563C2E-5481-4ECD-BA4A-8806AEF43DCD}']
     function OnApplicationDefinition(const application: IGlueApplication; announced: WordBool): HResult; stdcall;
-    function OnApplicationInstance(const application: IGlueApplication;
-                                   const correlationId: WideString; const Id: WideString;
-                                   started: WordBool; const Message: WideString;
+    function OnApplicationInstance(const application: IGlueApplication; 
+                                   const correlationId: WideString; const Id: WideString; 
+                                   started: WordBool; const Message: WideString; 
                                    const Instance: IGlueApplicationInstance): HResult; stdcall;
-    function OnMessage(const application: IGlueApplication; const correlationId: WideString;
+    function OnMessage(const application: IGlueApplication; const correlationId: WideString; 
                        success: WordBool; const Message: WideString): HResult; stdcall;
   end;
 
@@ -2144,7 +2179,7 @@ type
 // *********************************************************************//
   IGlueApplicationInstanceEventHandler = interface(IUnknown)
     ['{285922F7-5372-4204-8AE0-23BB2CC11F21}']
-    function OnAppInstanceEvent(const Instance: IGlueApplicationInstance; started: WordBool;
+    function OnAppInstanceEvent(const Instance: IGlueApplicationInstance; started: WordBool; 
                                 success: WordBool; const Message: WideString): HResult; stdcall;
   end;
 
@@ -2156,9 +2191,9 @@ type
   IGlueAppManagerEventHandler = interface(IUnknown)
     ['{5FF98819-7571-43B2-872C-AEC4CD369F32}']
     function OnApplicationDefinition(const appName: WideString; added: WordBool): HResult; stdcall;
-    function OnApplicationInstance(const appName: WideString; const correlationId: WideString;
-                                   const Id: WideString; started: WordBool;
-                                   const Message: WideString;
+    function OnApplicationInstance(const appName: WideString; const correlationId: WideString; 
+                                   const Id: WideString; started: WordBool; 
+                                   const Message: WideString; 
                                    const Instance: IGlueApplicationInstance): HResult; stdcall;
   end;
 
@@ -2181,352 +2216,1700 @@ type
   end;
 
 // *********************************************************************//
-// The Class CoGlueNameValuePair provides a Create and CreateRemote method to
-// create instances of the default interface IGlueNameValuePair exposed by
-// the CoClass GlueNameValuePair. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// The Class CoGlueNameValuePair provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueNameValuePair exposed by              
+// the CoClass GlueNameValuePair. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueNameValuePair = class
     class function Create: IGlueNameValuePair;
     class function CreateRemote(const MachineName: string): IGlueNameValuePair;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueContextUpdate provides a Create and CreateRemote method to
-// create instances of the default interface IGlueContextUpdate exposed by
-// the CoClass GlueContextUpdate. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueNameValuePair
+// Help String      : This object is name-value pairs that holds the arguments and complex result properties.
+// Default Interface: IGlueNameValuePair
+// Def. Intf. DISP? : Yes
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueNameValuePair = class(TOleServer)
+  private
+    FIntf: IGlueNameValuePair;
+    function GetDefaultInterface: IGlueNameValuePair;
+  protected
+    procedure InitServerData; override;
+    function Get_Name: WideString;
+    function Get_Value: OleVariant;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueNameValuePair);
+    procedure Disconnect; override;
+    property DefaultInterface: IGlueNameValuePair read GetDefaultInterface;
+    property Name: WideString read Get_Name;
+    property Value: OleVariant read Get_Value;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueContextUpdate provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueContextUpdate exposed by              
+// the CoClass GlueContextUpdate. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueContextUpdate = class
     class function Create: IGlueContextUpdate;
     class function CreateRemote(const MachineName: string): IGlueContextUpdate;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueDynamicValueBase provides a Create and CreateRemote method to
-// create instances of the default interface IReflect exposed by
-// the CoClass GlueDynamicValueBase. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueContextUpdate
+// Help String      : 
+// Default Interface: IGlueContextUpdate
+// Def. Intf. DISP? : No
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueContextUpdate = class(TOleServer)
+  private
+    FIntf: IGlueContextUpdate;
+    function GetDefaultInterface: IGlueContextUpdate;
+  protected
+    procedure InitServerData; override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueContextUpdate);
+    procedure Disconnect; override;
+    function GetContext: IGlueContext;
+    function GetRemoved: PSafeArray;
+    function GetAdded: PSafeArray;
+    function GetUpdated: PSafeArray;
+    property DefaultInterface: IGlueContextUpdate read GetDefaultInterface;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueDynamicValueBase provides a Create and CreateRemote method to          
+// create instances of the default interface IReflect exposed by              
+// the CoClass GlueDynamicValueBase. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueDynamicValueBase = class
     class function Create: IReflect;
     class function CreateRemote(const MachineName: string): IReflect;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueDynamicValue provides a Create and CreateRemote method to
-// create instances of the default interface IGlueValueCollection exposed by
-// the CoClass GlueDynamicValue. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueDynamicValueBase
+// Help String      : 
+// Default Interface: IReflect
+// Def. Intf. DISP? : No
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueDynamicValueBase = class(TOleServer)
+  private
+    FIntf: IReflect;
+    function GetDefaultInterface: IReflect;
+  protected
+    procedure InitServerData; override;
+    function Get_UnderlyingSystemType: _Type;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IReflect);
+    procedure Disconnect; override;
+    function GetMethod(const name: WideString; bindingAttr: BindingFlags; const Binder: _Binder; 
+                       types: PSafeArray; modifiers: PSafeArray): _MethodInfo;
+    function GetMethod_2(const name: WideString; bindingAttr: BindingFlags): _MethodInfo;
+    function GetMethods(bindingAttr: BindingFlags): PSafeArray;
+    function GetField(const name: WideString; bindingAttr: BindingFlags): _FieldInfo;
+    function GetFields(bindingAttr: BindingFlags): PSafeArray;
+    function GetProperty(const name: WideString; bindingAttr: BindingFlags): _PropertyInfo;
+    function GetProperty_2(const name: WideString; bindingAttr: BindingFlags; 
+                           const Binder: _Binder; const returnType: _Type; types: PSafeArray; 
+                           modifiers: PSafeArray): _PropertyInfo;
+    function GetProperties(bindingAttr: BindingFlags): PSafeArray;
+    function GetMember(const name: WideString; bindingAttr: BindingFlags): PSafeArray;
+    function GetMembers(bindingAttr: BindingFlags): PSafeArray;
+    function InvokeMember(const name: WideString; invokeAttr: BindingFlags; const Binder: _Binder; 
+                          Target: OleVariant; args: PSafeArray; modifiers: PSafeArray; 
+                          const culture: _CultureInfo; namedParameters: PSafeArray): OleVariant;
+    property DefaultInterface: IReflect read GetDefaultInterface;
+    property UnderlyingSystemType: _Type read Get_UnderlyingSystemType;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueDynamicValue provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueValueCollection exposed by              
+// the CoClass GlueDynamicValue. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueDynamicValue = class
     class function Create: IGlueValueCollection;
     class function CreateRemote(const MachineName: string): IGlueValueCollection;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueContextManager provides a Create and CreateRemote method to
-// create instances of the default interface IGlueContext exposed by
-// the CoClass GlueContextManager. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueDynamicValue
+// Help String      : 
+// Default Interface: IGlueValueCollection
+// Def. Intf. DISP? : Yes
+// Event   Interface: 
+// TypeFlags        : (2) CanCreate
+// *********************************************************************//
+  TGlueDynamicValue = class(TOleServer)
+  private
+    FIntf: IGlueValueCollection;
+    function GetDefaultInterface: IGlueValueCollection;
+  protected
+    procedure InitServerData; override;
+    function Get__Default(key: OleVariant): OleVariant;
+    function Get_Count: Integer;
+    function Get_Names: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+    function Get_Values: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+    function Get_Composite: WordBool;
+    function Get_Value: OleVariant;
+    function Get_GlueType: GlueValueType;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueValueCollection);
+    procedure Disconnect; override;
+    function GetEnumerator: IEnumVARIANT;
+    function Contains(const Name: WideString): WordBool;
+    property DefaultInterface: IGlueValueCollection read GetDefaultInterface;
+    property _Default[key: OleVariant]: OleVariant read Get__Default; default;
+    property Count: Integer read Get_Count;
+    property Names: {NOT_OLEAUTO(PSafeArray)}OleVariant read Get_Names;
+    property Values: {NOT_OLEAUTO(PSafeArray)}OleVariant read Get_Values;
+    property Composite: WordBool read Get_Composite;
+    property Value: OleVariant read Get_Value;
+    property GlueType: GlueValueType read Get_GlueType;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueContextManager provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueContext exposed by              
+// the CoClass GlueContextManager. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueContextManager = class
     class function Create: IGlueContext;
     class function CreateRemote(const MachineName: string): IGlueContext;
   end;
 
+  TGlueContextManagerHandleContext = procedure(ASender: TObject; const context: IGlueContext) of object;
+  TGlueContextManagerHandleContextUpdate = procedure(ASender: TObject; const contextUpdate: IGlueContextUpdate) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueContextImage provides a Create and CreateRemote method to
-// create instances of the default interface IGlueContextUpdate exposed by
-// the CoClass GlueContextImage. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueContextManager
+// Help String      : 
+// Default Interface: IGlueContext
+// Def. Intf. DISP? : No
+// Event   Interface: IGlueContextEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueContextManager = class(TOleServer)
+  private
+    FOnHandleContext: TGlueContextManagerHandleContext;
+    FOnHandleContextUpdate: TGlueContextManagerHandleContextUpdate;
+    FIntf: IGlueContext;
+    function GetDefaultInterface: IGlueContext;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueContext);
+    procedure Disconnect; override;
+    function GetContextInfo: GlueContext;
+    function GetData: PSafeArray;
+    function GetReflectData(const fieldPath: WideString): OleVariant;
+    procedure SetValue(const fieldPath: WideString; Value: OleVariant);
+    procedure SetContextData(data: PSafeArray);
+    procedure BuildAndSetContextData(const builderCallback: IGlueContextBuilderCallback);
+    procedure UpdateContextData(data: PSafeArray);
+    procedure SetContextDataOnFieldPath(const fieldPath: WideString; data: PSafeArray);
+    function GetDataAsJson(const fieldPath: WideString): WideString;
+    procedure UpdateContextDataJson(const fieldPath: WideString; const jsonEncodedData: WideString);
+    procedure BuildAndUpdateContextData(const builderCallback: IGlueContextBuilderCallback);
+    procedure Remove(const fieldPath: WideString);
+    procedure Open;
+    procedure Close;
+    function EnsureOpened(msecs: Integer): WordBool;
+    property DefaultInterface: IGlueContext read GetDefaultInterface;
+  published
+    property OnHandleContext: TGlueContextManagerHandleContext read FOnHandleContext write FOnHandleContext;
+    property OnHandleContextUpdate: TGlueContextManagerHandleContextUpdate read FOnHandleContextUpdate write FOnHandleContextUpdate;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueContextImage provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueContextUpdate exposed by              
+// the CoClass GlueContextImage. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueContextImage = class
     class function Create: IGlueContextUpdate;
     class function CreateRemote(const MachineName: string): IGlueContextUpdate;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueWindowSettings provides a Create and CreateRemote method to
-// create instances of the default interface IGlueWindowSettings exposed by
-// the CoClass GlueWindowSettings. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueContextImage
+// Help String      : 
+// Default Interface: IGlueContextUpdate
+// Def. Intf. DISP? : No
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueContextImage = class(TOleServer)
+  private
+    FIntf: IGlueContextUpdate;
+    function GetDefaultInterface: IGlueContextUpdate;
+  protected
+    procedure InitServerData; override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueContextUpdate);
+    procedure Disconnect; override;
+    function GetContext: IGlueContext;
+    function GetRemoved: PSafeArray;
+    function GetAdded: PSafeArray;
+    function GetUpdated: PSafeArray;
+    property DefaultInterface: IGlueContextUpdate read GetDefaultInterface;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueWindowSettings provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueWindowSettings exposed by              
+// the CoClass GlueWindowSettings. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueWindowSettings = class
     class function Create: IGlueWindowSettings;
     class function CreateRemote(const MachineName: string): IGlueWindowSettings;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueMethodInfo provides a Create and CreateRemote method to
-// create instances of the default interface IGlueMethodInfo exposed by
-// the CoClass GlueMethodInfo. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueWindowSettings
+// Help String      : 
+// Default Interface: IGlueWindowSettings
+// Def. Intf. DISP? : No
+// Event   Interface: 
+// TypeFlags        : (2) CanCreate
+// *********************************************************************//
+  TGlueWindowSettings = class(TOleServer)
+  private
+    FIntf: IGlueWindowSettings;
+    function GetDefaultInterface: IGlueWindowSettings;
+  protected
+    procedure InitServerData; override;
+    function Get_type_: WideString;
+    procedure Set_type_(const pRetVal: WideString);
+    function Get_Title: WideString;
+    procedure Set_Title(const pRetVal: WideString);
+    function Get_AllowTabClose: WordBool;
+    procedure Set_AllowTabClose(pRetVal: WordBool);
+    function Get_ChannelSupport: WordBool;
+    procedure Set_ChannelSupport(pRetVal: WordBool);
+    function Get_Channel: WideString;
+    procedure Set_Channel(const pRetVal: WideString);
+    function Get_ShowTaskbarIcon: WordBool;
+    procedure Set_ShowTaskbarIcon(pRetVal: WordBool);
+    function Get_IsSticky: WordBool;
+    procedure Set_IsSticky(pRetVal: WordBool);
+    function Get_AllowUnstick: WordBool;
+    procedure Set_AllowUnstick(pRetVal: WordBool);
+    function Get_FrameColor: WideString;
+    procedure Set_FrameColor(const pRetVal: WideString);
+    function Get_Icon: WideString;
+    procedure Set_Icon(const pRetVal: WideString);
+    function Get_StandardButtons: WideString;
+    procedure Set_StandardButtons(const pRetVal: WideString);
+    function Get_MaxWidth: Integer;
+    procedure Set_MaxWidth(pRetVal: Integer);
+    function Get_MinWidth: Integer;
+    procedure Set_MinWidth(pRetVal: Integer);
+    function Get_MaxHeight: Integer;
+    procedure Set_MaxHeight(pRetVal: Integer);
+    function Get_MinHeight: Integer;
+    procedure Set_MinHeight(pRetVal: Integer);
+    function Get_Maximizable: WordBool;
+    procedure Set_Maximizable(pRetVal: WordBool);
+    function Get_Minimizable: WordBool;
+    procedure Set_Minimizable(pRetVal: WordBool);
+    function Get_SynchronousDestroy: WordBool;
+    procedure Set_SynchronousDestroy(pRetVal: WordBool);
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueWindowSettings);
+    procedure Disconnect; override;
+    property DefaultInterface: IGlueWindowSettings read GetDefaultInterface;
+    property type_: WideString read Get_type_ write Set_type_;
+    property Title: WideString read Get_Title write Set_Title;
+    property AllowTabClose: WordBool read Get_AllowTabClose write Set_AllowTabClose;
+    property ChannelSupport: WordBool read Get_ChannelSupport write Set_ChannelSupport;
+    property Channel: WideString read Get_Channel write Set_Channel;
+    property ShowTaskbarIcon: WordBool read Get_ShowTaskbarIcon write Set_ShowTaskbarIcon;
+    property IsSticky: WordBool read Get_IsSticky write Set_IsSticky;
+    property AllowUnstick: WordBool read Get_AllowUnstick write Set_AllowUnstick;
+    property FrameColor: WideString read Get_FrameColor write Set_FrameColor;
+    property Icon: WideString read Get_Icon write Set_Icon;
+    property StandardButtons: WideString read Get_StandardButtons write Set_StandardButtons;
+    property MaxWidth: Integer read Get_MaxWidth write Set_MaxWidth;
+    property MinWidth: Integer read Get_MinWidth write Set_MinWidth;
+    property MaxHeight: Integer read Get_MaxHeight write Set_MaxHeight;
+    property MinHeight: Integer read Get_MinHeight write Set_MinHeight;
+    property Maximizable: WordBool read Get_Maximizable write Set_Maximizable;
+    property Minimizable: WordBool read Get_Minimizable write Set_Minimizable;
+    property SynchronousDestroy: WordBool read Get_SynchronousDestroy write Set_SynchronousDestroy;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueMethodInfo provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueMethodInfo exposed by              
+// the CoClass GlueMethodInfo. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueMethodInfo = class
     class function Create: IGlueMethodInfo;
     class function CreateRemote(const MachineName: string): IGlueMethodInfo;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueData provides a Create and CreateRemote method to
-// create instances of the default interface IGlueData exposed by
-// the CoClass GlueData. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueMethodInfo
+// Help String      : 
+// Default Interface: IGlueMethodInfo
+// Def. Intf. DISP? : Yes
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueMethodInfo = class(TOleServer)
+  private
+    FIntf: IGlueMethodInfo;
+    function GetDefaultInterface: IGlueMethodInfo;
+  protected
+    procedure InitServerData; override;
+    function Get_method: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+    function Get_correlationId: WideString;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueMethodInfo);
+    procedure Disconnect; override;
+    property DefaultInterface: IGlueMethodInfo read GetDefaultInterface;
+    property method: {NOT_OLEAUTO(VBGlueMethod)}OleVariant read Get_method;
+    property correlationId: WideString read Get_correlationId;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueData provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueData exposed by              
+// the CoClass GlueData. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueData = class
     class function Create: IGlueData;
     class function CreateRemote(const MachineName: string): IGlueData;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueStreamConsumer provides a Create and CreateRemote method to
-// create instances of the default interface IGlueStreamConsumer exposed by
-// the CoClass GlueStreamConsumer. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueData
+// Help String      : 
+// Default Interface: IGlueData
+// Def. Intf. DISP? : Yes
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueData = class(TOleServer)
+  private
+    FIntf: IGlueData;
+    function GetDefaultInterface: IGlueData;
+  protected
+    procedure InitServerData; override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueData);
+    procedure Disconnect; override;
+    function GetReflectData(const fieldPath: WideString): OleVariant;
+    property DefaultInterface: IGlueData read GetDefaultInterface;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueStreamConsumer provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueStreamConsumer exposed by              
+// the CoClass GlueStreamConsumer. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueStreamConsumer = class
     class function Create: IGlueStreamConsumer;
     class function CreateRemote(const MachineName: string): IGlueStreamConsumer;
   end;
 
+  TGlueStreamConsumerHandleSubscriptionActivated = procedure(ASender: TObject; const GlueStreamSubscription: IGlueStreamSubscription; 
+                                                                               const correlationId: WideString) of object;
+  TGlueStreamConsumerHandleStreamData = procedure(ASender: TObject; const stream: IGlueMethodInfo; 
+                                                                    const data: IGlueData) of object;
+  TGlueStreamConsumerHandleStreamStatus = procedure(ASender: TObject; const stream: IGlueMethodInfo; 
+                                                                      state: GlueStreamState; 
+                                                                      const Message: WideString; 
+                                                                      dateTime: Double) of object;
+  TGlueStreamConsumerHandleStreamClosed = procedure(ASender: TObject; const stream: IGlueMethodInfo) of object;
+
+
 // *********************************************************************//
-// The Class CoVbGlueInvocationResult provides a Create and CreateRemote method to
-// create instances of the default interface IGlueInvocationResult exposed by
-// the CoClass VbGlueInvocationResult. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueStreamConsumer
+// Help String      : 
+// Default Interface: IGlueStreamConsumer
+// Def. Intf. DISP? : Yes
+// Event   Interface: IGlueStreamConsumerEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueStreamConsumer = class(TOleServer)
+  private
+    FOnHandleSubscriptionActivated: TGlueStreamConsumerHandleSubscriptionActivated;
+    FOnHandleStreamData: TGlueStreamConsumerHandleStreamData;
+    FOnHandleStreamStatus: TGlueStreamConsumerHandleStreamStatus;
+    FOnHandleStreamClosed: TGlueStreamConsumerHandleStreamClosed;
+    FIntf: IGlueStreamConsumer;
+    function GetDefaultInterface: IGlueStreamConsumer;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueStreamConsumer);
+    procedure Disconnect; override;
+    procedure Subscribe(const stream: WideString; const targetRegex: WideString; args: OleVariant; 
+                        all: WordBool; const correlationId: WideString; timeoutMsecs: Integer);
+    property DefaultInterface: IGlueStreamConsumer read GetDefaultInterface;
+  published
+    property OnHandleSubscriptionActivated: TGlueStreamConsumerHandleSubscriptionActivated read FOnHandleSubscriptionActivated write FOnHandleSubscriptionActivated;
+    property OnHandleStreamData: TGlueStreamConsumerHandleStreamData read FOnHandleStreamData write FOnHandleStreamData;
+    property OnHandleStreamStatus: TGlueStreamConsumerHandleStreamStatus read FOnHandleStreamStatus write FOnHandleStreamStatus;
+    property OnHandleStreamClosed: TGlueStreamConsumerHandleStreamClosed read FOnHandleStreamClosed write FOnHandleStreamClosed;
+  end;
+
+// *********************************************************************//
+// The Class CoVbGlueInvocationResult provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueInvocationResult exposed by              
+// the CoClass VbGlueInvocationResult. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoVbGlueInvocationResult = class
     class function Create: IGlueInvocationResult;
     class function CreateRemote(const MachineName: string): IGlueInvocationResult;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueMethodInvocator provides a Create and CreateRemote method to
-// create instances of the default interface IGlueMethodInvocator exposed by
-// the CoClass GlueMethodInvocator. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TVbGlueInvocationResult
+// Help String      : 
+// Default Interface: IGlueInvocationResult
+// Def. Intf. DISP? : Yes
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TVbGlueInvocationResult = class(TOleServer)
+  private
+    FIntf: IGlueInvocationResult;
+    function GetDefaultInterface: IGlueInvocationResult;
+  protected
+    procedure InitServerData; override;
+    function Get_correlationId: WideString;
+    function Get_Results: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueInvocationResult);
+    procedure Disconnect; override;
+    property DefaultInterface: IGlueInvocationResult read GetDefaultInterface;
+    property correlationId: WideString read Get_correlationId;
+    property Results: {NOT_OLEAUTO(PSafeArray)}OleVariant read Get_Results;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueMethodInvocator provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueMethodInvocator exposed by              
+// the CoClass GlueMethodInvocator. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueMethodInvocator = class
     class function Create: IGlueMethodInvocator;
     class function CreateRemote(const MachineName: string): IGlueMethodInvocator;
   end;
 
+  TGlueMethodInvocatorHandleInvocationResult = procedure(ASender: TObject; const invocationResult: IGlueInvocationResult) of object;
+
+
 // *********************************************************************//
-// The Class CoVBGlueStreamSubscriber provides a Create and CreateRemote method to
-// create instances of the default interface IVBGlueStreamSubscriber exposed by
-// the CoClass VBGlueStreamSubscriber. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueMethodInvocator
+// Help String      : 
+// Default Interface: IGlueMethodInvocator
+// Def. Intf. DISP? : Yes
+// Event   Interface: IGlueMethodInvocatorEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueMethodInvocator = class(TOleServer)
+  private
+    FOnHandleInvocationResult: TGlueMethodInvocatorHandleInvocationResult;
+    FIntf: IGlueMethodInvocator;
+    function GetDefaultInterface: IGlueMethodInvocator;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueMethodInvocator);
+    procedure Disconnect; override;
+    procedure InvokeAsync(const method: WideString; const targetRegex: WideString; 
+                          args: OleVariant; all: WordBool; const correlationId: WideString; 
+                          timeoutMsecs: Integer);
+    function InvokeSync(const method: WideString; const targetRegex: WideString; args: OleVariant; 
+                        all: WordBool; timeoutMsecs: Integer): OleVariant;
+    property DefaultInterface: IGlueMethodInvocator read GetDefaultInterface;
+  published
+    property OnHandleInvocationResult: TGlueMethodInvocatorHandleInvocationResult read FOnHandleInvocationResult write FOnHandleInvocationResult;
+  end;
+
+// *********************************************************************//
+// The Class CoVBGlueStreamSubscriber provides a Create and CreateRemote method to          
+// create instances of the default interface IVBGlueStreamSubscriber exposed by              
+// the CoClass VBGlueStreamSubscriber. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoVBGlueStreamSubscriber = class
     class function Create: IVBGlueStreamSubscriber;
     class function CreateRemote(const MachineName: string): IVBGlueStreamSubscriber;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueInvocationRequest provides a Create and CreateRemote method to
-// create instances of the default interface IGlueInvocationRequest exposed by
-// the CoClass GlueInvocationRequest. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TVBGlueStreamSubscriber
+// Help String      : 
+// Default Interface: IVBGlueStreamSubscriber
+// Def. Intf. DISP? : Yes
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TVBGlueStreamSubscriber = class(TOleServer)
+  private
+    FIntf: IVBGlueStreamSubscriber;
+    function GetDefaultInterface: IVBGlueStreamSubscriber;
+  protected
+    procedure InitServerData; override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IVBGlueStreamSubscriber);
+    procedure Disconnect; override;
+    function GetStream: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+    function GetSubscriberInstance: {NOT_OLEAUTO(VBGlueInstance)}OleVariant;
+    procedure Push(data: OleVariant);
+    procedure Close(data: OleVariant);
+    property DefaultInterface: IVBGlueStreamSubscriber read GetDefaultInterface;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueInvocationRequest provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueInvocationRequest exposed by              
+// the CoClass GlueInvocationRequest. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueInvocationRequest = class
     class function Create: IGlueInvocationRequest;
     class function CreateRemote(const MachineName: string): IGlueInvocationRequest;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueSubscriptionRequest provides a Create and CreateRemote method to
-// create instances of the default interface IGlueSubscriptionRequest exposed by
-// the CoClass GlueSubscriptionRequest. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueInvocationRequest
+// Help String      : 
+// Default Interface: IGlueInvocationRequest
+// Def. Intf. DISP? : Yes
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueInvocationRequest = class(TOleServer)
+  private
+    FIntf: IGlueInvocationRequest;
+    function GetDefaultInterface: IGlueInvocationRequest;
+  protected
+    procedure InitServerData; override;
+    function Get_method: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+    function Get_Caller: {NOT_OLEAUTO(VBGlueInstance)}OleVariant;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueInvocationRequest);
+    procedure Disconnect; override;
+    function GetReflectData(const fieldPath: WideString): OleVariant;
+    procedure SendResult(result: OleVariant);
+    procedure SendFailure(const Message: WideString; additionalData: OleVariant);
+    property DefaultInterface: IGlueInvocationRequest read GetDefaultInterface;
+    property method: {NOT_OLEAUTO(VBGlueMethod)}OleVariant read Get_method;
+    property Caller: {NOT_OLEAUTO(VBGlueInstance)}OleVariant read Get_Caller;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueSubscriptionRequest provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueSubscriptionRequest exposed by              
+// the CoClass GlueSubscriptionRequest. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueSubscriptionRequest = class
     class function Create: IGlueSubscriptionRequest;
     class function CreateRemote(const MachineName: string): IGlueSubscriptionRequest;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueStreamSubscription provides a Create and CreateRemote method to
-// create instances of the default interface IGlueStreamSubscription exposed by
-// the CoClass GlueStreamSubscription. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueSubscriptionRequest
+// Help String      : 
+// Default Interface: IGlueSubscriptionRequest
+// Def. Intf. DISP? : Yes
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueSubscriptionRequest = class(TOleServer)
+  private
+    FIntf: IGlueSubscriptionRequest;
+    function GetDefaultInterface: IGlueSubscriptionRequest;
+  protected
+    procedure InitServerData; override;
+    function Get_stream: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+    function Get_Requester: {NOT_OLEAUTO(VBGlueInstance)}OleVariant;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueSubscriptionRequest);
+    procedure Disconnect; override;
+    function GetReflectData(const fieldPath: WideString): OleVariant;
+    function Accept(const branch: WideString; aresult: OleVariant): IGlueStreamBranch;
+    procedure Reject(result: OleVariant);
+    property DefaultInterface: IGlueSubscriptionRequest read GetDefaultInterface;
+    property stream: {NOT_OLEAUTO(VBGlueMethod)}OleVariant read Get_stream;
+    property Requester: {NOT_OLEAUTO(VBGlueInstance)}OleVariant read Get_Requester;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueStreamSubscription provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueStreamSubscription exposed by              
+// the CoClass GlueStreamSubscription. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueStreamSubscription = class
     class function Create: IGlueStreamSubscription;
     class function CreateRemote(const MachineName: string): IGlueStreamSubscription;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueServerStream provides a Create and CreateRemote method to
-// create instances of the default interface IGlueServerStream exposed by
-// the CoClass GlueServerStream. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueStreamSubscription
+// Help String      : 
+// Default Interface: IGlueStreamSubscription
+// Def. Intf. DISP? : No
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueStreamSubscription = class(TOleServer)
+  private
+    FIntf: IGlueStreamSubscription;
+    function GetDefaultInterface: IGlueStreamSubscription;
+  protected
+    procedure InitServerData; override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueStreamSubscription);
+    procedure Disconnect; override;
+    procedure Close;
+    property DefaultInterface: IGlueStreamSubscription read GetDefaultInterface;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueServerStream provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueServerStream exposed by              
+// the CoClass GlueServerStream. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueServerStream = class
     class function Create: IGlueServerStream;
     class function CreateRemote(const MachineName: string): IGlueServerStream;
   end;
 
+  TGlueServerStreamHandleSubscriptionRequest = procedure(ASender: TObject; const GlueSubscriptionRequest: IGlueSubscriptionRequest) of object;
+  TGlueServerStreamHandleSubscriber = procedure(ASender: TObject; const glueStreamSubscriber: IVBGlueStreamSubscriber; 
+                                                                  const requestValues: IGlueData) of object;
+  TGlueServerStreamHandleSubscriberLost = procedure(ASender: TObject; const glueStreamSubscriber: IVBGlueStreamSubscriber) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueServerMethod provides a Create and CreateRemote method to
-// create instances of the default interface IGlueServerMethod exposed by
-// the CoClass GlueServerMethod. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueServerStream
+// Help String      : 
+// Default Interface: IGlueServerStream
+// Def. Intf. DISP? : Yes
+// Event   Interface: IGlueSubscriptionHandlerEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueServerStream = class(TOleServer)
+  private
+    FOnHandleSubscriptionRequest: TGlueServerStreamHandleSubscriptionRequest;
+    FOnHandleSubscriber: TGlueServerStreamHandleSubscriber;
+    FOnHandleSubscriberLost: TGlueServerStreamHandleSubscriberLost;
+    FIntf: IGlueServerStream;
+    function GetDefaultInterface: IGlueServerStream;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+    function Get_Definition: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueServerStream);
+    procedure Disconnect; override;
+    procedure Push(data: {NOT_OLEAUTO(PSafeArray)}OleVariant; const branch: WideString);
+    procedure CloseBranch(const branch: WideString);
+    procedure CloseStream;
+    function GetBranchKeys: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+    function GetBranch(const branchKey: WideString): IGlueStreamBranch;
+    procedure Register;
+    procedure Unregister;
+    procedure PushVariantData(data: OleVariant; const branch: WideString);
+    property DefaultInterface: IGlueServerStream read GetDefaultInterface;
+    property Definition: {NOT_OLEAUTO(VBGlueMethod)}OleVariant read Get_Definition;
+  published
+    property OnHandleSubscriptionRequest: TGlueServerStreamHandleSubscriptionRequest read FOnHandleSubscriptionRequest write FOnHandleSubscriptionRequest;
+    property OnHandleSubscriber: TGlueServerStreamHandleSubscriber read FOnHandleSubscriber write FOnHandleSubscriber;
+    property OnHandleSubscriberLost: TGlueServerStreamHandleSubscriberLost read FOnHandleSubscriberLost write FOnHandleSubscriberLost;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueServerMethod provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueServerMethod exposed by              
+// the CoClass GlueServerMethod. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueServerMethod = class
     class function Create: IGlueServerMethod;
     class function CreateRemote(const MachineName: string): IGlueServerMethod;
   end;
 
+  TGlueServerMethodHandleInvocationRequest = procedure(ASender: TObject; const GlueInvocationRequest: IGlueInvocationRequest) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueIntentsManager provides a Create and CreateRemote method to
-// create instances of the default interface IGlueIntentsManager exposed by
-// the CoClass GlueIntentsManager. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueServerMethod
+// Help String      : 
+// Default Interface: IGlueServerMethod
+// Def. Intf. DISP? : Yes
+// Event   Interface: IGlueServerMethodEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueServerMethod = class(TOleServer)
+  private
+    FOnHandleInvocationRequest: TGlueServerMethodHandleInvocationRequest;
+    FIntf: IGlueServerMethod;
+    function GetDefaultInterface: IGlueServerMethod;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+    function Get_Definition: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueServerMethod);
+    procedure Disconnect; override;
+    procedure Register;
+    procedure Unregister;
+    property DefaultInterface: IGlueServerMethod read GetDefaultInterface;
+    property Definition: {NOT_OLEAUTO(VBGlueMethod)}OleVariant read Get_Definition;
+  published
+    property OnHandleInvocationRequest: TGlueServerMethodHandleInvocationRequest read FOnHandleInvocationRequest write FOnHandleInvocationRequest;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueIntentsManager provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueIntentsManager exposed by              
+// the CoClass GlueIntentsManager. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueIntentsManager = class
     class function Create: IGlueIntentsManager;
     class function CreateRemote(const MachineName: string): IGlueIntentsManager;
   end;
 
+  TGlueIntentsManagerHandleIntentDefinition = procedure(ASender: TObject; const intentName: WideString; 
+                                                                          const intentHandler: WideString; 
+                                                                          const contextTypesCSV: WideString; 
+                                                                          enabled: WordBool) of object;
+  TGlueIntentsManagerHandleIntentRaiseResult = procedure(ASender: TObject; const intentName: WideString; 
+                                                                           const correlationId: WideString; 
+                                                                           success: WordBool; 
+                                                                           const Message: WideString) of object;
+  TGlueIntentsManagerHandleIntentRequest = procedure(ASender: TObject; const intentName: WideString; 
+                                                                       const Type_: WideString; 
+                                                                       const requestValue: IGlueValueCollection) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueWindow provides a Create and CreateRemote method to
-// create instances of the default interface IGlueWindow exposed by
-// the CoClass GlueWindow. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueIntentsManager
+// Help String      : 
+// Default Interface: IGlueIntentsManager
+// Def. Intf. DISP? : No
+// Event   Interface: IGlueIntentsManagerEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueIntentsManager = class(TOleServer)
+  private
+    FOnHandleIntentDefinition: TGlueIntentsManagerHandleIntentDefinition;
+    FOnHandleIntentRaiseResult: TGlueIntentsManagerHandleIntentRaiseResult;
+    FOnHandleIntentRequest: TGlueIntentsManagerHandleIntentRequest;
+    FIntf: IGlueIntentsManager;
+    function GetDefaultInterface: IGlueIntentsManager;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueIntentsManager);
+    procedure Disconnect; override;
+    procedure RaiseIntent(const intentName: WideString; const contextType: WideString; 
+                          Values: PSafeArray; const handler: WideString; 
+                          const correlationId: WideString);
+    procedure RaiseIntentWithJson(const intentName: WideString; const contextType: WideString; 
+                                  const json: WideString; const handler: WideString; 
+                                  const correlationId: WideString);
+    procedure RaiseIntentWithDynamicValue(const intentName: WideString; 
+                                          const contextType: WideString; 
+                                          const dv: IGlueValueCollection; 
+                                          const handler: WideString; const correlationId: WideString);
+    procedure RegisterIntent(const intentName: WideString; const displayName: WideString; 
+                             const description: WideString; const contextTypesCSV: WideString);
+    property DefaultInterface: IGlueIntentsManager read GetDefaultInterface;
+  published
+    property OnHandleIntentDefinition: TGlueIntentsManagerHandleIntentDefinition read FOnHandleIntentDefinition write FOnHandleIntentDefinition;
+    property OnHandleIntentRaiseResult: TGlueIntentsManagerHandleIntentRaiseResult read FOnHandleIntentRaiseResult write FOnHandleIntentRaiseResult;
+    property OnHandleIntentRequest: TGlueIntentsManagerHandleIntentRequest read FOnHandleIntentRequest write FOnHandleIntentRequest;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueWindow provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueWindow exposed by              
+// the CoClass GlueWindow. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueWindow = class
     class function Create: IGlueWindow;
     class function CreateRemote(const MachineName: string): IGlueWindow;
   end;
 
+  TGlueWindowHandleWindowReady = procedure(ASender: TObject; const GlueWindow: IGlueWindow) of object;
+  TGlueWindowHandleChannelData = procedure(ASender: TObject; const GlueWindow: IGlueWindow; 
+                                                             const channelUpdate: IGlueContextUpdate) of object;
+  TGlueWindowHandleChannelChanged = procedure(ASender: TObject; const GlueWindow: IGlueWindow; 
+                                                                const Channel: IGlueContext; 
+                                                                const prevChannelName: WideString) of object;
+  TGlueWindowHandleWindowDestroyed = procedure(ASender: TObject; const GlueWindow: IGlueWindow) of object;
+  TGlueWindowHandleWindowEvent = procedure(ASender: TObject; const GlueWindow: IGlueWindow; 
+                                                             eventType: GlueWindowEventType; 
+                                                             const eventData: IGlueValueCollection) of object;
+
+
 // *********************************************************************//
-// The Class CoGlue42 provides a Create and CreateRemote method to
-// create instances of the default interface IGlue42 exposed by
-// the CoClass Glue42. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueWindow
+// Help String      : 
+// Default Interface: IGlueWindow
+// Def. Intf. DISP? : No
+// Event   Interface: IGlueWindowEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueWindow = class(TOleServer)
+  private
+    FOnHandleWindowReady: TGlueWindowHandleWindowReady;
+    FOnHandleChannelData: TGlueWindowHandleChannelData;
+    FOnHandleChannelChanged: TGlueWindowHandleChannelChanged;
+    FOnHandleWindowDestroyed: TGlueWindowHandleWindowDestroyed;
+    FOnHandleWindowEvent: TGlueWindowHandleWindowEvent;
+    FIntf: IGlueWindow;
+    function GetDefaultInterface: IGlueWindow;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueWindow);
+    procedure Disconnect; override;
+    function GetId: WideString;
+    function IsVisible: WordBool;
+    procedure SetVisible(visible: WordBool);
+    function GetTitle: WideString;
+    procedure SetTitle(const Title: WideString);
+    function GetChannelSupport: WordBool;
+    procedure SetChannelSupport(showLink: WordBool);
+    procedure Activate;
+    procedure Unregister;
+    function GetChannelContext: IGlueContext;
+    function IsInWorkspace: WordBool;
+    function GetWorkspaceContext: IGlueContext;
+    procedure NavigateWithJson(const url: WideString; const jsonContext: WideString);
+    property DefaultInterface: IGlueWindow read GetDefaultInterface;
+  published
+    property OnHandleWindowReady: TGlueWindowHandleWindowReady read FOnHandleWindowReady write FOnHandleWindowReady;
+    property OnHandleChannelData: TGlueWindowHandleChannelData read FOnHandleChannelData write FOnHandleChannelData;
+    property OnHandleChannelChanged: TGlueWindowHandleChannelChanged read FOnHandleChannelChanged write FOnHandleChannelChanged;
+    property OnHandleWindowDestroyed: TGlueWindowHandleWindowDestroyed read FOnHandleWindowDestroyed write FOnHandleWindowDestroyed;
+    property OnHandleWindowEvent: TGlueWindowHandleWindowEvent read FOnHandleWindowEvent write FOnHandleWindowEvent;
+  end;
+
+// *********************************************************************//
+// The Class CoGlue42 provides a Create and CreateRemote method to          
+// create instances of the default interface IGlue42 exposed by              
+// the CoClass Glue42. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlue42 = class
     class function Create: IGlue42;
     class function CreateRemote(const MachineName: string): IGlue42;
   end;
 
+  TGlue42OnGlueVariantResponse = procedure(ASender: TObject; const correlationId: WideString; 
+                                                             data: OleVariant) of object;
+  TGlue42OnGlueVariantInvoke = procedure(ASender: TObject; const correlationId: WideString; 
+                                                           data: OleVariant; 
+                                                           const callbackId: WideString) of object;
+  TGlue42OnGlueResponse = procedure(ASender: TObject; const correlationId: WideString; 
+                                                      const jsonData: WideString) of object;
+  TGlue42OnGlueInvoke = procedure(ASender: TObject; const correlationId: WideString; 
+                                                    const jsonData: WideString; 
+                                                    const callbackId: WideString) of object;
+  TGlue42OnConnectionStatus = procedure(ASender: TObject; const state: WideString; 
+                                                          const Message: WideString; date: Double) of object;
+  TGlue42OnInstanceStatus = procedure(ASender: TObject; const Instance: WideString; active: WordBool) of object;
+  TGlue42OnMethodStatus = procedure(ASender: TObject; const Instance: WideString; 
+                                                      const method: WideString; active: WordBool) of object;
+  TGlue42OnGlueContext = procedure(ASender: TObject; const context: WideString; created: WordBool) of object;
+  TGlue42OnException = procedure(ASender: TObject; const Message: WideString; 
+                                                   const ex: IGlueValueCollection) of object;
+  TGlue42OnGlueState = procedure(ASender: TObject; active: WordBool; const Message: WideString; 
+                                                   date: Double) of object;
+
+
 // *********************************************************************//
-// The Class CoEventSinkAppFactory provides a Create and CreateRemote method to
-// create instances of the default interface IEventSinkAppFactory exposed by
-// the CoClass EventSinkAppFactory. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlue42
+// Help String      : 
+// Default Interface: IGlue42
+// Def. Intf. DISP? : No
+// Event   Interface: IGlueEventSink
+// TypeFlags        : (2) CanCreate
+// *********************************************************************//
+  TGlue42 = class(TOleServer)
+  private
+    FOnGlueVariantResponse: TGlue42OnGlueVariantResponse;
+    FOnGlueVariantInvoke: TGlue42OnGlueVariantInvoke;
+    FOnGlueResponse: TGlue42OnGlueResponse;
+    FOnGlueInvoke: TGlue42OnGlueInvoke;
+    FOnConnectionStatus: TGlue42OnConnectionStatus;
+    FOnInstanceStatus: TGlue42OnInstanceStatus;
+    FOnMethodStatus: TGlue42OnMethodStatus;
+    FOnGlueContext: TGlue42OnGlueContext;
+    FOnException: TGlue42OnException;
+    FOnBindLifetimeEvent: TNotifyEvent;
+    FOnGlueState: TGlue42OnGlueState;
+    FIntf: IGlue42;
+    function GetDefaultInterface: IGlue42;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+    function Get_AppFactoryRegistry: IAppFactoryRegistry;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlue42);
+    procedure Disconnect; override;
+    procedure OverrideConfiguration(configuration: GlueConfiguration);
+    procedure Start(Instance: GlueInstance);
+    function TranslateVbObject(data: OleVariant): OleVariant;
+    procedure SetLogConfigurationPath(const logConfigPath: WideString);
+    procedure StartWithAppName(const ApplicationName: WideString);
+    procedure Stop;
+    function RegisterGlueWindow(hwnd: Integer; const windowEventHandler: IGlueWindowEventHandler): IGlueWindow;
+    function RegisterStartupGlueWindow(hwnd: Integer; 
+                                       const windowEventHandler: IGlueWindowEventHandler): IGlueWindow;
+    function CreateDefaultVBGlueWindowSettings: IGlueWindowSettings;
+    function GetStartupWindowSettings: IGlueWindowSettings;
+    function RegisterGlueWindowWithSettings(hwnd: Integer; const settings: IGlueWindowSettings; 
+                                            const windowEventHandler: IGlueWindowEventHandler): IGlueWindow;
+    function RegisterStartupGlueWindowWithSettings(hwnd: Integer; 
+                                                   const settings: IGlueWindowSettings; 
+                                                   const windowEventHandler: IGlueWindowEventHandler): IGlueWindow;
+    function GetInstance: GlueInstance;
+    function CreateGlueValues: OleVariant;
+    function CreateGlueData(data: OleVariant): IGlueData;
+    function GetKnownContexts: PSafeArray;
+    procedure SubscribeGlueContext(const contextName: WideString; const handler: IGlueContextHandler);
+    function GetGlueContext(const contextName: WideString): IGlueContext;
+    function GetAllInstances: PSafeArray;
+    function GetAllMethods: PSafeArray;
+    function GetMethodsForInstance(Instance: GlueInstance; identity: GlueInstanceIdentity): PSafeArray;
+    procedure Subscribe(const handler: IGlueEvents);
+    procedure Unsubscribe(const handler: IGlueEvents);
+    function BuildGlueContextValues(const contextBuilderCallback: IGlueContextBuilderCallback): PSafeArray;
+    function RegisterMethod(const methodName: WideString; 
+                            const requestHandler: IGlueRequestHandler; const Input: WideString; 
+                            const Output: WideString; ObjectTypes: PSafeArray): GlueMethod;
+    function CreateServerMethod(const methodName: WideString; const Input: WideString; 
+                                const Output: WideString; const objectTypesCSV: WideString): IGlueServerMethod;
+    function CreateServerStream(const streamName: WideString; const Input: WideString; 
+                                const Output: WideString; const objectTypesCSV: WideString): IGlueServerStream;
+    function CreateMethodInvocator: IGlueMethodInvocator;
+    function CreateStreamConsumer: IGlueStreamConsumer;
+    function RegisterStream(const streamName: WideString; 
+                            const subscriptionHandler: IGlueSubscriptionHandler; 
+                            const Input: WideString; const Output: WideString; 
+                            ObjectTypes: PSafeArray; out stream: IGlueStream): GlueMethod;
+    procedure UnregisterMethod(method: GlueMethod);
+    procedure BuildAndInvoke(const method: WideString; 
+                             const builderCallback: IGlueContextBuilderCallback; 
+                             targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity; 
+                             const resultHandler: IGlueInvocationResultHandler; 
+                             invocationTimeoutMsecs: Int64; const correlationId: WideString);
+    procedure InvokeMethods(const method: WideString; invocationArgs: PSafeArray; 
+                            targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity; 
+                            const resultHandler: IGlueInvocationResultHandler; 
+                            invocationTimeoutMsecs: Int64; const correlationId: WideString);
+    procedure InvokeMethod(method: GlueMethod; invocationArgs: PSafeArray; 
+                           const resultHandler: IGlueInvocationResultHandler; 
+                           invocationTimeoutMsecs: Int64; const correlationId: WideString);
+    procedure SubscribeStreams(const streamName: WideString; subscriptionRequestArgs: PSafeArray; 
+                               targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity; 
+                               const streamHandler: IGlueStreamHandler; 
+                               invocationTimeoutMsecs: Int64);
+    procedure SubscribeStreamsFilterTargets(const streamName: WideString; 
+                                            subscriptionRequestArgs: PSafeArray; 
+                                            const targetRegex: WideString; all: WordBool; 
+                                            const streamHandler: IGlueStreamHandler; 
+                                            invocationTimeoutMsecs: Int64);
+    procedure SubscribeStream(stream: GlueMethod; subscriptionRequestArgs: PSafeArray; 
+                              const streamHandler: IGlueStreamHandler; 
+                              subscriptionTimeoutMsecs: Int64);
+    function InvokeSync(const methodName: WideString; const argsAsJson: WideString; 
+                        const resultFieldPath: WideString; const targetRegex: WideString): WideString;
+    procedure InvokeAsync(const correlationId: WideString; const methodName: WideString; 
+                          const argsAsJson: WideString; const resultFieldPath: WideString; 
+                          const targetRegex: WideString);
+    procedure SubscribeStreamInSink(const correlationId: WideString; const streamName: WideString; 
+                                    const argsAsJson: WideString; 
+                                    const resultFieldPath: WideString; 
+                                    const targetRegex: WideString; 
+                                    const filterFieldPath: WideString; 
+                                    const filterDataRegex: WideString);
+    procedure RegisterMethodInSink(const correlationId: WideString; const methodName: WideString; 
+                                   const inputSignature: WideString; 
+                                   const outputSignature: WideString; ObjectTypes: PSafeArray; 
+                                   const invocationFieldPath: WideString; 
+                                   const targetRegex: WideString; 
+                                   const filterFieldPath: WideString; 
+                                   const filterDataRegex: WideString);
+    procedure RegisterVariantMethodInSink(const correlationId: WideString; 
+                                          const methodName: WideString; 
+                                          const inputSignature: WideString; 
+                                          const outputSignature: WideString; 
+                                          ObjectTypes: PSafeArray; 
+                                          const invocationFieldPath: WideString; 
+                                          const targetRegex: WideString; 
+                                          const filterFieldPath: WideString; 
+                                          const filterDataRegex: WideString);
+    procedure RegisterVoidMethodInSink(const correlationId: WideString; 
+                                       const methodName: WideString; 
+                                       const inputSignature: WideString; ObjectTypes: PSafeArray; 
+                                       const invocationFieldPath: WideString; 
+                                       const targetRegex: WideString; 
+                                       const filterFieldPath: WideString; 
+                                       const filterDataRegex: WideString);
+    procedure RegisterSingleBranchStream(const correlationId: WideString; 
+                                         const streamName: WideString; 
+                                         const requestSignature: WideString; 
+                                         const streamSignature: WideString);
+    procedure AddCorrelationInterest(const correlationId: WideString; const interestId: WideString; 
+                                     const fieldPath: WideString; 
+                                     const filterFieldPath: WideString; 
+                                     const filterDataRegex: WideString);
+    procedure RegisterStreamInSink(const correlationId: WideString; const streamName: WideString; 
+                                   const requestSignature: WideString; 
+                                   const streamSignature: WideString; 
+                                   const requestFieldPath: WideString; 
+                                   const targetRegex: WideString; 
+                                   const filterFieldPath: WideString; 
+                                   const filterDataRegex: WideString);
+    procedure YieldCallbackData(const correlationId: WideString; const callbackId: WideString; 
+                                const callbackData: WideString);
+    procedure YieldCallbackVariantData(const correlationId: WideString; 
+                                       const callbackId: WideString; callbackData: OleVariant);
+    procedure RegisterGlueWindowInSink(const correlationId: WideString; const hwnd: WideString; 
+                                       const glueWindowOptionsJson: WideString);
+    function JsonToVariant(const json: WideString): PSafeArray;
+    procedure CloseResource(const correlationId: WideString);
+    function GetMethodNamesForTarget(const targetRegex: WideString): PSafeArray;
+    function GetTargets: PSafeArray;
+    function GetChannels: PSafeArray;
+    procedure InvokeAsyncVariantData(const correlationId: WideString; const methodName: WideString; 
+                                     args: OleVariant; const resultFieldPath: WideString; 
+                                     const targetRegex: WideString);
+    procedure SubscribeChannel(const correlationId: WideString; const Channel: WideString; 
+                               const resultFieldPath: WideString);
+    procedure SetChannelData(const Channel: WideString; const fieldPath: WideString; 
+                             const data: WideString);
+    procedure G4O_XL_OpenSheet(const correlationId: WideString; const sheetName: WideString; 
+                               columnNames: PSafeArray; columnValidationTypes: PSafeArray; 
+                               data: OleVariant);
+    procedure Log(level: Byte; const Message: WideString);
+    function GetState: GlueState;
+    function IsLaunchedByGD: WordBool;
+    function GetStartingContext: GlueValue;
+    procedure OverrideConfigurationJson(const json: WideString);
+    procedure UpdateEventSinkSubscription(const eventName: WideString; enable: WordBool);
+    function GetLibraryVersion: WideString;
+    function GetGDInfo: WideString;
+    function CreateIntentsManager: IGlueIntentsManager;
+    procedure InvokeMethodsWithJson(const method: WideString; const invocationArgs: WideString; 
+                                    targets: PSafeArray; all: WordBool; 
+                                    identity: GlueInstanceIdentity; 
+                                    const resultHandler: IGlueInvocationResultHandler; 
+                                    invocationTimeoutMsecs: Int64; const correlationId: WideString);
+    function GetValueByFieldPath(Values: PSafeArray; const fieldPath: WideString): GlueValue;
+    function CreateAppManager: IGlueAppManager;
+    function GetGlueDynamicValueByFieldPath(variant: OleVariant; const fieldPath: WideString): IGlueValueCollection;
+    function GetAllInstancesVB: PSafeArray;
+    property DefaultInterface: IGlue42 read GetDefaultInterface;
+    property AppFactoryRegistry: IAppFactoryRegistry read Get_AppFactoryRegistry;
+  published
+    property OnGlueVariantResponse: TGlue42OnGlueVariantResponse read FOnGlueVariantResponse write FOnGlueVariantResponse;
+    property OnGlueVariantInvoke: TGlue42OnGlueVariantInvoke read FOnGlueVariantInvoke write FOnGlueVariantInvoke;
+    property OnGlueResponse: TGlue42OnGlueResponse read FOnGlueResponse write FOnGlueResponse;
+    property OnGlueInvoke: TGlue42OnGlueInvoke read FOnGlueInvoke write FOnGlueInvoke;
+    property OnConnectionStatus: TGlue42OnConnectionStatus read FOnConnectionStatus write FOnConnectionStatus;
+    property OnInstanceStatus: TGlue42OnInstanceStatus read FOnInstanceStatus write FOnInstanceStatus;
+    property OnMethodStatus: TGlue42OnMethodStatus read FOnMethodStatus write FOnMethodStatus;
+    property OnGlueContext: TGlue42OnGlueContext read FOnGlueContext write FOnGlueContext;
+    property OnException: TGlue42OnException read FOnException write FOnException;
+    property OnBindLifetimeEvent: TNotifyEvent read FOnBindLifetimeEvent write FOnBindLifetimeEvent;
+    property OnGlueState: TGlue42OnGlueState read FOnGlueState write FOnGlueState;
+  end;
+
+// *********************************************************************//
+// The Class CoEventSinkAppFactory provides a Create and CreateRemote method to          
+// create instances of the default interface IEventSinkAppFactory exposed by              
+// the CoClass EventSinkAppFactory. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoEventSinkAppFactory = class
     class function Create: IEventSinkAppFactory;
     class function CreateRemote(const MachineName: string): IEventSinkAppFactory;
   end;
 
+  TEventSinkAppFactoryOnCreateApp = procedure(ASender: TObject; const appDefName: WideString; 
+                                                                const state: IGlueValueCollection; 
+                                                                const announcer: IAppAnnouncerInSink) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueAppInSink provides a Create and CreateRemote method to
-// create instances of the default interface IGlueAppInSink exposed by
-// the CoClass GlueAppInSink. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TEventSinkAppFactory
+// Help String      : 
+// Default Interface: IEventSinkAppFactory
+// Def. Intf. DISP? : No
+// Event   Interface: IAppFactoryEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TEventSinkAppFactory = class(TOleServer)
+  private
+    FOnCreateApp: TEventSinkAppFactoryOnCreateApp;
+    FIntf: IEventSinkAppFactory;
+    function GetDefaultInterface: IEventSinkAppFactory;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IEventSinkAppFactory);
+    procedure Disconnect; override;
+    property DefaultInterface: IEventSinkAppFactory read GetDefaultInterface;
+  published
+    property OnCreateApp: TEventSinkAppFactoryOnCreateApp read FOnCreateApp write FOnCreateApp;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueAppInSink provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueAppInSink exposed by              
+// the CoClass GlueAppInSink. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueAppInSink = class
     class function Create: IGlueAppInSink;
     class function CreateRemote(const MachineName: string): IGlueAppInSink;
   end;
 
+  TGlueAppInSinkOnInitialize = procedure(ASender: TObject; hwnd: Integer; 
+                                                           const state: IGlueValueCollection; 
+                                                           const GlueWindow: IGlueWindow) of object;
+  TGlueAppInSinkOnSaveState = procedure(ASender: TObject; hwnd: Integer; 
+                                                          const receiver: IGlueDynamicValueReceiver) of object;
+  TGlueAppInSinkOnShutdown = procedure(ASender: TObject; hwnd: Integer) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueApplicationInstance provides a Create and CreateRemote method to
-// create instances of the default interface IGlueApplicationInstance exposed by
-// the CoClass GlueApplicationInstance. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueAppInSink
+// Help String      : 
+// Default Interface: IGlueAppInSink
+// Def. Intf. DISP? : No
+// Event   Interface: IGlueAppSinkEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueAppInSink = class(TOleServer)
+  private
+    FOnInitialize: TGlueAppInSinkOnInitialize;
+    FOnSaveState: TGlueAppInSinkOnSaveState;
+    FOnShutdown: TGlueAppInSinkOnShutdown;
+    FIntf: IGlueAppInSink;
+    function GetDefaultInterface: IGlueAppInSink;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueAppInSink);
+    procedure Disconnect; override;
+    function GetWindow: IGlueWindow;
+    property DefaultInterface: IGlueAppInSink read GetDefaultInterface;
+  published
+    property OnInitialize: TGlueAppInSinkOnInitialize read FOnInitialize write FOnInitialize;
+    property OnSaveState: TGlueAppInSinkOnSaveState read FOnSaveState write FOnSaveState;
+    property OnShutdown: TGlueAppInSinkOnShutdown read FOnShutdown write FOnShutdown;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueApplicationInstance provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueApplicationInstance exposed by              
+// the CoClass GlueApplicationInstance. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueApplicationInstance = class
     class function Create: IGlueApplicationInstance;
     class function CreateRemote(const MachineName: string): IGlueApplicationInstance;
   end;
 
+  TGlueApplicationInstanceOnAppInstanceEvent = procedure(ASender: TObject; const Instance: IGlueApplicationInstance; 
+                                                                           started: WordBool; 
+                                                                           success: WordBool; 
+                                                                           const Message: WideString) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueApplication provides a Create and CreateRemote method to
-// create instances of the default interface IGlueApplication exposed by
-// the CoClass GlueApplication. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueApplicationInstance
+// Help String      : 
+// Default Interface: IGlueApplicationInstance
+// Def. Intf. DISP? : No
+// Event   Interface: IGlueApplicationInstanceEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueApplicationInstance = class(TOleServer)
+  private
+    FOnAppInstanceEvent: TGlueApplicationInstanceOnAppInstanceEvent;
+    FIntf: IGlueApplicationInstance;
+    function GetDefaultInterface: IGlueApplicationInstance;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+    function Get_GlueApplication: IGlueApplication;
+    function Get_Id: WideString;
+    function Get_Name: WideString;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueApplicationInstance);
+    procedure Disconnect; override;
+    procedure Subscribe(const handler: IGlueApplicationInstanceEventHandler);
+    procedure Unsubscribe(const handler: IGlueApplicationInstanceEventHandler);
+    procedure Start(context: OleVariant);
+    procedure StartWithJson(const json: WideString);
+    procedure Stop;
+    function IsRunning: WordBool;
+    function GetWindows: PSafeArray;
+    property DefaultInterface: IGlueApplicationInstance read GetDefaultInterface;
+    property GlueApplication: IGlueApplication read Get_GlueApplication;
+    property Id: WideString read Get_Id;
+    property Name: WideString read Get_Name;
+  published
+    property OnAppInstanceEvent: TGlueApplicationInstanceOnAppInstanceEvent read FOnAppInstanceEvent write FOnAppInstanceEvent;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueApplication provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueApplication exposed by              
+// the CoClass GlueApplication. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueApplication = class
     class function Create: IGlueApplication;
     class function CreateRemote(const MachineName: string): IGlueApplication;
   end;
 
+  TGlueApplicationOnApplicationDefinition = procedure(ASender: TObject; const application: IGlueApplication; 
+                                                                        announced: WordBool) of object;
+  TGlueApplicationOnApplicationInstance = procedure(ASender: TObject; const application: IGlueApplication; 
+                                                                      const correlationId: WideString; 
+                                                                      const Id: WideString; 
+                                                                      started: WordBool; 
+                                                                      const Message: WideString; 
+                                                                      const Instance: IGlueApplicationInstance) of object;
+  TGlueApplicationOnMessage = procedure(ASender: TObject; const application: IGlueApplication; 
+                                                          const correlationId: WideString; 
+                                                          success: WordBool; 
+                                                          const Message: WideString) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueAppManager provides a Create and CreateRemote method to
-// create instances of the default interface IGlueAppManager exposed by
-// the CoClass GlueAppManager. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueApplication
+// Help String      : 
+// Default Interface: IGlueApplication
+// Def. Intf. DISP? : No
+// Event   Interface: IGlueApplicationEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueApplication = class(TOleServer)
+  private
+    FOnApplicationDefinition: TGlueApplicationOnApplicationDefinition;
+    FOnApplicationInstance: TGlueApplicationOnApplicationInstance;
+    FOnMessage: TGlueApplicationOnMessage;
+    FIntf: IGlueApplication;
+    function GetDefaultInterface: IGlueApplication;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+    function Get_Name: WideString;
+    function Get_Caption: WideString;
+    function Get_Title: WideString;
+    function Get_IsHidden: WordBool;
+    function Get_AppType: WideString;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueApplication);
+    procedure Disconnect; override;
+    function IsAnnounced: WordBool;
+    function WaitAnnounced(msecs: Integer): WordBool;
+    function GetInstances: PSafeArray;
+    function CreateInstance: IGlueApplicationInstance;
+    procedure Subscribe(const handler: IGlueApplicationEventHandler);
+    procedure Unsubscribe(const handler: IGlueApplicationEventHandler);
+    procedure Start(const correlationId: WideString; context: OleVariant; startTimeoutMsecs: Integer);
+    procedure StartWithJson(const correlationId: WideString; const json: WideString; 
+                            startTimeoutMsecs: Integer);
+    procedure Stop(const InstanceId: WideString; const correlationId: WideString);
+    property DefaultInterface: IGlueApplication read GetDefaultInterface;
+    property Name: WideString read Get_Name;
+    property Caption: WideString read Get_Caption;
+    property Title: WideString read Get_Title;
+    property IsHidden: WordBool read Get_IsHidden;
+    property AppType: WideString read Get_AppType;
+  published
+    property OnApplicationDefinition: TGlueApplicationOnApplicationDefinition read FOnApplicationDefinition write FOnApplicationDefinition;
+    property OnApplicationInstance: TGlueApplicationOnApplicationInstance read FOnApplicationInstance write FOnApplicationInstance;
+    property OnMessage: TGlueApplicationOnMessage read FOnMessage write FOnMessage;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueAppManager provides a Create and CreateRemote method to          
+// create instances of the default interface IGlueAppManager exposed by              
+// the CoClass GlueAppManager. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueAppManager = class
     class function Create: IGlueAppManager;
     class function CreateRemote(const MachineName: string): IGlueAppManager;
   end;
 
+  TGlueAppManagerOnApplicationDefinition = procedure(ASender: TObject; const appName: WideString; 
+                                                                       added: WordBool) of object;
+  TGlueAppManagerOnApplicationInstance = procedure(ASender: TObject; const appName: WideString; 
+                                                                     const correlationId: WideString; 
+                                                                     const Id: WideString; 
+                                                                     started: WordBool; 
+                                                                     const Message: WideString; 
+                                                                     const Instance: IGlueApplicationInstance) of object;
+
+
 // *********************************************************************//
-// The Class CoGlueException provides a Create and CreateRemote method to
-// create instances of the default interface _GlueException exposed by
-// the CoClass GlueException. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueAppManager
+// Help String      : 
+// Default Interface: IGlueAppManager
+// Def. Intf. DISP? : No
+// Event   Interface: IGlueAppManagerEvents
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueAppManager = class(TOleServer)
+  private
+    FOnApplicationDefinition: TGlueAppManagerOnApplicationDefinition;
+    FOnApplicationInstance: TGlueAppManagerOnApplicationInstance;
+    FIntf: IGlueAppManager;
+    function GetDefaultInterface: IGlueAppManager;
+  protected
+    procedure InitServerData; override;
+    procedure InvokeEvent(DispID: TDispID; var Params: TVariantArray); override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: IGlueAppManager);
+    procedure Disconnect; override;
+    procedure Subscribe(const handler: IGlueAppManagerEventHandler);
+    procedure Unsubscribe(const handler: IGlueAppManagerEventHandler);
+    procedure StartApplication(const appName: WideString; const correlationId: WideString; 
+                               context: OleVariant; appDefTimeoutMsecs: Integer; 
+                               startTimeoutMsecs: Integer);
+    procedure StartApplicationWithJson(const appName: WideString; const correlationId: WideString; 
+                                       const json: WideString; appDefTimeoutMsecs: Integer; 
+                                       startTimeoutMsecs: Integer);
+    procedure StopApplication(const correlationId: WideString);
+    function GetApplications: PSafeArray;
+    function GetApplication(const Name: WideString): IGlueApplication;
+    property DefaultInterface: IGlueAppManager read GetDefaultInterface;
+  published
+    property OnApplicationDefinition: TGlueAppManagerOnApplicationDefinition read FOnApplicationDefinition write FOnApplicationDefinition;
+    property OnApplicationInstance: TGlueAppManagerOnApplicationInstance read FOnApplicationInstance write FOnApplicationInstance;
+  end;
+
+// *********************************************************************//
+// The Class CoGlueException provides a Create and CreateRemote method to          
+// create instances of the default interface _GlueException exposed by              
+// the CoClass GlueException. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueException = class
     class function Create: _GlueException;
     class function CreateRemote(const MachineName: string): _GlueException;
   end;
 
+
 // *********************************************************************//
-// The Class CoGlueDynamicValueReceiver provides a Create and CreateRemote method to
-// create instances of the default interface _GlueDynamicValueReceiver exposed by
-// the CoClass GlueDynamicValueReceiver. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueException
+// Help String      : This object holds GlueAgm exceptions
+// Default Interface: _GlueException
+// Def. Intf. DISP? : No
+// Event   Interface: 
+// TypeFlags        : (2) CanCreate
+// *********************************************************************//
+  TGlueException = class(TOleServer)
+  private
+    FIntf: _GlueException;
+    function GetDefaultInterface: _GlueException;
+  protected
+    procedure InitServerData; override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: _GlueException);
+    procedure Disconnect; override;
+    property DefaultInterface: _GlueException read GetDefaultInterface;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoGlueDynamicValueReceiver provides a Create and CreateRemote method to          
+// create instances of the default interface _GlueDynamicValueReceiver exposed by              
+// the CoClass GlueDynamicValueReceiver. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoGlueDynamicValueReceiver = class
     class function Create: _GlueDynamicValueReceiver;
     class function CreateRemote(const MachineName: string): _GlueDynamicValueReceiver;
   end;
 
+
 // *********************************************************************//
-// The Class CoLambdaAnnouncerInSink provides a Create and CreateRemote method to
-// create instances of the default interface _LambdaAnnouncerInSink exposed by
-// the CoClass LambdaAnnouncerInSink. The functions are intended to be used by
-// clients wishing to automate the CoClass objects exposed by the
-// server of this typelibrary.
+// OLE Server Proxy class declaration
+// Server Object    : TGlueDynamicValueReceiver
+// Help String      : 
+// Default Interface: _GlueDynamicValueReceiver
+// Def. Intf. DISP? : No
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TGlueDynamicValueReceiver = class(TOleServer)
+  private
+    FIntf: _GlueDynamicValueReceiver;
+    function GetDefaultInterface: _GlueDynamicValueReceiver;
+  protected
+    procedure InitServerData; override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: _GlueDynamicValueReceiver);
+    procedure Disconnect; override;
+    property DefaultInterface: _GlueDynamicValueReceiver read GetDefaultInterface;
+  published
+  end;
+
+// *********************************************************************//
+// The Class CoLambdaAnnouncerInSink provides a Create and CreateRemote method to          
+// create instances of the default interface _LambdaAnnouncerInSink exposed by              
+// the CoClass LambdaAnnouncerInSink. The functions are intended to be used by             
+// clients wishing to automate the CoClass objects exposed by the         
+// server of this typelibrary.                                            
 // *********************************************************************//
   CoLambdaAnnouncerInSink = class
     class function Create: _LambdaAnnouncerInSink;
     class function CreateRemote(const MachineName: string): _LambdaAnnouncerInSink;
   end;
+
+
+// *********************************************************************//
+// OLE Server Proxy class declaration
+// Server Object    : TLambdaAnnouncerInSink
+// Help String      : 
+// Default Interface: _LambdaAnnouncerInSink
+// Def. Intf. DISP? : No
+// Event   Interface: 
+// TypeFlags        : (0)
+// *********************************************************************//
+  TLambdaAnnouncerInSink = class(TOleServer)
+  private
+    FIntf: _LambdaAnnouncerInSink;
+    function GetDefaultInterface: _LambdaAnnouncerInSink;
+  protected
+    procedure InitServerData; override;
+  public
+    constructor Create(AOwner: TComponent); override;
+    destructor  Destroy; override;
+    procedure Connect; override;
+    procedure ConnectTo(svrIntf: _LambdaAnnouncerInSink);
+    procedure Disconnect; override;
+    property DefaultInterface: _LambdaAnnouncerInSink read GetDefaultInterface;
+  published
+  end;
+
+procedure Register;
+
+resourcestring
+  dtlServerPage = 'ActiveX';
+
+  dtlOcxPage = 'ActiveX';
 
 implementation
 
@@ -2542,6 +3925,71 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueNameValuePair) as IGlueNameValuePair;
 end;
 
+procedure TGlueNameValuePair.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{1D7E88AF-6603-4B94-8EBC-197B50FD6571}';
+    IntfIID:   '{1F8757FA-F806-43E6-A224-6889FD77CEA2}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueNameValuePair.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueNameValuePair;
+  end;
+end;
+
+procedure TGlueNameValuePair.ConnectTo(svrIntf: IGlueNameValuePair);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueNameValuePair.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueNameValuePair.GetDefaultInterface: IGlueNameValuePair;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueNameValuePair.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueNameValuePair.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueNameValuePair.Get_Name: WideString;
+begin
+  Result := DefaultInterface.Name;
+end;
+
+function TGlueNameValuePair.Get_Value: OleVariant;
+begin
+  Result := DefaultInterface.Value;
+end;
+
 class function CoGlueContextUpdate.Create: IGlueContextUpdate;
 begin
   Result := CreateComObject(CLASS_GlueContextUpdate) as IGlueContextUpdate;
@@ -2550,6 +3998,81 @@ end;
 class function CoGlueContextUpdate.CreateRemote(const MachineName: string): IGlueContextUpdate;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueContextUpdate) as IGlueContextUpdate;
+end;
+
+procedure TGlueContextUpdate.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{60B4684E-5853-41F7-821F-51EFEFDD8A45}';
+    IntfIID:   '{FCA1B294-A416-4533-AFAF-3640FDE02B1A}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueContextUpdate.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueContextUpdate;
+  end;
+end;
+
+procedure TGlueContextUpdate.ConnectTo(svrIntf: IGlueContextUpdate);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueContextUpdate.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueContextUpdate.GetDefaultInterface: IGlueContextUpdate;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueContextUpdate.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueContextUpdate.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueContextUpdate.GetContext: IGlueContext;
+begin
+  Result := DefaultInterface.GetContext;
+end;
+
+function TGlueContextUpdate.GetRemoved: PSafeArray;
+begin
+  Result := DefaultInterface.GetRemoved;
+end;
+
+function TGlueContextUpdate.GetAdded: PSafeArray;
+begin
+  Result := DefaultInterface.GetAdded;
+end;
+
+function TGlueContextUpdate.GetUpdated: PSafeArray;
+begin
+  Result := DefaultInterface.GetUpdated;
 end;
 
 class function CoGlueDynamicValueBase.Create: IReflect;
@@ -2562,6 +4085,129 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueDynamicValueBase) as IReflect;
 end;
 
+procedure TGlueDynamicValueBase.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{C4ED0287-3E7D-45E8-A42B-03851CA337EF}';
+    IntfIID:   '{AFBF15E5-C37C-11D2-B88E-00A0C9B471B8}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueDynamicValueBase.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IReflect;
+  end;
+end;
+
+procedure TGlueDynamicValueBase.ConnectTo(svrIntf: IReflect);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueDynamicValueBase.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueDynamicValueBase.GetDefaultInterface: IReflect;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueDynamicValueBase.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueDynamicValueBase.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueDynamicValueBase.Get_UnderlyingSystemType: _Type;
+begin
+  Result := DefaultInterface.UnderlyingSystemType;
+end;
+
+function TGlueDynamicValueBase.GetMethod(const name: WideString; bindingAttr: BindingFlags; 
+                                         const Binder: _Binder; types: PSafeArray; 
+                                         modifiers: PSafeArray): _MethodInfo;
+begin
+  Result := DefaultInterface.GetMethod(name, bindingAttr, Binder, types, modifiers);
+end;
+
+function TGlueDynamicValueBase.GetMethod_2(const name: WideString; bindingAttr: BindingFlags): _MethodInfo;
+begin
+  Result := DefaultInterface.GetMethod_2(name, bindingAttr);
+end;
+
+function TGlueDynamicValueBase.GetMethods(bindingAttr: BindingFlags): PSafeArray;
+begin
+  Result := DefaultInterface.GetMethods(bindingAttr);
+end;
+
+function TGlueDynamicValueBase.GetField(const name: WideString; bindingAttr: BindingFlags): _FieldInfo;
+begin
+  Result := DefaultInterface.GetField(name, bindingAttr);
+end;
+
+function TGlueDynamicValueBase.GetFields(bindingAttr: BindingFlags): PSafeArray;
+begin
+  Result := DefaultInterface.GetFields(bindingAttr);
+end;
+
+function TGlueDynamicValueBase.GetProperty(const name: WideString; bindingAttr: BindingFlags): _PropertyInfo;
+begin
+  Result := DefaultInterface.GetProperty(name, bindingAttr);
+end;
+
+function TGlueDynamicValueBase.GetProperty_2(const name: WideString; bindingAttr: BindingFlags; 
+                                             const Binder: _Binder; const returnType: _Type; 
+                                             types: PSafeArray; modifiers: PSafeArray): _PropertyInfo;
+begin
+  Result := DefaultInterface.GetProperty_2(name, bindingAttr, Binder, returnType, types, modifiers);
+end;
+
+function TGlueDynamicValueBase.GetProperties(bindingAttr: BindingFlags): PSafeArray;
+begin
+  Result := DefaultInterface.GetProperties(bindingAttr);
+end;
+
+function TGlueDynamicValueBase.GetMember(const name: WideString; bindingAttr: BindingFlags): PSafeArray;
+begin
+  Result := DefaultInterface.GetMember(name, bindingAttr);
+end;
+
+function TGlueDynamicValueBase.GetMembers(bindingAttr: BindingFlags): PSafeArray;
+begin
+  Result := DefaultInterface.GetMembers(bindingAttr);
+end;
+
+function TGlueDynamicValueBase.InvokeMember(const name: WideString; invokeAttr: BindingFlags; 
+                                            const Binder: _Binder; Target: OleVariant; 
+                                            args: PSafeArray; modifiers: PSafeArray; 
+                                            const culture: _CultureInfo; namedParameters: PSafeArray): OleVariant;
+begin
+  Result := DefaultInterface.InvokeMember(name, invokeAttr, Binder, Target, args, modifiers, 
+                                          culture, namedParameters);
+end;
+
 class function CoGlueDynamicValue.Create: IGlueValueCollection;
 begin
   Result := CreateComObject(CLASS_GlueDynamicValue) as IGlueValueCollection;
@@ -2570,6 +4216,106 @@ end;
 class function CoGlueDynamicValue.CreateRemote(const MachineName: string): IGlueValueCollection;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueDynamicValue) as IGlueValueCollection;
+end;
+
+procedure TGlueDynamicValue.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{496249AA-598F-4E57-9DD4-80C7FA55CEF3}';
+    IntfIID:   '{57F378B0-6D2A-4710-8696-DB021283A2BF}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueDynamicValue.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueValueCollection;
+  end;
+end;
+
+procedure TGlueDynamicValue.ConnectTo(svrIntf: IGlueValueCollection);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueDynamicValue.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueDynamicValue.GetDefaultInterface: IGlueValueCollection;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueDynamicValue.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueDynamicValue.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueDynamicValue.Get__Default(key: OleVariant): OleVariant;
+begin
+  Result := DefaultInterface._Default[key];
+end;
+
+function TGlueDynamicValue.Get_Count: Integer;
+begin
+  Result := DefaultInterface.Count;
+end;
+
+function TGlueDynamicValue.Get_Names: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+begin
+  Result := DefaultInterface.Names;
+end;
+
+function TGlueDynamicValue.Get_Values: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+begin
+  Result := DefaultInterface.Values;
+end;
+
+function TGlueDynamicValue.Get_Composite: WordBool;
+begin
+  Result := DefaultInterface.Composite;
+end;
+
+function TGlueDynamicValue.Get_Value: OleVariant;
+begin
+  Result := DefaultInterface.Value;
+end;
+
+function TGlueDynamicValue.Get_GlueType: GlueValueType;
+begin
+  Result := DefaultInterface.GlueType;
+end;
+
+function TGlueDynamicValue.GetEnumerator: IEnumVARIANT;
+begin
+  Result := DefaultInterface.GetEnumerator;
+end;
+
+function TGlueDynamicValue.Contains(const Name: WideString): WordBool;
+begin
+  Result := DefaultInterface.Contains(Name);
 end;
 
 class function CoGlueContextManager.Create: IGlueContext;
@@ -2582,6 +4328,156 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueContextManager) as IGlueContext;
 end;
 
+procedure TGlueContextManager.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{AB3721D4-2735-464E-BD79-3187B165C812}';
+    IntfIID:   '{E36214AA-00E9-4057-8DB3-B381C8839735}';
+    EventIID:  '{04506BEC-804F-4FA0-B769-8C8DF1F71293}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueContextManager.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueContext;
+  end;
+end;
+
+procedure TGlueContextManager.ConnectTo(svrIntf: IGlueContext);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueContextManager.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueContextManager.GetDefaultInterface: IGlueContext;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueContextManager.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueContextManager.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueContextManager.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleContext) then
+         FOnHandleContext(Self, IUnknown(TVarData(Params[0]).VPointer) as IGlueContext {const IGlueContext});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleContextUpdate) then
+         FOnHandleContextUpdate(Self, IUnknown(TVarData(Params[0]).VPointer) as IGlueContextUpdate {const IGlueContextUpdate});
+*)
+  end; {case DispID}
+end;
+
+function TGlueContextManager.GetContextInfo: GlueContext;
+begin
+  Result := DefaultInterface.GetContextInfo;
+end;
+
+function TGlueContextManager.GetData: PSafeArray;
+begin
+  Result := DefaultInterface.GetData;
+end;
+
+function TGlueContextManager.GetReflectData(const fieldPath: WideString): OleVariant;
+begin
+  Result := DefaultInterface.GetReflectData(fieldPath);
+end;
+
+procedure TGlueContextManager.SetValue(const fieldPath: WideString; Value: OleVariant);
+begin
+  DefaultInterface.SetValue(fieldPath, Value);
+end;
+
+procedure TGlueContextManager.SetContextData(data: PSafeArray);
+begin
+  DefaultInterface.SetContextData(data);
+end;
+
+procedure TGlueContextManager.BuildAndSetContextData(const builderCallback: IGlueContextBuilderCallback);
+begin
+  DefaultInterface.BuildAndSetContextData(builderCallback);
+end;
+
+procedure TGlueContextManager.UpdateContextData(data: PSafeArray);
+begin
+  DefaultInterface.UpdateContextData(data);
+end;
+
+procedure TGlueContextManager.SetContextDataOnFieldPath(const fieldPath: WideString; 
+                                                        data: PSafeArray);
+begin
+  DefaultInterface.SetContextDataOnFieldPath(fieldPath, data);
+end;
+
+function TGlueContextManager.GetDataAsJson(const fieldPath: WideString): WideString;
+begin
+  Result := DefaultInterface.GetDataAsJson(fieldPath);
+end;
+
+procedure TGlueContextManager.UpdateContextDataJson(const fieldPath: WideString; 
+                                                    const jsonEncodedData: WideString);
+begin
+  DefaultInterface.UpdateContextDataJson(fieldPath, jsonEncodedData);
+end;
+
+procedure TGlueContextManager.BuildAndUpdateContextData(const builderCallback: IGlueContextBuilderCallback);
+begin
+  DefaultInterface.BuildAndUpdateContextData(builderCallback);
+end;
+
+procedure TGlueContextManager.Remove(const fieldPath: WideString);
+begin
+  DefaultInterface.Remove(fieldPath);
+end;
+
+procedure TGlueContextManager.Open;
+begin
+  DefaultInterface.Open;
+end;
+
+procedure TGlueContextManager.Close;
+begin
+  DefaultInterface.Close;
+end;
+
+function TGlueContextManager.EnsureOpened(msecs: Integer): WordBool;
+begin
+  Result := DefaultInterface.EnsureOpened(msecs);
+end;
+
 class function CoGlueContextImage.Create: IGlueContextUpdate;
 begin
   Result := CreateComObject(CLASS_GlueContextImage) as IGlueContextUpdate;
@@ -2590,6 +4486,81 @@ end;
 class function CoGlueContextImage.CreateRemote(const MachineName: string): IGlueContextUpdate;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueContextImage) as IGlueContextUpdate;
+end;
+
+procedure TGlueContextImage.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{7212E737-5831-4058-88E3-4512AB60DFE2}';
+    IntfIID:   '{FCA1B294-A416-4533-AFAF-3640FDE02B1A}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueContextImage.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueContextUpdate;
+  end;
+end;
+
+procedure TGlueContextImage.ConnectTo(svrIntf: IGlueContextUpdate);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueContextImage.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueContextImage.GetDefaultInterface: IGlueContextUpdate;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueContextImage.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueContextImage.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueContextImage.GetContext: IGlueContext;
+begin
+  Result := DefaultInterface.GetContext;
+end;
+
+function TGlueContextImage.GetRemoved: PSafeArray;
+begin
+  Result := DefaultInterface.GetRemoved;
+end;
+
+function TGlueContextImage.GetAdded: PSafeArray;
+begin
+  Result := DefaultInterface.GetAdded;
+end;
+
+function TGlueContextImage.GetUpdated: PSafeArray;
+begin
+  Result := DefaultInterface.GetUpdated;
 end;
 
 class function CoGlueWindowSettings.Create: IGlueWindowSettings;
@@ -2602,6 +4573,241 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueWindowSettings) as IGlueWindowSettings;
 end;
 
+procedure TGlueWindowSettings.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{F7A641B7-1407-4B3D-A9EB-D3C47BB579B6}';
+    IntfIID:   '{DA16AD71-DF87-4243-B85B-47CE09F6ED8F}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueWindowSettings.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueWindowSettings;
+  end;
+end;
+
+procedure TGlueWindowSettings.ConnectTo(svrIntf: IGlueWindowSettings);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueWindowSettings.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueWindowSettings.GetDefaultInterface: IGlueWindowSettings;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueWindowSettings.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueWindowSettings.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueWindowSettings.Get_type_: WideString;
+begin
+  Result := DefaultInterface.type_;
+end;
+
+procedure TGlueWindowSettings.Set_type_(const pRetVal: WideString);
+begin
+  DefaultInterface.type_ := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_Title: WideString;
+begin
+  Result := DefaultInterface.Title;
+end;
+
+procedure TGlueWindowSettings.Set_Title(const pRetVal: WideString);
+begin
+  DefaultInterface.Title := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_AllowTabClose: WordBool;
+begin
+  Result := DefaultInterface.AllowTabClose;
+end;
+
+procedure TGlueWindowSettings.Set_AllowTabClose(pRetVal: WordBool);
+begin
+  DefaultInterface.AllowTabClose := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_ChannelSupport: WordBool;
+begin
+  Result := DefaultInterface.ChannelSupport;
+end;
+
+procedure TGlueWindowSettings.Set_ChannelSupport(pRetVal: WordBool);
+begin
+  DefaultInterface.ChannelSupport := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_Channel: WideString;
+begin
+  Result := DefaultInterface.Channel;
+end;
+
+procedure TGlueWindowSettings.Set_Channel(const pRetVal: WideString);
+begin
+  DefaultInterface.Channel := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_ShowTaskbarIcon: WordBool;
+begin
+  Result := DefaultInterface.ShowTaskbarIcon;
+end;
+
+procedure TGlueWindowSettings.Set_ShowTaskbarIcon(pRetVal: WordBool);
+begin
+  DefaultInterface.ShowTaskbarIcon := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_IsSticky: WordBool;
+begin
+  Result := DefaultInterface.IsSticky;
+end;
+
+procedure TGlueWindowSettings.Set_IsSticky(pRetVal: WordBool);
+begin
+  DefaultInterface.IsSticky := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_AllowUnstick: WordBool;
+begin
+  Result := DefaultInterface.AllowUnstick;
+end;
+
+procedure TGlueWindowSettings.Set_AllowUnstick(pRetVal: WordBool);
+begin
+  DefaultInterface.AllowUnstick := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_FrameColor: WideString;
+begin
+  Result := DefaultInterface.FrameColor;
+end;
+
+procedure TGlueWindowSettings.Set_FrameColor(const pRetVal: WideString);
+begin
+  DefaultInterface.FrameColor := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_Icon: WideString;
+begin
+  Result := DefaultInterface.Icon;
+end;
+
+procedure TGlueWindowSettings.Set_Icon(const pRetVal: WideString);
+begin
+  DefaultInterface.Icon := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_StandardButtons: WideString;
+begin
+  Result := DefaultInterface.StandardButtons;
+end;
+
+procedure TGlueWindowSettings.Set_StandardButtons(const pRetVal: WideString);
+begin
+  DefaultInterface.StandardButtons := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_MaxWidth: Integer;
+begin
+  Result := DefaultInterface.MaxWidth;
+end;
+
+procedure TGlueWindowSettings.Set_MaxWidth(pRetVal: Integer);
+begin
+  DefaultInterface.MaxWidth := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_MinWidth: Integer;
+begin
+  Result := DefaultInterface.MinWidth;
+end;
+
+procedure TGlueWindowSettings.Set_MinWidth(pRetVal: Integer);
+begin
+  DefaultInterface.MinWidth := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_MaxHeight: Integer;
+begin
+  Result := DefaultInterface.MaxHeight;
+end;
+
+procedure TGlueWindowSettings.Set_MaxHeight(pRetVal: Integer);
+begin
+  DefaultInterface.MaxHeight := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_MinHeight: Integer;
+begin
+  Result := DefaultInterface.MinHeight;
+end;
+
+procedure TGlueWindowSettings.Set_MinHeight(pRetVal: Integer);
+begin
+  DefaultInterface.MinHeight := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_Maximizable: WordBool;
+begin
+  Result := DefaultInterface.Maximizable;
+end;
+
+procedure TGlueWindowSettings.Set_Maximizable(pRetVal: WordBool);
+begin
+  DefaultInterface.Maximizable := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_Minimizable: WordBool;
+begin
+  Result := DefaultInterface.Minimizable;
+end;
+
+procedure TGlueWindowSettings.Set_Minimizable(pRetVal: WordBool);
+begin
+  DefaultInterface.Minimizable := pRetVal;
+end;
+
+function TGlueWindowSettings.Get_SynchronousDestroy: WordBool;
+begin
+  Result := DefaultInterface.SynchronousDestroy;
+end;
+
+procedure TGlueWindowSettings.Set_SynchronousDestroy(pRetVal: WordBool);
+begin
+  DefaultInterface.SynchronousDestroy := pRetVal;
+end;
+
 class function CoGlueMethodInfo.Create: IGlueMethodInfo;
 begin
   Result := CreateComObject(CLASS_GlueMethodInfo) as IGlueMethodInfo;
@@ -2610,6 +4816,71 @@ end;
 class function CoGlueMethodInfo.CreateRemote(const MachineName: string): IGlueMethodInfo;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueMethodInfo) as IGlueMethodInfo;
+end;
+
+procedure TGlueMethodInfo.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{0114F791-9F8C-4237-9368-FD9096EA0E5C}';
+    IntfIID:   '{455FA15C-AE59-403F-A80E-5216EB975FB7}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueMethodInfo.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueMethodInfo;
+  end;
+end;
+
+procedure TGlueMethodInfo.ConnectTo(svrIntf: IGlueMethodInfo);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueMethodInfo.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueMethodInfo.GetDefaultInterface: IGlueMethodInfo;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueMethodInfo.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueMethodInfo.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueMethodInfo.Get_method: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+begin
+  Result := DefaultInterface.method;
+end;
+
+function TGlueMethodInfo.Get_correlationId: WideString;
+begin
+  Result := DefaultInterface.correlationId;
 end;
 
 class function CoGlueData.Create: IGlueData;
@@ -2622,6 +4893,66 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueData) as IGlueData;
 end;
 
+procedure TGlueData.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{B05FD585-A3D0-456A-9006-0B34AC25704B}';
+    IntfIID:   '{8056A674-5A37-430D-847D-C99F38721C10}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueData.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueData;
+  end;
+end;
+
+procedure TGlueData.ConnectTo(svrIntf: IGlueData);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueData.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueData.GetDefaultInterface: IGlueData;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueData.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueData.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueData.GetReflectData(const fieldPath: WideString): OleVariant;
+begin
+  Result := DefaultInterface.GetReflectData(fieldPath);
+end;
+
 class function CoGlueStreamConsumer.Create: IGlueStreamConsumer;
 begin
   Result := CreateComObject(CLASS_GlueStreamConsumer) as IGlueStreamConsumer;
@@ -2630,6 +4961,102 @@ end;
 class function CoGlueStreamConsumer.CreateRemote(const MachineName: string): IGlueStreamConsumer;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueStreamConsumer) as IGlueStreamConsumer;
+end;
+
+procedure TGlueStreamConsumer.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{E80EDB19-B149-43F4-B6CB-39E5EE4318C1}';
+    IntfIID:   '{2F7F15D5-7206-4C87-A390-ED0B42C2CA36}';
+    EventIID:  '{45E44742-45E8-4C58-BB18-8663D4C20D11}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueStreamConsumer.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueStreamConsumer;
+  end;
+end;
+
+procedure TGlueStreamConsumer.ConnectTo(svrIntf: IGlueStreamConsumer);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueStreamConsumer.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueStreamConsumer.GetDefaultInterface: IGlueStreamConsumer;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueStreamConsumer.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueStreamConsumer.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueStreamConsumer.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleSubscriptionActivated) then
+         FOnHandleSubscriptionActivated(Self,
+                                        IUnknown(TVarData(Params[0]).VPointer) as IGlueStreamSubscription {const IGlueStreamSubscription},
+                                        Params[1] {const WideString});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleStreamData) then
+         FOnHandleStreamData(Self,
+                             IUnknown(TVarData(Params[0]).VPointer) as IGlueMethodInfo {const IGlueMethodInfo},
+                             IUnknown(TVarData(Params[1]).VPointer) as IGlueData {const IGlueData});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleStreamStatus) then
+         FOnHandleStreamStatus(Self,
+                               IUnknown(TVarData(Params[0]).VPointer) as IGlueMethodInfo {const IGlueMethodInfo},
+                               Params[1] {GlueStreamState},
+                               Params[2] {const WideString},
+                               Params[3] {Double});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleStreamClosed) then
+         FOnHandleStreamClosed(Self, IUnknown(TVarData(Params[0]).VPointer) as IGlueMethodInfo {const IGlueMethodInfo});
+*)
+  end; {case DispID}
+end;
+
+procedure TGlueStreamConsumer.Subscribe(const stream: WideString; const targetRegex: WideString; 
+                                        args: OleVariant; all: WordBool; 
+                                        const correlationId: WideString; timeoutMsecs: Integer);
+begin
+  DefaultInterface.Subscribe(stream, targetRegex, args, all, correlationId, timeoutMsecs);
 end;
 
 class function CoVbGlueInvocationResult.Create: IGlueInvocationResult;
@@ -2642,6 +5069,71 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_VbGlueInvocationResult) as IGlueInvocationResult;
 end;
 
+procedure TVbGlueInvocationResult.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{ED75F977-4AD9-48D3-B85B-59E503F8F3AE}';
+    IntfIID:   '{B73B2552-BF00-4AD9-927B-77F0DC9FBC4E}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TVbGlueInvocationResult.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueInvocationResult;
+  end;
+end;
+
+procedure TVbGlueInvocationResult.ConnectTo(svrIntf: IGlueInvocationResult);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TVbGlueInvocationResult.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TVbGlueInvocationResult.GetDefaultInterface: IGlueInvocationResult;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TVbGlueInvocationResult.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TVbGlueInvocationResult.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TVbGlueInvocationResult.Get_correlationId: WideString;
+begin
+  Result := DefaultInterface.correlationId;
+end;
+
+function TVbGlueInvocationResult.Get_Results: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+begin
+  Result := DefaultInterface.Results;
+end;
+
 class function CoGlueMethodInvocator.Create: IGlueMethodInvocator;
 begin
   Result := CreateComObject(CLASS_GlueMethodInvocator) as IGlueMethodInvocator;
@@ -2650,6 +5142,88 @@ end;
 class function CoGlueMethodInvocator.CreateRemote(const MachineName: string): IGlueMethodInvocator;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueMethodInvocator) as IGlueMethodInvocator;
+end;
+
+procedure TGlueMethodInvocator.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{47C68069-F7AE-49F9-9EEA-231990D2CDE6}';
+    IntfIID:   '{DA0A6BAF-6967-4F6B-91C9-21743B5D23A1}';
+    EventIID:  '{AA4DF44F-E91A-4C9E-8288-02D93C5B1E4C}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueMethodInvocator.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueMethodInvocator;
+  end;
+end;
+
+procedure TGlueMethodInvocator.ConnectTo(svrIntf: IGlueMethodInvocator);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueMethodInvocator.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueMethodInvocator.GetDefaultInterface: IGlueMethodInvocator;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueMethodInvocator.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueMethodInvocator.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueMethodInvocator.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleInvocationResult) then
+         FOnHandleInvocationResult(Self, IUnknown(TVarData(Params[0]).VPointer) as IGlueInvocationResult {const IGlueInvocationResult});
+*)
+  end; {case DispID}
+end;
+
+procedure TGlueMethodInvocator.InvokeAsync(const method: WideString; const targetRegex: WideString; 
+                                           args: OleVariant; all: WordBool; 
+                                           const correlationId: WideString; timeoutMsecs: Integer);
+begin
+  DefaultInterface.InvokeAsync(method, targetRegex, args, all, correlationId, timeoutMsecs);
+end;
+
+function TGlueMethodInvocator.InvokeSync(const method: WideString; const targetRegex: WideString; 
+                                         args: OleVariant; all: WordBool; timeoutMsecs: Integer): OleVariant;
+begin
+  Result := DefaultInterface.InvokeSync(method, targetRegex, args, all, timeoutMsecs);
 end;
 
 class function CoVBGlueStreamSubscriber.Create: IVBGlueStreamSubscriber;
@@ -2662,6 +5236,81 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_VBGlueStreamSubscriber) as IVBGlueStreamSubscriber;
 end;
 
+procedure TVBGlueStreamSubscriber.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{8E9B605B-E9DB-4046-A472-C11C370ECDF6}';
+    IntfIID:   '{632317F3-E6C2-4FB9-AB8F-067DF1F113CA}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TVBGlueStreamSubscriber.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IVBGlueStreamSubscriber;
+  end;
+end;
+
+procedure TVBGlueStreamSubscriber.ConnectTo(svrIntf: IVBGlueStreamSubscriber);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TVBGlueStreamSubscriber.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TVBGlueStreamSubscriber.GetDefaultInterface: IVBGlueStreamSubscriber;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TVBGlueStreamSubscriber.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TVBGlueStreamSubscriber.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TVBGlueStreamSubscriber.GetStream: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+begin
+  Result := DefaultInterface.GetStream;
+end;
+
+function TVBGlueStreamSubscriber.GetSubscriberInstance: {NOT_OLEAUTO(VBGlueInstance)}OleVariant;
+begin
+  Result := DefaultInterface.GetSubscriberInstance;
+end;
+
+procedure TVBGlueStreamSubscriber.Push(data: OleVariant);
+begin
+  DefaultInterface.Push(data);
+end;
+
+procedure TVBGlueStreamSubscriber.Close(data: OleVariant);
+begin
+  DefaultInterface.Close(data);
+end;
+
 class function CoGlueInvocationRequest.Create: IGlueInvocationRequest;
 begin
   Result := CreateComObject(CLASS_GlueInvocationRequest) as IGlueInvocationRequest;
@@ -2670,6 +5319,86 @@ end;
 class function CoGlueInvocationRequest.CreateRemote(const MachineName: string): IGlueInvocationRequest;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueInvocationRequest) as IGlueInvocationRequest;
+end;
+
+procedure TGlueInvocationRequest.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{593D2314-2879-4962-9427-A90FEC191648}';
+    IntfIID:   '{9811A276-E7E7-4C86-92F1-C4677288723B}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueInvocationRequest.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueInvocationRequest;
+  end;
+end;
+
+procedure TGlueInvocationRequest.ConnectTo(svrIntf: IGlueInvocationRequest);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueInvocationRequest.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueInvocationRequest.GetDefaultInterface: IGlueInvocationRequest;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueInvocationRequest.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueInvocationRequest.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueInvocationRequest.Get_method: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+begin
+  Result := DefaultInterface.method;
+end;
+
+function TGlueInvocationRequest.Get_Caller: {NOT_OLEAUTO(VBGlueInstance)}OleVariant;
+begin
+  Result := DefaultInterface.Caller;
+end;
+
+function TGlueInvocationRequest.GetReflectData(const fieldPath: WideString): OleVariant;
+begin
+  Result := DefaultInterface.GetReflectData(fieldPath);
+end;
+
+procedure TGlueInvocationRequest.SendResult(result: OleVariant);
+begin
+  DefaultInterface.SendResult(result);
+end;
+
+procedure TGlueInvocationRequest.SendFailure(const Message: WideString; additionalData: OleVariant);
+begin
+  DefaultInterface.SendFailure(Message, additionalData);
 end;
 
 class function CoGlueSubscriptionRequest.Create: IGlueSubscriptionRequest;
@@ -2682,6 +5411,86 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueSubscriptionRequest) as IGlueSubscriptionRequest;
 end;
 
+procedure TGlueSubscriptionRequest.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{AD97252D-47E5-41EA-978F-2BB83876FD17}';
+    IntfIID:   '{D6E08259-D2B4-453D-B050-E9DD9F6308C8}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueSubscriptionRequest.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueSubscriptionRequest;
+  end;
+end;
+
+procedure TGlueSubscriptionRequest.ConnectTo(svrIntf: IGlueSubscriptionRequest);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueSubscriptionRequest.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueSubscriptionRequest.GetDefaultInterface: IGlueSubscriptionRequest;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueSubscriptionRequest.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueSubscriptionRequest.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TGlueSubscriptionRequest.Get_stream: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+begin
+  Result := DefaultInterface.stream;
+end;
+
+function TGlueSubscriptionRequest.Get_Requester: {NOT_OLEAUTO(VBGlueInstance)}OleVariant;
+begin
+  Result := DefaultInterface.Requester;
+end;
+
+function TGlueSubscriptionRequest.GetReflectData(const fieldPath: WideString): OleVariant;
+begin
+  Result := DefaultInterface.GetReflectData(fieldPath);
+end;
+
+function TGlueSubscriptionRequest.Accept(const branch: WideString; aresult: OleVariant): IGlueStreamBranch;
+begin
+  Result := DefaultInterface.Accept(branch, aresult);
+end;
+
+procedure TGlueSubscriptionRequest.Reject(result: OleVariant);
+begin
+  DefaultInterface.Reject(result);
+end;
+
 class function CoGlueStreamSubscription.Create: IGlueStreamSubscription;
 begin
   Result := CreateComObject(CLASS_GlueStreamSubscription) as IGlueStreamSubscription;
@@ -2690,6 +5499,66 @@ end;
 class function CoGlueStreamSubscription.CreateRemote(const MachineName: string): IGlueStreamSubscription;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueStreamSubscription) as IGlueStreamSubscription;
+end;
+
+procedure TGlueStreamSubscription.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{D4E3DD22-0EAB-4761-BE7D-7A040AE02BDE}';
+    IntfIID:   '{E1ADF3C1-D11C-4E96-B9E9-D0B52B02DBCD}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueStreamSubscription.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as IGlueStreamSubscription;
+  end;
+end;
+
+procedure TGlueStreamSubscription.ConnectTo(svrIntf: IGlueStreamSubscription);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueStreamSubscription.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueStreamSubscription.GetDefaultInterface: IGlueStreamSubscription;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueStreamSubscription.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueStreamSubscription.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueStreamSubscription.Close;
+begin
+  DefaultInterface.Close;
 end;
 
 class function CoGlueServerStream.Create: IGlueServerStream;
@@ -2702,6 +5571,130 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueServerStream) as IGlueServerStream;
 end;
 
+procedure TGlueServerStream.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{C7597981-309E-41D6-BFCA-5099A6F0BD0E}';
+    IntfIID:   '{E3330E58-F99B-452C-BE10-1A916FACA5B4}';
+    EventIID:  '{96E100B1-CCE8-463C-8965-2567B08ECF37}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueServerStream.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueServerStream;
+  end;
+end;
+
+procedure TGlueServerStream.ConnectTo(svrIntf: IGlueServerStream);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueServerStream.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueServerStream.GetDefaultInterface: IGlueServerStream;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueServerStream.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueServerStream.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueServerStream.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleSubscriptionRequest) then
+         FOnHandleSubscriptionRequest(Self, IUnknown(TVarData(Params[0]).VPointer) as IGlueSubscriptionRequest {const IGlueSubscriptionRequest});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleSubscriber) then
+         FOnHandleSubscriber(Self,
+                             IUnknown(TVarData(Params[0]).VPointer) as IVBGlueStreamSubscriber {const IVBGlueStreamSubscriber},
+                             IUnknown(TVarData(Params[1]).VPointer) as IGlueData {const IGlueData});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleSubscriberLost) then
+         FOnHandleSubscriberLost(Self, IUnknown(TVarData(Params[0]).VPointer) as IVBGlueStreamSubscriber {const IVBGlueStreamSubscriber});
+*)
+  end; {case DispID}
+end;
+
+function TGlueServerStream.Get_Definition: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+begin
+  Result := DefaultInterface.Definition;
+end;
+
+procedure TGlueServerStream.Push(data: {NOT_OLEAUTO(PSafeArray)}OleVariant; const branch: WideString);
+begin
+  DefaultInterface.Push(data, branch);
+end;
+
+procedure TGlueServerStream.CloseBranch(const branch: WideString);
+begin
+  DefaultInterface.CloseBranch(branch);
+end;
+
+procedure TGlueServerStream.CloseStream;
+begin
+  DefaultInterface.CloseStream;
+end;
+
+function TGlueServerStream.GetBranchKeys: {NOT_OLEAUTO(PSafeArray)}OleVariant;
+begin
+  Result := DefaultInterface.GetBranchKeys;
+end;
+
+function TGlueServerStream.GetBranch(const branchKey: WideString): IGlueStreamBranch;
+begin
+  Result := DefaultInterface.GetBranch(branchKey);
+end;
+
+procedure TGlueServerStream.Register;
+begin
+  DefaultInterface.Register;
+end;
+
+procedure TGlueServerStream.Unregister;
+begin
+  DefaultInterface.Unregister;
+end;
+
+procedure TGlueServerStream.PushVariantData(data: OleVariant; const branch: WideString);
+begin
+  DefaultInterface.PushVariantData(data, branch);
+end;
+
 class function CoGlueServerMethod.Create: IGlueServerMethod;
 begin
   Result := CreateComObject(CLASS_GlueServerMethod) as IGlueServerMethod;
@@ -2710,6 +5703,90 @@ end;
 class function CoGlueServerMethod.CreateRemote(const MachineName: string): IGlueServerMethod;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueServerMethod) as IGlueServerMethod;
+end;
+
+procedure TGlueServerMethod.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{E5C2164E-D3CA-4D32-92CB-029C9B214FF4}';
+    IntfIID:   '{E2331307-B552-4C57-B2E1-62E6DCA380DC}';
+    EventIID:  '{9E690080-E140-4A99-B962-F9132AD9E4D8}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueServerMethod.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueServerMethod;
+  end;
+end;
+
+procedure TGlueServerMethod.ConnectTo(svrIntf: IGlueServerMethod);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueServerMethod.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueServerMethod.GetDefaultInterface: IGlueServerMethod;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueServerMethod.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueServerMethod.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueServerMethod.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleInvocationRequest) then
+         FOnHandleInvocationRequest(Self, IUnknown(TVarData(Params[0]).VPointer) as IGlueInvocationRequest {const IGlueInvocationRequest});
+*)
+  end; {case DispID}
+end;
+
+function TGlueServerMethod.Get_Definition: {NOT_OLEAUTO(VBGlueMethod)}OleVariant;
+begin
+  Result := DefaultInterface.Definition;
+end;
+
+procedure TGlueServerMethod.Register;
+begin
+  DefaultInterface.Register;
+end;
+
+procedure TGlueServerMethod.Unregister;
+begin
+  DefaultInterface.Unregister;
 end;
 
 class function CoGlueIntentsManager.Create: IGlueIntentsManager;
@@ -2722,6 +5799,127 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueIntentsManager) as IGlueIntentsManager;
 end;
 
+procedure TGlueIntentsManager.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{18714D13-C641-4343-9C10-028122B270BB}';
+    IntfIID:   '{2439A1C1-8625-49E7-8C10-E107122BEA6C}';
+    EventIID:  '{FDBB1A97-FC6E-4351-BD61-493E7841077D}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueIntentsManager.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueIntentsManager;
+  end;
+end;
+
+procedure TGlueIntentsManager.ConnectTo(svrIntf: IGlueIntentsManager);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueIntentsManager.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueIntentsManager.GetDefaultInterface: IGlueIntentsManager;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueIntentsManager.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueIntentsManager.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueIntentsManager.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleIntentDefinition) then
+         FOnHandleIntentDefinition(Self,
+                                   Params[0] {const WideString},
+                                   Params[1] {const WideString},
+                                   Params[2] {const WideString},
+                                   Params[3] {WordBool});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleIntentRaiseResult) then
+         FOnHandleIntentRaiseResult(Self,
+                                    Params[0] {const WideString},
+                                    Params[1] {const WideString},
+                                    Params[2] {WordBool},
+                                    Params[3] {const WideString});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleIntentRequest) then
+         FOnHandleIntentRequest(Self,
+                                Params[0] {const WideString},
+                                Params[1] {const WideString},
+                                IUnknown(TVarData(Params[2]).VPointer) as IGlueValueCollection {const IGlueValueCollection});
+*)
+  end; {case DispID}
+end;
+
+procedure TGlueIntentsManager.RaiseIntent(const intentName: WideString; 
+                                          const contextType: WideString; Values: PSafeArray; 
+                                          const handler: WideString; const correlationId: WideString);
+begin
+  DefaultInterface.RaiseIntent(intentName, contextType, Values, handler, correlationId);
+end;
+
+procedure TGlueIntentsManager.RaiseIntentWithJson(const intentName: WideString; 
+                                                  const contextType: WideString; 
+                                                  const json: WideString; 
+                                                  const handler: WideString; 
+                                                  const correlationId: WideString);
+begin
+  DefaultInterface.RaiseIntentWithJson(intentName, contextType, json, handler, correlationId);
+end;
+
+procedure TGlueIntentsManager.RaiseIntentWithDynamicValue(const intentName: WideString; 
+                                                          const contextType: WideString; 
+                                                          const dv: IGlueValueCollection; 
+                                                          const handler: WideString; 
+                                                          const correlationId: WideString);
+begin
+  DefaultInterface.RaiseIntentWithDynamicValue(intentName, contextType, dv, handler, correlationId);
+end;
+
+procedure TGlueIntentsManager.RegisterIntent(const intentName: WideString; 
+                                             const displayName: WideString; 
+                                             const description: WideString; 
+                                             const contextTypesCSV: WideString);
+begin
+  DefaultInterface.RegisterIntent(intentName, displayName, description, contextTypesCSV);
+end;
+
 class function CoGlueWindow.Create: IGlueWindow;
 begin
   Result := CreateComObject(CLASS_GlueWindow) as IGlueWindow;
@@ -2730,6 +5928,164 @@ end;
 class function CoGlueWindow.CreateRemote(const MachineName: string): IGlueWindow;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueWindow) as IGlueWindow;
+end;
+
+procedure TGlueWindow.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{7D7A8474-4855-401C-8F8A-8DA77D454443}';
+    IntfIID:   '{2F432B71-D338-419B-B150-E5E111F3D9A3}';
+    EventIID:  '{30B72DA7-93FD-4B9F-BDA2-6EEE1F41EE30}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueWindow.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueWindow;
+  end;
+end;
+
+procedure TGlueWindow.ConnectTo(svrIntf: IGlueWindow);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueWindow.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueWindow.GetDefaultInterface: IGlueWindow;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueWindow.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueWindow.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueWindow.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleWindowReady) then
+         FOnHandleWindowReady(Self, IUnknown(TVarData(Params[0]).VPointer) as IGlueWindow {const IGlueWindow});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleChannelData) then
+         FOnHandleChannelData(Self,
+                              IUnknown(TVarData(Params[0]).VPointer) as IGlueWindow {const IGlueWindow},
+                              IUnknown(TVarData(Params[1]).VPointer) as IGlueContextUpdate {const IGlueContextUpdate});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleChannelChanged) then
+         FOnHandleChannelChanged(Self,
+                                 IUnknown(TVarData(Params[0]).VPointer) as IGlueWindow {const IGlueWindow},
+                                 IUnknown(TVarData(Params[1]).VPointer) as IGlueContext {const IGlueContext},
+                                 Params[2] {const WideString});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleWindowDestroyed) then
+         FOnHandleWindowDestroyed(Self, IUnknown(TVarData(Params[0]).VPointer) as IGlueWindow {const IGlueWindow});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnHandleWindowEvent) then
+         FOnHandleWindowEvent(Self,
+                              IUnknown(TVarData(Params[0]).VPointer) as IGlueWindow {const IGlueWindow},
+                              Params[1] {GlueWindowEventType},
+                              IUnknown(TVarData(Params[2]).VPointer) as IGlueValueCollection {const IGlueValueCollection});
+*)
+  end; {case DispID}
+end;
+
+function TGlueWindow.GetId: WideString;
+begin
+  Result := DefaultInterface.GetId;
+end;
+
+function TGlueWindow.IsVisible: WordBool;
+begin
+  Result := DefaultInterface.IsVisible;
+end;
+
+procedure TGlueWindow.SetVisible(visible: WordBool);
+begin
+  DefaultInterface.SetVisible(visible);
+end;
+
+function TGlueWindow.GetTitle: WideString;
+begin
+  Result := DefaultInterface.GetTitle;
+end;
+
+procedure TGlueWindow.SetTitle(const Title: WideString);
+begin
+  DefaultInterface.SetTitle(Title);
+end;
+
+function TGlueWindow.GetChannelSupport: WordBool;
+begin
+  Result := DefaultInterface.GetChannelSupport;
+end;
+
+procedure TGlueWindow.SetChannelSupport(showLink: WordBool);
+begin
+  DefaultInterface.SetChannelSupport(showLink);
+end;
+
+procedure TGlueWindow.Activate;
+begin
+  DefaultInterface.Activate;
+end;
+
+procedure TGlueWindow.Unregister;
+begin
+  DefaultInterface.Unregister;
+end;
+
+function TGlueWindow.GetChannelContext: IGlueContext;
+begin
+  Result := DefaultInterface.GetChannelContext;
+end;
+
+function TGlueWindow.IsInWorkspace: WordBool;
+begin
+  Result := DefaultInterface.IsInWorkspace;
+end;
+
+function TGlueWindow.GetWorkspaceContext: IGlueContext;
+begin
+  Result := DefaultInterface.GetWorkspaceContext;
+end;
+
+procedure TGlueWindow.NavigateWithJson(const url: WideString; const jsonContext: WideString);
+begin
+  DefaultInterface.NavigateWithJson(url, jsonContext);
 end;
 
 class function CoGlue42.Create: IGlue42;
@@ -2742,6 +6098,617 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_Glue42) as IGlue42;
 end;
 
+procedure TGlue42.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{556D7D1B-7E89-454A-8575-85B1ABE35941}';
+    IntfIID:   '{DB20C8DA-CD98-4D75-8B9A-18284B7EE0D1}';
+    EventIID:  '{0EE5A248-F02A-4551-8745-437F6AFAAB4D}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlue42.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlue42;
+  end;
+end;
+
+procedure TGlue42.ConnectTo(svrIntf: IGlue42);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlue42.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlue42.GetDefaultInterface: IGlue42;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlue42.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlue42.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlue42.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnGlueVariantResponse) then
+         FOnGlueVariantResponse(Self,
+                                Params[0] {const WideString},
+                                Params[1] {OleVariant});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnGlueVariantInvoke) then
+         FOnGlueVariantInvoke(Self,
+                              Params[0] {const WideString},
+                              Params[1] {OleVariant},
+                              Params[2] {const WideString});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnGlueResponse) then
+         FOnGlueResponse(Self,
+                         Params[0] {const WideString},
+                         Params[1] {const WideString});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnGlueInvoke) then
+         FOnGlueInvoke(Self,
+                       Params[0] {const WideString},
+                       Params[1] {const WideString},
+                       Params[2] {const WideString});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnConnectionStatus) then
+         FOnConnectionStatus(Self,
+                             Params[0] {const WideString},
+                             Params[1] {const WideString},
+                             Params[2] {Double});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnInstanceStatus) then
+         FOnInstanceStatus(Self,
+                           Params[0] {const WideString},
+                           Params[1] {WordBool});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnMethodStatus) then
+         FOnMethodStatus(Self,
+                         Params[0] {const WideString},
+                         Params[1] {const WideString},
+                         Params[2] {WordBool});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnGlueContext) then
+         FOnGlueContext(Self,
+                        Params[0] {const WideString},
+                        Params[1] {WordBool});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnException) then
+         FOnException(Self,
+                      Params[0] {const WideString},
+                      IUnknown(TVarData(Params[1]).VPointer) as IGlueValueCollection {const IGlueValueCollection});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnBindLifetimeEvent) then
+         FOnBindLifetimeEvent(Self);
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnGlueState) then
+         FOnGlueState(Self,
+                      Params[0] {WordBool},
+                      Params[1] {const WideString},
+                      Params[2] {Double});
+*)
+  end; {case DispID}
+end;
+
+function TGlue42.Get_AppFactoryRegistry: IAppFactoryRegistry;
+begin
+  Result := DefaultInterface.AppFactoryRegistry;
+end;
+
+procedure TGlue42.OverrideConfiguration(configuration: GlueConfiguration);
+begin
+  DefaultInterface.OverrideConfiguration(configuration);
+end;
+
+procedure TGlue42.Start(Instance: GlueInstance);
+begin
+  DefaultInterface.Start(Instance);
+end;
+
+function TGlue42.TranslateVbObject(data: OleVariant): OleVariant;
+begin
+  Result := DefaultInterface.TranslateVbObject(data);
+end;
+
+procedure TGlue42.SetLogConfigurationPath(const logConfigPath: WideString);
+begin
+  DefaultInterface.SetLogConfigurationPath(logConfigPath);
+end;
+
+procedure TGlue42.StartWithAppName(const ApplicationName: WideString);
+begin
+  DefaultInterface.StartWithAppName(ApplicationName);
+end;
+
+procedure TGlue42.Stop;
+begin
+  DefaultInterface.Stop;
+end;
+
+function TGlue42.RegisterGlueWindow(hwnd: Integer; const windowEventHandler: IGlueWindowEventHandler): IGlueWindow;
+begin
+  Result := DefaultInterface.RegisterGlueWindow(hwnd, windowEventHandler);
+end;
+
+function TGlue42.RegisterStartupGlueWindow(hwnd: Integer; 
+                                           const windowEventHandler: IGlueWindowEventHandler): IGlueWindow;
+begin
+  Result := DefaultInterface.RegisterStartupGlueWindow(hwnd, windowEventHandler);
+end;
+
+function TGlue42.CreateDefaultVBGlueWindowSettings: IGlueWindowSettings;
+begin
+  Result := DefaultInterface.CreateDefaultVBGlueWindowSettings;
+end;
+
+function TGlue42.GetStartupWindowSettings: IGlueWindowSettings;
+begin
+  Result := DefaultInterface.GetStartupWindowSettings;
+end;
+
+function TGlue42.RegisterGlueWindowWithSettings(hwnd: Integer; const settings: IGlueWindowSettings; 
+                                                const windowEventHandler: IGlueWindowEventHandler): IGlueWindow;
+begin
+  Result := DefaultInterface.RegisterGlueWindowWithSettings(hwnd, settings, windowEventHandler);
+end;
+
+function TGlue42.RegisterStartupGlueWindowWithSettings(hwnd: Integer; 
+                                                       const settings: IGlueWindowSettings; 
+                                                       const windowEventHandler: IGlueWindowEventHandler): IGlueWindow;
+begin
+  Result := DefaultInterface.RegisterStartupGlueWindowWithSettings(hwnd, settings, 
+                                                                   windowEventHandler);
+end;
+
+function TGlue42.GetInstance: GlueInstance;
+begin
+  Result := DefaultInterface.GetInstance;
+end;
+
+function TGlue42.CreateGlueValues: OleVariant;
+begin
+  Result := DefaultInterface.CreateGlueValues;
+end;
+
+function TGlue42.CreateGlueData(data: OleVariant): IGlueData;
+begin
+  Result := DefaultInterface.CreateGlueData(data);
+end;
+
+function TGlue42.GetKnownContexts: PSafeArray;
+begin
+  Result := DefaultInterface.GetKnownContexts;
+end;
+
+procedure TGlue42.SubscribeGlueContext(const contextName: WideString; 
+                                       const handler: IGlueContextHandler);
+begin
+  DefaultInterface.SubscribeGlueContext(contextName, handler);
+end;
+
+function TGlue42.GetGlueContext(const contextName: WideString): IGlueContext;
+begin
+  Result := DefaultInterface.GetGlueContext(contextName);
+end;
+
+function TGlue42.GetAllInstances: PSafeArray;
+begin
+  Result := DefaultInterface.GetAllInstances;
+end;
+
+function TGlue42.GetAllMethods: PSafeArray;
+begin
+  Result := DefaultInterface.GetAllMethods;
+end;
+
+function TGlue42.GetMethodsForInstance(Instance: GlueInstance; identity: GlueInstanceIdentity): PSafeArray;
+begin
+  Result := DefaultInterface.GetMethodsForInstance(Instance, identity);
+end;
+
+procedure TGlue42.Subscribe(const handler: IGlueEvents);
+begin
+  DefaultInterface.Subscribe(handler);
+end;
+
+procedure TGlue42.Unsubscribe(const handler: IGlueEvents);
+begin
+  DefaultInterface.Unsubscribe(handler);
+end;
+
+function TGlue42.BuildGlueContextValues(const contextBuilderCallback: IGlueContextBuilderCallback): PSafeArray;
+begin
+  Result := DefaultInterface.BuildGlueContextValues(contextBuilderCallback);
+end;
+
+function TGlue42.RegisterMethod(const methodName: WideString; 
+                                const requestHandler: IGlueRequestHandler; const Input: WideString; 
+                                const Output: WideString; ObjectTypes: PSafeArray): GlueMethod;
+begin
+  Result := DefaultInterface.RegisterMethod(methodName, requestHandler, Input, Output, ObjectTypes);
+end;
+
+function TGlue42.CreateServerMethod(const methodName: WideString; const Input: WideString; 
+                                    const Output: WideString; const objectTypesCSV: WideString): IGlueServerMethod;
+begin
+  Result := DefaultInterface.CreateServerMethod(methodName, Input, Output, objectTypesCSV);
+end;
+
+function TGlue42.CreateServerStream(const streamName: WideString; const Input: WideString; 
+                                    const Output: WideString; const objectTypesCSV: WideString): IGlueServerStream;
+begin
+  Result := DefaultInterface.CreateServerStream(streamName, Input, Output, objectTypesCSV);
+end;
+
+function TGlue42.CreateMethodInvocator: IGlueMethodInvocator;
+begin
+  Result := DefaultInterface.CreateMethodInvocator;
+end;
+
+function TGlue42.CreateStreamConsumer: IGlueStreamConsumer;
+begin
+  Result := DefaultInterface.CreateStreamConsumer;
+end;
+
+function TGlue42.RegisterStream(const streamName: WideString; 
+                                const subscriptionHandler: IGlueSubscriptionHandler; 
+                                const Input: WideString; const Output: WideString; 
+                                ObjectTypes: PSafeArray; out stream: IGlueStream): GlueMethod;
+begin
+  Result := DefaultInterface.RegisterStream(streamName, subscriptionHandler, Input, Output, 
+                                            ObjectTypes, stream);
+end;
+
+procedure TGlue42.UnregisterMethod(method: GlueMethod);
+begin
+  DefaultInterface.UnregisterMethod(method);
+end;
+
+procedure TGlue42.BuildAndInvoke(const method: WideString; 
+                                 const builderCallback: IGlueContextBuilderCallback; 
+                                 targets: PSafeArray; all: WordBool; 
+                                 identity: GlueInstanceIdentity; 
+                                 const resultHandler: IGlueInvocationResultHandler; 
+                                 invocationTimeoutMsecs: Int64; const correlationId: WideString);
+begin
+  DefaultInterface.BuildAndInvoke(method, builderCallback, targets, all, identity, resultHandler, 
+                                  invocationTimeoutMsecs, correlationId);
+end;
+
+procedure TGlue42.InvokeMethods(const method: WideString; invocationArgs: PSafeArray; 
+                                targets: PSafeArray; all: WordBool; identity: GlueInstanceIdentity; 
+                                const resultHandler: IGlueInvocationResultHandler; 
+                                invocationTimeoutMsecs: Int64; const correlationId: WideString);
+begin
+  DefaultInterface.InvokeMethods(method, invocationArgs, targets, all, identity, resultHandler, 
+                                 invocationTimeoutMsecs, correlationId);
+end;
+
+procedure TGlue42.InvokeMethod(method: GlueMethod; invocationArgs: PSafeArray; 
+                               const resultHandler: IGlueInvocationResultHandler; 
+                               invocationTimeoutMsecs: Int64; const correlationId: WideString);
+begin
+  DefaultInterface.InvokeMethod(method, invocationArgs, resultHandler, invocationTimeoutMsecs, 
+                                correlationId);
+end;
+
+procedure TGlue42.SubscribeStreams(const streamName: WideString; 
+                                   subscriptionRequestArgs: PSafeArray; targets: PSafeArray; 
+                                   all: WordBool; identity: GlueInstanceIdentity; 
+                                   const streamHandler: IGlueStreamHandler; 
+                                   invocationTimeoutMsecs: Int64);
+begin
+  DefaultInterface.SubscribeStreams(streamName, subscriptionRequestArgs, targets, all, identity, 
+                                    streamHandler, invocationTimeoutMsecs);
+end;
+
+procedure TGlue42.SubscribeStreamsFilterTargets(const streamName: WideString; 
+                                                subscriptionRequestArgs: PSafeArray; 
+                                                const targetRegex: WideString; all: WordBool; 
+                                                const streamHandler: IGlueStreamHandler; 
+                                                invocationTimeoutMsecs: Int64);
+begin
+  DefaultInterface.SubscribeStreamsFilterTargets(streamName, subscriptionRequestArgs, targetRegex, 
+                                                 all, streamHandler, invocationTimeoutMsecs);
+end;
+
+procedure TGlue42.SubscribeStream(stream: GlueMethod; subscriptionRequestArgs: PSafeArray; 
+                                  const streamHandler: IGlueStreamHandler; 
+                                  subscriptionTimeoutMsecs: Int64);
+begin
+  DefaultInterface.SubscribeStream(stream, subscriptionRequestArgs, streamHandler, 
+                                   subscriptionTimeoutMsecs);
+end;
+
+function TGlue42.InvokeSync(const methodName: WideString; const argsAsJson: WideString; 
+                            const resultFieldPath: WideString; const targetRegex: WideString): WideString;
+begin
+  Result := DefaultInterface.InvokeSync(methodName, argsAsJson, resultFieldPath, targetRegex);
+end;
+
+procedure TGlue42.InvokeAsync(const correlationId: WideString; const methodName: WideString; 
+                              const argsAsJson: WideString; const resultFieldPath: WideString; 
+                              const targetRegex: WideString);
+begin
+  DefaultInterface.InvokeAsync(correlationId, methodName, argsAsJson, resultFieldPath, targetRegex);
+end;
+
+procedure TGlue42.SubscribeStreamInSink(const correlationId: WideString; 
+                                        const streamName: WideString; const argsAsJson: WideString; 
+                                        const resultFieldPath: WideString; 
+                                        const targetRegex: WideString; 
+                                        const filterFieldPath: WideString; 
+                                        const filterDataRegex: WideString);
+begin
+  DefaultInterface.SubscribeStreamInSink(correlationId, streamName, argsAsJson, resultFieldPath, 
+                                         targetRegex, filterFieldPath, filterDataRegex);
+end;
+
+procedure TGlue42.RegisterMethodInSink(const correlationId: WideString; 
+                                       const methodName: WideString; 
+                                       const inputSignature: WideString; 
+                                       const outputSignature: WideString; ObjectTypes: PSafeArray; 
+                                       const invocationFieldPath: WideString; 
+                                       const targetRegex: WideString; 
+                                       const filterFieldPath: WideString; 
+                                       const filterDataRegex: WideString);
+begin
+  DefaultInterface.RegisterMethodInSink(correlationId, methodName, inputSignature, outputSignature, 
+                                        ObjectTypes, invocationFieldPath, targetRegex, 
+                                        filterFieldPath, filterDataRegex);
+end;
+
+procedure TGlue42.RegisterVariantMethodInSink(const correlationId: WideString; 
+                                              const methodName: WideString; 
+                                              const inputSignature: WideString; 
+                                              const outputSignature: WideString; 
+                                              ObjectTypes: PSafeArray; 
+                                              const invocationFieldPath: WideString; 
+                                              const targetRegex: WideString; 
+                                              const filterFieldPath: WideString; 
+                                              const filterDataRegex: WideString);
+begin
+  DefaultInterface.RegisterVariantMethodInSink(correlationId, methodName, inputSignature, 
+                                               outputSignature, ObjectTypes, invocationFieldPath, 
+                                               targetRegex, filterFieldPath, filterDataRegex);
+end;
+
+procedure TGlue42.RegisterVoidMethodInSink(const correlationId: WideString; 
+                                           const methodName: WideString; 
+                                           const inputSignature: WideString; 
+                                           ObjectTypes: PSafeArray; 
+                                           const invocationFieldPath: WideString; 
+                                           const targetRegex: WideString; 
+                                           const filterFieldPath: WideString; 
+                                           const filterDataRegex: WideString);
+begin
+  DefaultInterface.RegisterVoidMethodInSink(correlationId, methodName, inputSignature, ObjectTypes, 
+                                            invocationFieldPath, targetRegex, filterFieldPath, 
+                                            filterDataRegex);
+end;
+
+procedure TGlue42.RegisterSingleBranchStream(const correlationId: WideString; 
+                                             const streamName: WideString; 
+                                             const requestSignature: WideString; 
+                                             const streamSignature: WideString);
+begin
+  DefaultInterface.RegisterSingleBranchStream(correlationId, streamName, requestSignature, 
+                                              streamSignature);
+end;
+
+procedure TGlue42.AddCorrelationInterest(const correlationId: WideString; 
+                                         const interestId: WideString; const fieldPath: WideString; 
+                                         const filterFieldPath: WideString; 
+                                         const filterDataRegex: WideString);
+begin
+  DefaultInterface.AddCorrelationInterest(correlationId, interestId, fieldPath, filterFieldPath, 
+                                          filterDataRegex);
+end;
+
+procedure TGlue42.RegisterStreamInSink(const correlationId: WideString; 
+                                       const streamName: WideString; 
+                                       const requestSignature: WideString; 
+                                       const streamSignature: WideString; 
+                                       const requestFieldPath: WideString; 
+                                       const targetRegex: WideString; 
+                                       const filterFieldPath: WideString; 
+                                       const filterDataRegex: WideString);
+begin
+  DefaultInterface.RegisterStreamInSink(correlationId, streamName, requestSignature, 
+                                        streamSignature, requestFieldPath, targetRegex, 
+                                        filterFieldPath, filterDataRegex);
+end;
+
+procedure TGlue42.YieldCallbackData(const correlationId: WideString; const callbackId: WideString; 
+                                    const callbackData: WideString);
+begin
+  DefaultInterface.YieldCallbackData(correlationId, callbackId, callbackData);
+end;
+
+procedure TGlue42.YieldCallbackVariantData(const correlationId: WideString; 
+                                           const callbackId: WideString; callbackData: OleVariant);
+begin
+  DefaultInterface.YieldCallbackVariantData(correlationId, callbackId, callbackData);
+end;
+
+procedure TGlue42.RegisterGlueWindowInSink(const correlationId: WideString; const hwnd: WideString; 
+                                           const glueWindowOptionsJson: WideString);
+begin
+  DefaultInterface.RegisterGlueWindowInSink(correlationId, hwnd, glueWindowOptionsJson);
+end;
+
+function TGlue42.JsonToVariant(const json: WideString): PSafeArray;
+begin
+  Result := DefaultInterface.JsonToVariant(json);
+end;
+
+procedure TGlue42.CloseResource(const correlationId: WideString);
+begin
+  DefaultInterface.CloseResource(correlationId);
+end;
+
+function TGlue42.GetMethodNamesForTarget(const targetRegex: WideString): PSafeArray;
+begin
+  Result := DefaultInterface.GetMethodNamesForTarget(targetRegex);
+end;
+
+function TGlue42.GetTargets: PSafeArray;
+begin
+  Result := DefaultInterface.GetTargets;
+end;
+
+function TGlue42.GetChannels: PSafeArray;
+begin
+  Result := DefaultInterface.GetChannels;
+end;
+
+procedure TGlue42.InvokeAsyncVariantData(const correlationId: WideString; 
+                                         const methodName: WideString; args: OleVariant; 
+                                         const resultFieldPath: WideString; 
+                                         const targetRegex: WideString);
+begin
+  DefaultInterface.InvokeAsyncVariantData(correlationId, methodName, args, resultFieldPath, 
+                                          targetRegex);
+end;
+
+procedure TGlue42.SubscribeChannel(const correlationId: WideString; const Channel: WideString; 
+                                   const resultFieldPath: WideString);
+begin
+  DefaultInterface.SubscribeChannel(correlationId, Channel, resultFieldPath);
+end;
+
+procedure TGlue42.SetChannelData(const Channel: WideString; const fieldPath: WideString; 
+                                 const data: WideString);
+begin
+  DefaultInterface.SetChannelData(Channel, fieldPath, data);
+end;
+
+procedure TGlue42.G4O_XL_OpenSheet(const correlationId: WideString; const sheetName: WideString; 
+                                   columnNames: PSafeArray; columnValidationTypes: PSafeArray; 
+                                   data: OleVariant);
+begin
+  DefaultInterface.G4O_XL_OpenSheet(correlationId, sheetName, columnNames, columnValidationTypes, 
+                                    data);
+end;
+
+procedure TGlue42.Log(level: Byte; const Message: WideString);
+begin
+  DefaultInterface.Log(level, Message);
+end;
+
+function TGlue42.GetState: GlueState;
+begin
+  Result := DefaultInterface.GetState;
+end;
+
+function TGlue42.IsLaunchedByGD: WordBool;
+begin
+  Result := DefaultInterface.IsLaunchedByGD;
+end;
+
+function TGlue42.GetStartingContext: GlueValue;
+begin
+  Result := DefaultInterface.GetStartingContext;
+end;
+
+procedure TGlue42.OverrideConfigurationJson(const json: WideString);
+begin
+  DefaultInterface.OverrideConfigurationJson(json);
+end;
+
+procedure TGlue42.UpdateEventSinkSubscription(const eventName: WideString; enable: WordBool);
+begin
+  DefaultInterface.UpdateEventSinkSubscription(eventName, enable);
+end;
+
+function TGlue42.GetLibraryVersion: WideString;
+begin
+  Result := DefaultInterface.GetLibraryVersion;
+end;
+
+function TGlue42.GetGDInfo: WideString;
+begin
+  Result := DefaultInterface.GetGDInfo;
+end;
+
+function TGlue42.CreateIntentsManager: IGlueIntentsManager;
+begin
+  Result := DefaultInterface.CreateIntentsManager;
+end;
+
+procedure TGlue42.InvokeMethodsWithJson(const method: WideString; const invocationArgs: WideString; 
+                                        targets: PSafeArray; all: WordBool; 
+                                        identity: GlueInstanceIdentity; 
+                                        const resultHandler: IGlueInvocationResultHandler; 
+                                        invocationTimeoutMsecs: Int64; 
+                                        const correlationId: WideString);
+begin
+  DefaultInterface.InvokeMethodsWithJson(method, invocationArgs, targets, all, identity, 
+                                         resultHandler, invocationTimeoutMsecs, correlationId);
+end;
+
+function TGlue42.GetValueByFieldPath(Values: PSafeArray; const fieldPath: WideString): GlueValue;
+begin
+  Result := DefaultInterface.GetValueByFieldPath(Values, fieldPath);
+end;
+
+function TGlue42.CreateAppManager: IGlueAppManager;
+begin
+  Result := DefaultInterface.CreateAppManager;
+end;
+
+function TGlue42.GetGlueDynamicValueByFieldPath(variant: OleVariant; const fieldPath: WideString): IGlueValueCollection;
+begin
+  Result := DefaultInterface.GetGlueDynamicValueByFieldPath(variant, fieldPath);
+end;
+
+function TGlue42.GetAllInstancesVB: PSafeArray;
+begin
+  Result := DefaultInterface.GetAllInstancesVB;
+end;
+
 class function CoEventSinkAppFactory.Create: IEventSinkAppFactory;
 begin
   Result := CreateComObject(CLASS_EventSinkAppFactory) as IEventSinkAppFactory;
@@ -2750,6 +6717,78 @@ end;
 class function CoEventSinkAppFactory.CreateRemote(const MachineName: string): IEventSinkAppFactory;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_EventSinkAppFactory) as IEventSinkAppFactory;
+end;
+
+procedure TEventSinkAppFactory.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{C1AD91ED-C545-4EAE-9950-F0A86EF3E7F8}';
+    IntfIID:   '{A470DE80-1CAD-42B9-83B0-30F2F47F06F2}';
+    EventIID:  '{851E9C52-0392-4174-83F0-63C46AB9758B}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TEventSinkAppFactory.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IEventSinkAppFactory;
+  end;
+end;
+
+procedure TEventSinkAppFactory.ConnectTo(svrIntf: IEventSinkAppFactory);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TEventSinkAppFactory.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TEventSinkAppFactory.GetDefaultInterface: IEventSinkAppFactory;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TEventSinkAppFactory.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TEventSinkAppFactory.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TEventSinkAppFactory.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnCreateApp) then
+         FOnCreateApp(Self,
+                      Params[0] {const WideString},
+                      IUnknown(TVarData(Params[1]).VPointer) as IGlueValueCollection {const IGlueValueCollection},
+                      IUnknown(TVarData(Params[2]).VPointer) as IAppAnnouncerInSink {const IAppAnnouncerInSink});
+*)
+  end; {case DispID}
 end;
 
 class function CoGlueAppInSink.Create: IGlueAppInSink;
@@ -2762,6 +6801,93 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueAppInSink) as IGlueAppInSink;
 end;
 
+procedure TGlueAppInSink.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{1F71EFA1-B858-4AB8-AD54-0952E9FED424}';
+    IntfIID:   '{A8E36BE5-4027-4B28-8F51-BCF7F2B067BE}';
+    EventIID:  '{3D45C385-F42A-45E7-8D6A-FA0FBAB89BF8}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueAppInSink.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueAppInSink;
+  end;
+end;
+
+procedure TGlueAppInSink.ConnectTo(svrIntf: IGlueAppInSink);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueAppInSink.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueAppInSink.GetDefaultInterface: IGlueAppInSink;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueAppInSink.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueAppInSink.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueAppInSink.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnInitialize) then
+         FOnInitialize(Self,
+                       Params[0] {Integer},
+                       IUnknown(TVarData(Params[1]).VPointer) as IGlueValueCollection {const IGlueValueCollection},
+                       IUnknown(TVarData(Params[2]).VPointer) as IGlueWindow {const IGlueWindow});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnSaveState) then
+         FOnSaveState(Self,
+                      Params[0] {Integer},
+                      IUnknown(TVarData(Params[1]).VPointer) as IGlueDynamicValueReceiver {const IGlueDynamicValueReceiver});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnShutdown) then
+         FOnShutdown(Self, Params[0] {Integer});
+*)
+  end; {case DispID}
+end;
+
+function TGlueAppInSink.GetWindow: IGlueWindow;
+begin
+  Result := DefaultInterface.GetWindow;
+end;
+
 class function CoGlueApplicationInstance.Create: IGlueApplicationInstance;
 begin
   Result := CreateComObject(CLASS_GlueApplicationInstance) as IGlueApplicationInstance;
@@ -2770,6 +6896,129 @@ end;
 class function CoGlueApplicationInstance.CreateRemote(const MachineName: string): IGlueApplicationInstance;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueApplicationInstance) as IGlueApplicationInstance;
+end;
+
+procedure TGlueApplicationInstance.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{4A0DF2BD-DFFF-4DCB-B4B4-B25E3EDE3999}';
+    IntfIID:   '{2E2397A7-4698-4FD1-9E56-665355FB2A5C}';
+    EventIID:  '{C1BBE49F-0152-4660-A130-3F273952366E}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueApplicationInstance.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueApplicationInstance;
+  end;
+end;
+
+procedure TGlueApplicationInstance.ConnectTo(svrIntf: IGlueApplicationInstance);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueApplicationInstance.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueApplicationInstance.GetDefaultInterface: IGlueApplicationInstance;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueApplicationInstance.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueApplicationInstance.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueApplicationInstance.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnAppInstanceEvent) then
+         FOnAppInstanceEvent(Self,
+                             IUnknown(TVarData(Params[0]).VPointer) as IGlueApplicationInstance {const IGlueApplicationInstance},
+                             Params[1] {WordBool},
+                             Params[2] {WordBool},
+                             Params[3] {const WideString});
+*)
+  end; {case DispID}
+end;
+
+function TGlueApplicationInstance.Get_GlueApplication: IGlueApplication;
+begin
+  Result := DefaultInterface.GlueApplication;
+end;
+
+function TGlueApplicationInstance.Get_Id: WideString;
+begin
+  Result := DefaultInterface.Id;
+end;
+
+function TGlueApplicationInstance.Get_Name: WideString;
+begin
+  Result := DefaultInterface.Name;
+end;
+
+procedure TGlueApplicationInstance.Subscribe(const handler: IGlueApplicationInstanceEventHandler);
+begin
+  DefaultInterface.Subscribe(handler);
+end;
+
+procedure TGlueApplicationInstance.Unsubscribe(const handler: IGlueApplicationInstanceEventHandler);
+begin
+  DefaultInterface.Unsubscribe(handler);
+end;
+
+procedure TGlueApplicationInstance.Start(context: OleVariant);
+begin
+  DefaultInterface.Start(context);
+end;
+
+procedure TGlueApplicationInstance.StartWithJson(const json: WideString);
+begin
+  DefaultInterface.StartWithJson(json);
+end;
+
+procedure TGlueApplicationInstance.Stop;
+begin
+  DefaultInterface.Stop;
+end;
+
+function TGlueApplicationInstance.IsRunning: WordBool;
+begin
+  Result := DefaultInterface.IsRunning;
+end;
+
+function TGlueApplicationInstance.GetWindows: PSafeArray;
+begin
+  Result := DefaultInterface.GetWindows;
 end;
 
 class function CoGlueApplication.Create: IGlueApplication;
@@ -2782,6 +7031,167 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueApplication) as IGlueApplication;
 end;
 
+procedure TGlueApplication.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{10A0BD77-E19B-42D1-8569-0B9A73327937}';
+    IntfIID:   '{80108804-32AA-4998-A438-05BD00A86AFB}';
+    EventIID:  '{3883BD9D-ACF6-47C1-A98B-3A4CA8D48B98}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueApplication.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueApplication;
+  end;
+end;
+
+procedure TGlueApplication.ConnectTo(svrIntf: IGlueApplication);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueApplication.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueApplication.GetDefaultInterface: IGlueApplication;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueApplication.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueApplication.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueApplication.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnApplicationDefinition) then
+         FOnApplicationDefinition(Self,
+                                  IUnknown(TVarData(Params[0]).VPointer) as IGlueApplication {const IGlueApplication},
+                                  Params[1] {WordBool});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnApplicationInstance) then
+         FOnApplicationInstance(Self,
+                                IUnknown(TVarData(Params[0]).VPointer) as IGlueApplication {const IGlueApplication},
+                                Params[1] {const WideString},
+                                Params[2] {const WideString},
+                                Params[3] {WordBool},
+                                Params[4] {const WideString},
+                                IUnknown(TVarData(Params[5]).VPointer) as IGlueApplicationInstance {const IGlueApplicationInstance});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnMessage) then
+         FOnMessage(Self,
+                    IUnknown(TVarData(Params[0]).VPointer) as IGlueApplication {const IGlueApplication},
+                    Params[1] {const WideString},
+                    Params[2] {WordBool},
+                    Params[3] {const WideString});
+*)
+  end; {case DispID}
+end;
+
+function TGlueApplication.Get_Name: WideString;
+begin
+  Result := DefaultInterface.Name;
+end;
+
+function TGlueApplication.Get_Caption: WideString;
+begin
+  Result := DefaultInterface.Caption;
+end;
+
+function TGlueApplication.Get_Title: WideString;
+begin
+  Result := DefaultInterface.Title;
+end;
+
+function TGlueApplication.Get_IsHidden: WordBool;
+begin
+  Result := DefaultInterface.IsHidden;
+end;
+
+function TGlueApplication.Get_AppType: WideString;
+begin
+  Result := DefaultInterface.AppType;
+end;
+
+function TGlueApplication.IsAnnounced: WordBool;
+begin
+  Result := DefaultInterface.IsAnnounced;
+end;
+
+function TGlueApplication.WaitAnnounced(msecs: Integer): WordBool;
+begin
+  Result := DefaultInterface.WaitAnnounced(msecs);
+end;
+
+function TGlueApplication.GetInstances: PSafeArray;
+begin
+  Result := DefaultInterface.GetInstances;
+end;
+
+function TGlueApplication.CreateInstance: IGlueApplicationInstance;
+begin
+  Result := DefaultInterface.CreateInstance;
+end;
+
+procedure TGlueApplication.Subscribe(const handler: IGlueApplicationEventHandler);
+begin
+  DefaultInterface.Subscribe(handler);
+end;
+
+procedure TGlueApplication.Unsubscribe(const handler: IGlueApplicationEventHandler);
+begin
+  DefaultInterface.Unsubscribe(handler);
+end;
+
+procedure TGlueApplication.Start(const correlationId: WideString; context: OleVariant; 
+                                 startTimeoutMsecs: Integer);
+begin
+  DefaultInterface.Start(correlationId, context, startTimeoutMsecs);
+end;
+
+procedure TGlueApplication.StartWithJson(const correlationId: WideString; const json: WideString; 
+                                         startTimeoutMsecs: Integer);
+begin
+  DefaultInterface.StartWithJson(correlationId, json, startTimeoutMsecs);
+end;
+
+procedure TGlueApplication.Stop(const InstanceId: WideString; const correlationId: WideString);
+begin
+  DefaultInterface.Stop(InstanceId, correlationId);
+end;
+
 class function CoGlueAppManager.Create: IGlueAppManager;
 begin
   Result := CreateComObject(CLASS_GlueAppManager) as IGlueAppManager;
@@ -2790,6 +7200,130 @@ end;
 class function CoGlueAppManager.CreateRemote(const MachineName: string): IGlueAppManager;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueAppManager) as IGlueAppManager;
+end;
+
+procedure TGlueAppManager.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{373000A4-F8F4-41E5-B790-1FD512699252}';
+    IntfIID:   '{6A258876-3737-4281-BF01-09B3B9B99886}';
+    EventIID:  '{03D0882F-68FE-4A2B-84D6-5EF070187600}';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueAppManager.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    ConnectEvents(punk);
+    Fintf:= punk as IGlueAppManager;
+  end;
+end;
+
+procedure TGlueAppManager.ConnectTo(svrIntf: IGlueAppManager);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+  ConnectEvents(FIntf);
+end;
+
+procedure TGlueAppManager.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    DisconnectEvents(FIntf);
+    FIntf := nil;
+  end;
+end;
+
+function TGlueAppManager.GetDefaultInterface: IGlueAppManager;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueAppManager.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueAppManager.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure TGlueAppManager.InvokeEvent(DispID: TDispID; var Params: TVariantArray);
+begin
+  case DispID of
+    -1: Exit;  // DISPID_UNKNOWN
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnApplicationDefinition) then
+         FOnApplicationDefinition(Self,
+                                  Params[0] {const WideString},
+                                  Params[1] {WordBool});
+*)
+(*{The DispID for this method is DISPID_UNKNOWN!?. }
+    -1: if Assigned(FOnApplicationInstance) then
+         FOnApplicationInstance(Self,
+                                Params[0] {const WideString},
+                                Params[1] {const WideString},
+                                Params[2] {const WideString},
+                                Params[3] {WordBool},
+                                Params[4] {const WideString},
+                                IUnknown(TVarData(Params[5]).VPointer) as IGlueApplicationInstance {const IGlueApplicationInstance});
+*)
+  end; {case DispID}
+end;
+
+procedure TGlueAppManager.Subscribe(const handler: IGlueAppManagerEventHandler);
+begin
+  DefaultInterface.Subscribe(handler);
+end;
+
+procedure TGlueAppManager.Unsubscribe(const handler: IGlueAppManagerEventHandler);
+begin
+  DefaultInterface.Unsubscribe(handler);
+end;
+
+procedure TGlueAppManager.StartApplication(const appName: WideString; 
+                                           const correlationId: WideString; context: OleVariant; 
+                                           appDefTimeoutMsecs: Integer; startTimeoutMsecs: Integer);
+begin
+  DefaultInterface.StartApplication(appName, correlationId, context, appDefTimeoutMsecs, 
+                                    startTimeoutMsecs);
+end;
+
+procedure TGlueAppManager.StartApplicationWithJson(const appName: WideString; 
+                                                   const correlationId: WideString; 
+                                                   const json: WideString; 
+                                                   appDefTimeoutMsecs: Integer; 
+                                                   startTimeoutMsecs: Integer);
+begin
+  DefaultInterface.StartApplicationWithJson(appName, correlationId, json, appDefTimeoutMsecs, 
+                                            startTimeoutMsecs);
+end;
+
+procedure TGlueAppManager.StopApplication(const correlationId: WideString);
+begin
+  DefaultInterface.StopApplication(correlationId);
+end;
+
+function TGlueAppManager.GetApplications: PSafeArray;
+begin
+  Result := DefaultInterface.GetApplications;
+end;
+
+function TGlueAppManager.GetApplication(const Name: WideString): IGlueApplication;
+begin
+  Result := DefaultInterface.GetApplication(Name);
 end;
 
 class function CoGlueException.Create: _GlueException;
@@ -2802,6 +7336,61 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueException) as _GlueException;
 end;
 
+procedure TGlueException.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{3CB2D568-58F9-44D6-83EC-472FB5AE284A}';
+    IntfIID:   '{77A3400F-F4AC-3AA1-B0D9-39D704BD1949}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueException.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as _GlueException;
+  end;
+end;
+
+procedure TGlueException.ConnectTo(svrIntf: _GlueException);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueException.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueException.GetDefaultInterface: _GlueException;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueException.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueException.Destroy;
+begin
+  inherited Destroy;
+end;
+
 class function CoGlueDynamicValueReceiver.Create: _GlueDynamicValueReceiver;
 begin
   Result := CreateComObject(CLASS_GlueDynamicValueReceiver) as _GlueDynamicValueReceiver;
@@ -2812,6 +7401,61 @@ begin
   Result := CreateRemoteComObject(MachineName, CLASS_GlueDynamicValueReceiver) as _GlueDynamicValueReceiver;
 end;
 
+procedure TGlueDynamicValueReceiver.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{88571F82-86A8-48B6-9612-7D3AD3DF45A7}';
+    IntfIID:   '{D4A3201C-2DA9-3D0E-9FA4-C605361A6615}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TGlueDynamicValueReceiver.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as _GlueDynamicValueReceiver;
+  end;
+end;
+
+procedure TGlueDynamicValueReceiver.ConnectTo(svrIntf: _GlueDynamicValueReceiver);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TGlueDynamicValueReceiver.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TGlueDynamicValueReceiver.GetDefaultInterface: _GlueDynamicValueReceiver;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TGlueDynamicValueReceiver.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TGlueDynamicValueReceiver.Destroy;
+begin
+  inherited Destroy;
+end;
+
 class function CoLambdaAnnouncerInSink.Create: _LambdaAnnouncerInSink;
 begin
   Result := CreateComObject(CLASS_LambdaAnnouncerInSink) as _LambdaAnnouncerInSink;
@@ -2820,6 +7464,71 @@ end;
 class function CoLambdaAnnouncerInSink.CreateRemote(const MachineName: string): _LambdaAnnouncerInSink;
 begin
   Result := CreateRemoteComObject(MachineName, CLASS_LambdaAnnouncerInSink) as _LambdaAnnouncerInSink;
+end;
+
+procedure TLambdaAnnouncerInSink.InitServerData;
+const
+  CServerData: TServerData = (
+    ClassID:   '{616E43D6-D793-4726-94EA-19919912F3AB}';
+    IntfIID:   '{AF090E02-FB2A-3A7C-9823-BDA389D06EAE}';
+    EventIID:  '';
+    LicenseKey: nil;
+    Version: 500);
+begin
+  ServerData := @CServerData;
+end;
+
+procedure TLambdaAnnouncerInSink.Connect;
+var
+  punk: IUnknown;
+begin
+  if FIntf = nil then
+  begin
+    punk := GetServer;
+    Fintf:= punk as _LambdaAnnouncerInSink;
+  end;
+end;
+
+procedure TLambdaAnnouncerInSink.ConnectTo(svrIntf: _LambdaAnnouncerInSink);
+begin
+  Disconnect;
+  FIntf := svrIntf;
+end;
+
+procedure TLambdaAnnouncerInSink.DisConnect;
+begin
+  if Fintf <> nil then
+  begin
+    FIntf := nil;
+  end;
+end;
+
+function TLambdaAnnouncerInSink.GetDefaultInterface: _LambdaAnnouncerInSink;
+begin
+  if FIntf = nil then
+    Connect;
+  Assert(FIntf <> nil, 'DefaultInterface is NULL. Component is not connected to Server. You must call "Connect" or "ConnectTo" before this operation');
+  Result := FIntf;
+end;
+
+constructor TLambdaAnnouncerInSink.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+end;
+
+destructor TLambdaAnnouncerInSink.Destroy;
+begin
+  inherited Destroy;
+end;
+
+procedure Register;
+begin
+  RegisterComponents(dtlServerPage, [TGlueNameValuePair, TGlueContextUpdate, TGlueDynamicValueBase, TGlueDynamicValue, 
+    TGlueContextManager, TGlueContextImage, TGlueWindowSettings, TGlueMethodInfo, TGlueData, 
+    TGlueStreamConsumer, TVbGlueInvocationResult, TGlueMethodInvocator, TVBGlueStreamSubscriber, TGlueInvocationRequest, 
+    TGlueSubscriptionRequest, TGlueStreamSubscription, TGlueServerStream, TGlueServerMethod, TGlueIntentsManager, 
+    TGlueWindow, TGlue42, TEventSinkAppFactory, TGlueAppInSink, TGlueApplicationInstance, 
+    TGlueApplication, TGlueAppManager, TGlueException, TGlueDynamicValueReceiver, TLambdaAnnouncerInSink]);
 end;
 
 end.

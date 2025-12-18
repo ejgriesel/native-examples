@@ -53,6 +53,9 @@ type
       : HResult; stdcall;
     function HandleException(const Message: WideString; ex: GlueValue)
       : HResult; stdcall;
+    function HandleGlueState(active: WordBool; const Message: WideString; date: Int64)
+      : HResult; stdcall;
+
 
     // implements IGlueWindowEventHandler - channel updates for
     // registered Glue Window
@@ -336,6 +339,12 @@ created: WordBool): HResult;
 begin
   Log('Discovered Glue context ' + context.name);
   Result := S_OK;
+end;
+
+function TForm1.HandleGlueState(active: WordBool; const Message: WideString;
+  date: Int64): HResult;
+begin
+  Log('Glue state changed to ' + Message);
 end;
 
 function TForm1.HandleInstanceStatus(Instance: GlueInstance;

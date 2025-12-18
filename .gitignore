@@ -24,3 +24,5 @@
 *.exe
 /glue-com/GlueDelphi10 - CaseList/__history
 *.identcache
+/glue-com/GlueDelphi10 - CaseList/__recovery
+*.dcr

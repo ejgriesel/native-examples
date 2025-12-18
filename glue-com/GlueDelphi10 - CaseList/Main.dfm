@@ -10,9 +10,7 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 13
   object GroupBox1: TGroupBox
     Left = 0
@@ -47,11 +45,12 @@ object Form1: TForm1
     object Memo1: TMemo
       Left = 112
       Top = 24
-      Width = 782
+      Width = 780
       Height = 114
       Anchors = [akLeft, akTop, akRight, akBottom]
       ReadOnly = True
       TabOrder = 0
+      ExplicitWidth = 782
     end
   end
 end
