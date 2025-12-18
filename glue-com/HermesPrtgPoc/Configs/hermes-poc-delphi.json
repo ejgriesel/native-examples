@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Delphi 12 POC🔗",
+        "type": "exe",
+        "name": "delphi-12-poc",
+        "icon": "http://localhost:22080/resources/icons/wpf.ico",
+        "details": {
+            "path": "C:/GitHub/native-examples-ejgriesel/glue-com/GlueDelphi10 - CaseList/Win64/Debug/",
+            "command": "CaseList.exe",
+            "mode": "tab",
+            "parameters": " --mode=3",
+            "left": 100,
+            "top": 75,
+            "startingContextMode": "interop"
+        },
+        "customProperties": {
+            "includeInCanvas": false,
+            "includeInWorkspaces": false,
+            "appManagerOrder": 2,
+            "folder": "Hermes"
+        }
+    }
+]
