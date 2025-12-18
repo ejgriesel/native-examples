@@ -3,10 +3,10 @@ program CaseList;
 uses
   Vcl.Forms,
   Main in 'Main.pas' {Form1},
-  GlueCOM_TLB in 'GlueCOM_TLB.pas',
   GlueHelper in 'GlueHelper.pas',
-  mscorlib_TLB in 'mscorlib_TLB.pas',
-  StringGridEx in 'StringGridEx.pas';
+  StringGridEx in 'StringGridEx.pas',
+  GlueCOM_TLB in 'GlueCOM_TLB.pas',
+  mscorlib_TLB in 'mscorlib_TLB.pas';
 
 {$R *.res}
 

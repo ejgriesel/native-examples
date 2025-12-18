@@ -49,8 +49,8 @@ object Form1: TForm1
       Height = 114
       Anchors = [akLeft, akTop, akRight, akBottom]
       ReadOnly = True
+      ScrollBars = ssBoth
       TabOrder = 0
-      ExplicitWidth = 782
     end
   end
 end

@@ -345,6 +345,7 @@ function TForm1.HandleGlueState(active: WordBool; const Message: WideString;
   date: Int64): HResult;
 begin
   Log('Glue state changed to ' + Message);
+  Result := S_OK;
 end;
 
 function TForm1.HandleInstanceStatus(Instance: GlueInstance;

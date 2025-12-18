@@ -138,10 +138,10 @@ $(PostBuildEvent)]]></PostBuildEvent>
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="GlueCOM_TLB.pas"/>
         <DCCReference Include="GlueHelper.pas"/>
-        <DCCReference Include="mscorlib_TLB.pas"/>
         <DCCReference Include="StringGridEx.pas"/>
+        <DCCReference Include="GlueCOM_TLB.pas"/>
+        <DCCReference Include="mscorlib_TLB.pas"/>
         <None Include="case-list-data.json"/>
         <None Include="contacts.json"/>
         <None Include="GlueCOMDelphiLog.config"/>
@@ -173,9 +173,39 @@ $(PostBuildEvent)]]></PostBuildEvent>
             </Delphi.Personality>
             <Deployment Version="5">
                 <DeployFile LocalName="GlueCOMDelphiLog.config" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="GlueCOMDelphiLog.config" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Debug\CaseList.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="Win64\Debug\CaseList.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>CaseList.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win64\Debug\CaseList.rsm" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win64">
+                        <RemoteName>CaseList.rsm</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="case-list-data.json" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="case-list-data.json" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="contacts.json" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="contacts.json" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win64">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>
