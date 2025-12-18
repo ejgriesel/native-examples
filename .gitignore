@@ -31,3 +31,5 @@
 *.user
 /glue-com/HermesPrtgDemo/obj
 /glue-com/HermesPrtgDemo/bin
+/glue-com/HermesPrtgPoc/.vs
+/glue-com/HermesPrtgPoc/obj/Debug
